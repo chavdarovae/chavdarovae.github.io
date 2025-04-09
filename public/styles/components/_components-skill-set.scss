@@ -1,0 +1,34 @@
+.skill-set {
+
+    &:not(:last-child){
+        padding-bottom:15px;
+    }
+
+    &__title {
+        width: fit-content;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 100px;
+        // box-shadow: $secondary-shadow;
+        padding: 5px 22px;
+        margin-bottom: 20px !important;
+        color: #fff;
+        text-transform: uppercase;
+
+        @include for-tablet-landscape-up {
+            margin: 0;
+        }
+    }
+
+    &__list {
+        text-align: center;
+
+        @include for-tablet-landscape-up {
+            text-align: left;
+        }
+    }
+
+    &__list-item {
+        margin: 10px 0 0 0;
+    }
+}

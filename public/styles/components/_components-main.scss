@@ -1,0 +1,42 @@
+.main {
+	position: relative;
+	padding: 50px 20px 10px 20px;
+	color: $text-color;
+
+	[class*="__title"],
+	[class*="-title"],
+	[class*="__info"] {
+		justify-self: center;
+		margin: 10px auto;
+
+		@include for-tablet-landscape-up {
+			grid-column: 1 / -1;
+			margin: 10px 0;
+		}
+	}
+
+	[class*="__title"] {
+		text-align: center;
+	}
+
+	[class*="-highlights"],
+	[class*="__highlights"] {
+		justify-self: center;
+		background-color: #f9f0a3;
+		padding: 20px 10px;
+		// box-shadow: $secondary-shadow;
+		border-radius: $primary-rad;
+	}
+
+	[class*="-icon"] {
+		width: 50px;
+		margin: 30px;
+	}
+
+	[class*="-entry"] {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+
