@@ -1,0 +1,442 @@
+<section class="main__projects" id="projectsSection">
+	<h2 class="main__title page-title">Projects</h2>
+	<div class="anchor-nav">
+		<ul class="anchor-nav__list">
+			<li class="anchor-nav__list-item">
+				<a [routerLink]="[]"
+				   fragment="workProjectsDiv"
+				   class="anchor-nav__list-link anchor-nav__list-link--current">Work</a></li>
+			<li class="anchor-nav__list-item">
+				<a [routerLink]="[]"
+				   fragment="personalProjectsDiv"
+				   class="anchor-nav__list-link">Personal</a></li>
+			<li class="anchor-nav__list-item">
+				<a  [routerLink]="[]"
+					fragment="studyProjectsDiv"
+					class="anchor-nav__list-link">Study</a></li>
+		</ul>
+	</div>
+	<div class="content-container" id="workProjectsDiv">
+		<h2 class="main__title">WORK PROJECTS</h2>
+		<div class="project">
+			<h3 class="project__title">Carrypicker Web Applications</h3>
+			<div class="project__icon">
+				<img src="icons/star.svg" alt="Star icon">
+			</div>
+			<p class="project__highlights">
+				Developed further features for three web applications: Carrypicker, Colleta TMS and Colleta
+				Trucking. The symbiotic relationship between them allows for them to cover all three steps of
+				the truck transport logistics process. Starting with placing a shipment order in Carrypicker,
+				going through an AI based automatic disposition with a fallback option - manual disposition in
+				Colleta TMS. And ending with issuing tour request and transportation orders via Colleta Trucking
+				Platform, while having Colleta User Management Platform as the middle man in this ecosystem.
+			</p>
+			<p class="project__info">
+				Extended the four SPAs with further features written in an imperative manner using
+				TypeScript(Angular), AJAX, REST and JSON.
+			</p>
+			<p class="project__info">
+				Prepared multiple UX design drafts using Sketch, complying with established design streamlines
+				and implemented them with SCSS.
+			</p>
+			<p class="project__info">
+				Created multiple E-mail templates with Stripo (online platform for E-mail templates) and
+				integrated Handlebars as a template compiler.
+			</p>
+			<p class="project__info">
+				Partnered with backend developers, data analysts and product developers.
+			</p>
+			<div class="project__media project__media--info">
+				<div class="project__media-title">Carrypicker - Info</div>
+				<div class="project__media-img project__media-img--big">
+					<img src="images/Carrypicker-ui/0.png" alt="Shipment orders list view">
+				</div>
+				<div class="project__media-info">
+					<p>Carrypicker is a web platform, where shippers can easily input shipping orders. It
+						provides AI-based day price calculation algorithm and supports manual, CSV or excel
+						based shipment input.</p>
+					<p>The web portal keeps track of the status and the position of the shipments relevant to a
+						single user or to a group of users. It also issues automatically shipping orders and
+						allows for document exchange between stakeholders.</p>
+					<a href="https://my.carrypicker.com/">https://my.carrypicker.com/</a>
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/Carrypicker-ui/1.png" alt="Shipment orders list view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Carrypicker-ui/2.png" alt="Shipment input">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Carrypicker-ui/3.png" alt="Read-only shipment order detail view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Carrypicker-ui/4.png" alt="Favorite companies input">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Carrypicker-ui/5.png" alt="Backoffice shipment orders list view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Carrypicker-ui/6.png" alt="Editable shipment order detail view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Carrypicker-ui/7.png" alt="Shipment price update">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Carrypicker-ui/8.png" alt="Report genration">
+				</div> -->
+			</div>
+			<div class="project__media project__media--info">
+				<div class="project__media-title">Colleta TMS - Info</div>
+				<div class="project__media-img project__media-img--big">
+					<img src="images/Colleta-tms/0.png" alt="Login-first step view">
+				</div>
+				<div class="project__media-info">
+					<p>Colleta TMS is a disposition tool that serves mainly transport management purposes. It is
+						meant as a fallback web platform, where shipments that could not be disposed
+						automatically by the AI, are bundled manually by dispatchers. </p>
+					<p>Colleta TMS reduces the process chain of bundling multiple shipments together, creating a
+						tour request and contacting numerous carriers to a couple of button clicks. The price
+						negotiation and the actual assignment of a transport order also take place in this web
+						platform.</p>
+					<a href="https://neu.colleta.de/">https://neu.colleta.de/</a>
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/Colleta-tms/1.png" alt="Login-first step view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-tms/2.png" alt="Random project view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-tms/3.png" alt="Project result view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-tms/4.png" alt="Project result view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-tms/5.png" alt="Project result view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-tms/6.png" alt="Project result view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-tms/7.png" alt="Project result view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-tms/8.png" alt="Project result view">
+				</div> -->
+			</div>
+			<div class="project__media project__media--info">
+				<div class="project__media-title">Colleta Trucking - Info</div>
+				<div class="project__media-img project__media-img--big">
+					<img src="images/Colleta-trucking/0.png" alt="Login-first step view">
+				</div>
+				<div class="project__media-info">
+					<p>Colleta Trucking is a web application meant for transportation carriers. It allows them
+						to actively participate in tour request bids, register available transportation vehicles
+						and commonly run routes. Another feature of the platform is keeping history of all
+						transportation assignments and providing online-access the respective documentation.</p>
+					<a href="https://trucking.colleta.de/">https://trucking.colleta.de/</a>
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/Colleta-trucking/1.png" alt="Login-first step view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-trucking/2.png" alt="Random project view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-trucking/3.png" alt="Project result view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-trucking/4.png" alt="Project result view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-trucking/5.png" alt="Project result view">
+				</div> -->
+			</div>
+			<div class="project__media project__media--info">
+				<div class="project__media-title">Colleta Manager - Info</div>
+				<div class="project__media-img project__media-img--big">
+					<img src="images/Colleta-manager/0.png" alt="Login-first step view">
+				</div>
+				<div class="project__media-info">
+					<p>Colleta Manager does the user management for the other three web platforms: Carrypicker,
+						Colleta and Colleta Trucking. It allows for intersystem data exchange and is the place
+						where the onboarding for all stakeholders in the Carrypicker ecosystem takes place.</p>
+					<a href="https://my.colleta.de/">https://my.colleta.de/</a>
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/Colleta-manager/1.png" alt="Login-first step view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-manager/2.png" alt="Random project view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Colleta-manager/3.png" alt="Project result view">
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class="content-container" id="personalProjectsDiv">
+		<h2 class="main__title">PERSONAL PROJECTS</h2>
+		<div class="project">
+			<h3 class="project__title">Performance Management Tool - PMT SPA</h3>
+			<div class="project__icon">
+				<img src="icons/star.svg" alt="Star icon">
+			</div>
+			<p class="project__highlights">
+				Designed, developed and deployed an MVP Performance Management Tool (PMT SPA). The web
+				application is inspired by Six Sigma performance improvement techniques. It provides a
+				platform
+				for multiple
+				parties to quickly exchange highly complex technical reviews of assets or performance
+				indicators,
+				while generating a high-level overview for C level stakeholders.
+			</p>
+			<p class="project__info">
+				Wrote a well-structured Single Page Application with a cloud-based Backend (BaaS) using
+				JavaScript, AJAX, REST and JSON.
+			</p>
+			<p class="project__info">
+				Implemented efficient routing and templating via Handlebars and Sammy.js.
+			</p>
+			<p class="project__info">
+				Partnered with project managers and analysts to deeply understand the necessities of users
+				and
+				build a custom UI that explicitly serves those needs.
+			</p>
+			<p class="project__info">
+				Enabled modern multi-platform application design following the latest standards of HTML5 and
+				CSS3.
+			</p>
+			<p class="project__info">
+				Structured the SCSS code in a least wasteful way by implementing Inverted Triangle
+				architecture
+				and BEM methodology.
+			</p>
+			<div class="project__media">
+				<div class="project__media-title">PMT-Desktop - Gallery</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/1.png" alt="Login-first step view">
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/PermatoSPA/2.png" alt="Login-second step view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/3.png" alt="Register view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/4.png" alt="Home view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/5.png" alt="New project view">
+				</div> -->
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/6.png" alt="Random project view">
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/PermatoSPA/7.png" alt="Random project view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/8.png" alt="Random project view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/9.png" alt="Random project view">
+				</div> -->
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/10.png" alt="Project result view">
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/PermatoSPA/11.png" alt="Templates view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/12.png" alt="Project template view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/13.png" alt="Activity log">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/14.png" alt="Activity log - conversation">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/15.png" alt="Column modification">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/16.png" alt="Column photo modification">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/17.png" alt="User details update">
+				</div> -->
+			</div>
+			<div class="project__media">
+				<div class="project__media-title">PMT-Mobile - Gallery</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/1.png" alt="Login-first step view">
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/2.png" alt="Login-second step view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/3.png" alt="Register view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/4.png" alt="Home view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/5.png" alt="Home-menu view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/6.png" alt="New project view">
+				</div> -->
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/7.png" alt="Random project view">
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/8.png" alt="Random project view">
+				</div> -->
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/9.png" alt="Project results view">
+				</div>
+				<!-- <div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/10.png" alt="Templates view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/11.png" alt="Random template view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/PermatoSPA/mobile/12.png" alt="User modification view">
+				</div> -->
+			</div>
+		</div>
+
+		<div class="project">
+			<h3 class="project__title">Small Jobs Cloud - SmoJoCloud SPA</h3>
+			<div class="project__icon">
+				<img src="icons/star.svg" alt="Star icon">
+			</div>
+			<p class="project__highlights">
+				Designed, developed and deployed an MVP Performance Management Tool (PMT SPA). The web
+				application is inspired by Six Sigma performance improvement techniques. It provides a
+				platform
+				for multiple
+				parties to quickly exchange highly complex technical reviews of assets or performance
+				indicators,
+				while generating a high-level overview for C level stakeholders.
+			</p>
+			<p class="project__info">
+				Wrote a well-structured Single Page Application with a cloud-based Backend (BaaS) using
+				JavaScript, AJAX, REST and JSON.
+			</p>
+			<p class="project__info">
+				Implemented efficient routing and templating via Handlebars and Sammy.js.
+			</p>
+			<p class="project__info">
+				Partnered with project managers and analysts to deeply understand the necessities of users
+				and
+				build a custom UI that explicitly serves those needs.
+			</p>
+			<p class="project__info">
+				Enabled modern multi-platform application design following the latest standards of HTML5 and
+				CSS3.
+			</p>
+			<p class="project__info">
+				Structured the SCSS code in a least wasteful way by implementing Inverted Triangle
+				architecture
+				and BEM methodology.
+			</p>
+			<div class="project__media">
+				<div class="project__media-title">SmoJo Cloud - Gallery</div>
+				<div class="project__media-img">
+					<img src="images/Smo-jo-cloud/1.png" alt="Login-first step view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Smo-jo-cloud/2.png" alt="Login-first step view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/Smo-jo-cloud/3.png" alt="Login-first step view">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-container" id="studyProjectsDiv">
+		<h2 class="main__title">PROJECTS WITH EDUCATIONAL PURPOSE</h2>
+		<div class="project">
+			<h3 class="project__title">Movie platform SPA</h3>
+			<div class="project__icon">
+				<img src="icons/star.svg" alt="Star icon">
+			</div>
+			<p class="project__highlights">
+				Implemented Movie platform Single Page Application - platform for
+				sharing and rating inspiring movie titles. The web application keeps users and other
+				relevant data in a could-based backend (Backendless), support register and login for guest
+				users. And allow for various manipulation with instances, like: reviewing, creating,
+				editing,
+				deleting and simulation of purchasing movie tickets.
+			</p>
+			<div class="project__media">
+				<div class="project__media-title">Movie platform - Gallery</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/1.png" alt="Home view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/2.png" alt="Login view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/3.png" alt="Register view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/4.png" alt="Randome view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/5.png" alt="Create instance view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/6.png" alt="User home view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/7.png" alt="Search results view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/8.png" alt="Instance detailed view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MoviesSPA/9.png" alt="Edit instance view">
+				</div>
+			</div>
+		</div>
+		<div class="project">
+			<h3 class="project__title">Music platform SPA</h3>
+			<div class="project__icon">
+				<img src="icons/star.svg" alt="Star icon">
+			</div>
+			<p class="project__highlights">
+				Implemented Music platform Single Page Application - platform for
+				sharing and rating inspiring song titles. The web application keeps users and other
+				relevant data in a could-based backend (Backendless), support register and login for guest
+				users. And allow for various manipulation with instances, like: reviewing, creating,
+				deleting
+				and liking songs.
+			</p>
+			<div class="project__media">
+				<div class="project__media-title">Music platform - Gallery</div>
+				<div class="project__media-img">
+					<img src="images/MusicSPA/1.png" alt="Home view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MusicSPA/2.png" alt="Login view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MusicSPA/3.png" alt="Random view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MusicSPA/4.png" alt="Random view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MusicSPA/5.png" alt="User home view">
+				</div>
+				<div class="project__media-img">
+					<img src="images/MusicSPA/6.png" alt="Create instance view">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
