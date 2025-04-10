@@ -1,0 +1,42 @@
+{
+	"nav": {
+		"about": "About",
+		"courses": "Courses",
+		"experience": "Experience",
+		"projects": "Projects"
+	},
+	"about": {
+		"highlight": "I am an experienced software developer and engineer with a persisting passion for discovery and achievement. Curiosity, ingenuity and reliability are my signature. Throughout my 14 years of professional experience I have learned to value inspiration and collaboration as the true pillars of productivity and fulfilment. My positive attitude, confidence and natural responsibility make me a valued  asset to every team.",
+		"journey": {
+			"title": "On a journey to new frontiers",
+			"p1": "Throughout my 8-year carrier as a civil engineer I was always fascinated by the impact of digitalization and how web applications changed the core activities within my field and everything around it.",
+			"p2": "Looking to optimize processes and increase the effectiveness of my team’s efforts, I searched for ways to extract the maximum of every application by exploring different scripts and APIs.",
+			"p3": "As time progressed and my curiosity increased, so did my desire to create applications of my own and cover areas of my field and everyday life which I felt could be improved with digital solutions.",
+			"p4": "In the past 4 years I have decided to pursue this desire fully by enlisting a developer program in a software academy, creating my first web application from the ground up and joining an agile Start-up team of likeminded developers who share my passion of exploring.",
+			"p5": "I am eager to continue this exciting journey and grow my skillset professionally, learn and create more applications that improve our quality of life."
+		},
+		"education": {
+			"title": "Education",
+			"softUni": "SoftUni Educational Center - Sofia, Bulgaria",
+			"program": "Software Engineering Program – JavaScript Web Developer",
+			"certificates": "Acquired Certificates",
+			"uasg": "University of Architecture, Civil Engineering and Geodesy - Sofia, Bulgaria",
+			"master": "MSc Civil Engineering"
+		},
+		"skills": {
+			"core": "Core skills",
+			"additional": "Additional skills",
+			"engineering": "Civil engineering skills",
+			"language": "Language skills",
+			"solver": "Analytical problem-solver",
+			"designer": "Engineering Solutions Design and Implementation",
+			"leader": "Leadership Experience",
+			"manager": "Project management",
+			"bg":"Bulgarian – native",
+			"de":"German – professional working",
+			"en":"English – full professional",
+			"it":"Italian – professional working"
+		}
+
+	}
+}

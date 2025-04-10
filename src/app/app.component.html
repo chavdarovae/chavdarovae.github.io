@@ -1,21 +1,16 @@
 <header class="header">
 	<div class="content-container">
-		<div class="header__logo header__logo--backend">
-			<img src="icons/noun_back end_133744.svg" alt="back-end-icon">
-			<div class="header__logo-lang-bar header__logo-lang-bar--backend">EN</div>
-		</div>
+		<ng-container *ngTemplateOutlet="lang, context: {end: 'backend'}"></ng-container>
 		<nav class="nav">
 			<ul class="nav__list row row--right-aligned">
-				<li class="nav__list-item"><a routerLink="about" class="nav__list-link">About</a></li>
-				<li class="nav__list-item"><a routerLink="courses" class="nav__list-link">Courses</a></li>
-				<li class="nav__list-item"><a routerLink="experience" class="nav__list-link">Experience</a></li>
-				<li class="nav__list-item"><a routerLink="projects" class="nav__list-link">Experience</a></li>
+				@for (item of menuItems; track item) {
+					<li class="nav__list-item">
+						<a [routerLink]="item" class="nav__list-link">{{ ('nav.' + item) | translate }}</a>
+					</li>
+				}
 			</ul>
 		</nav>
-		<div class="header__logo header__logo--frontend">
-			<img src="icons/noun_front end_133743.svg" alt="front-end-icon">
-			<div class="header__logo-lang-bar header__logo-lang-bar--frontend">EN</div>
-		</div>
+		<ng-container *ngTemplateOutlet="lang, context: {end: 'frontend'}"></ng-container>
 	</div>
 </header>
 
@@ -26,3 +21,12 @@
 <footer class="footer">
 	Contact me!
 </footer>
+
+<ng-template #lang let-end="end">
+	<div [class]="'header__logo header__logo--' + end">
+		<img [src]="'icons/' + end + '.svg'" alt="back-end-icon">
+		<div [class]="'header__logo-lang-bar header__logo-lang-bar--' + end"
+			 (click)="changeLanguage()">{{ translate.currentLang | uppercase }}
+		</div>
+	</div>
+</ng-template>
