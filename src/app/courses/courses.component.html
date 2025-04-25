@@ -1,506 +1,59 @@
 <section class="main__courses" id="coursesSection">
 	<div class="content-container">
-		<h2 class="main__title page-title">Courses</h2>
+		<h2 class="main__title page-title">{{'nav.courses' | translate | uppercase}}</h2>
 
 		<div class="main__info">
-			<p>
-				SoftUni's software engineering curriculum is a combination of programming courses depending
-				on
-				the specialization. It focuses on acquiring fundamental knowledge, practical skills and
-				sufficient technical overview in latest
-				software technologies - a must for every "software engineer".
-			</p>
-			<p>
-				JavaScript Web Developer Program has three modules, each having a methodically selected
-				sequence
-				of courses, upgrading the IT competences in a well-considered pace, as follows:
-			</p>
+			<p>{{'courses.info.p1' | translate}}</p>
+			<p>{{'courses.info.p2' | translate}}</p>
 			<ul class="text-like-list">
-				<li>Entry Module - courses: Programming basics with C#, Programming basics with JAVA</li>
+				<li>{{'courses.info.li1' | translate}}</li>
+				<li>{{'courses.info.li2' | translate}}</li>
+				<li>{{'courses.info.li3' | translate}}</li>
 				<li>Fundamental Module - courses: Technology Fundamentals JavaScript</li>
-				<li>Professional Module - courses: JS Essentials, JS Advanced, JS Applications, JS Backend,
-					ReactJS,
-					HTML & CSS and Frontend Frameworks.</li>
 			</ul>
 		</div>
 
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">JS Backend</h3>
-				<div class="course__header-img">
-					<img src="images/angular.jpg" alt="Angular book">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> practical skills for building Single
-					Page
-					Application & basic
-					TypeScript
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/2760/angular-january-2020">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>Introduction to Angular and TypeScript</li>
-						<li>Components and Data binding</li>
-						<li>Dependency injection, Introduction to RxJS and Services</li>
-						<li>Modules and Routing</li>
-						<li>Forms, Directives and Data retrieval from REST, </li>
-						<li>Pipes,Interceptors and Subjects</li>
-						<li>State management and others</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="https://github.com/chavdarovae/08.Angular-Jan-2020">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            14 Jan 2020
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            6 weeks
-                        </span>
-			</div>
-		</article>
+		@for (course of courses; track course.id) {
 
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">Angular</h3>
-				<div class="course__header-img">
-					<img src="images/angular.jpg" alt="Angular book">
+			<article class="course">
+				<div class="course__header">
+					<h3 class="course__header-title">{{ course.title }}</h3>
+					<div class="course__header-img">
+						<img [src]="'images/' + course.img" alt="Angular book">
+					</div>
 				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> practical skills for building Single
-					Page
-					Application & basic
-					TypeScript
+				<div class="course__info">
+					<div class="course__info-focus">
+						<span class="h4-like-title">Course focus:</span> {{ course.focus }}
+					</div>
+					<div class="course__info-link hidden animations-delayed-appaerance">
+						<span>Course instance link </span>
+						<a [href]="course.link">here</a>
+					</div>
+					<div class="course__info-scope hidden">
+						<h4>Course scope:</h4>
+						<ul class="text-like-list animations-fancy-list">
+							@for ( item of course.scope; track item) {
+								<li>{{ item }}</li>
+							}
+						</ul>
+					</div>
+					<div class="course__info-link hidden animations-delayed-appaerance">
+						<span>GitHub repo with own solutions of homework and exam tasks </span>
+						<a href="https://github.com/chavdarovae/08.Angular-Jan-2020">here</a>
+					</div>
 				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/2760/angular-january-2020">here</a>
+				<div class="course__footer row row--space-btw">
+							<span>
+								<i class="fas fa-rocket"></i>
+								{{ course.start }}
+							</span>
+					<span>
+								<i class="fas fa-stopwatch"></i>
+								{{ course.duration }} weeks
+							</span>
 				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>Introduction to Angular and TypeScript</li>
-						<li>Components and Data binding</li>
-						<li>Dependency injection, Introduction to RxJS and Services</li>
-						<li>Modules and Routing</li>
-						<li>Forms, Directives and Data retrieval from REST, </li>
-						<li>Pipes,Interceptors and Subjects</li>
-						<li>State management and others</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="https://github.com/chavdarovae/08.Angular-Jan-2020">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            14 Jan 2020
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            6 weeks
-                        </span>
-			</div>
-		</article>
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">CSS Advanced</h3>
-				<div class="course__header-img">
-					<img src="images/kobu-agency-ipARHaxETRk-unsplash.jpg" alt="programmer">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> modern frontend design and development
-					with animations and icons
-					for
-					adaptive display on devices with different screen sizes.
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/3042/css-advanced-july-2020">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>CSS architecture - IT CSS</li>
-						<li>CSS architecture - BEM</li>
-						<li>SASS</li>
-						<li>CSS transitions, animations and transformations</li>
-						<li>CSS grid</li>
-						<li>Building layouts</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="https://github.com/chavdarovae/07.CSS-Advanced-June-2019">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            13 Jul 2020
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            4 weeks
-                        </span>
-			</div>
-		</article>
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">HTML & CSS</h3>
-				<div class="course__header-img">
-					<img src="images/HTML&CSS.jpg" alt="Photo by Greg Rakozy on Unsplash">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> practical skills in web development
-					using
-					HTML5 and CSS3 standard
-					latest
-					innovations.
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/2375/html-and-css-may-2019">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>Introduction to html & CSS</li>
-						<li>HTML structure</li>
-						<li>CSS & typography</li>
-						<li>CSS box model</li>
-						<li>Position & float</li>
-						<li>Flexbox</li>
-						<li>Working with forms</li>
-						<li>Media queries</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="https://github.com/chavdarovae/06.HTML-CSS-May2019">here</a>
-				</div>
-			</div>
-
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            14 May 2019
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            7 weeks
-                        </span>
-			</div>
-		</article>
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">JS Applications</h3>
-				<div class="course__header-img">
-					<img src="images/JS-applications.jpg"
-						 alt="Photo by Claudio Schwarz | purzlb">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> practical skills for building
-					well-structured Single Page
-					Applications.
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/2249/js-applications-march-2019">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>REST services</li>
-						<li>AJAX and jquery AJAX</li>
-						<li>Asynchronous programming</li>
-						<li>JS for frontend</li>
-						<li>Templating</li>
-						<li>Routing and architecture</li>
-						<li>Single page application</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="https://github.com/chavdarovae/05.JavaScript-Applications-March2019">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            19 Mar 2019
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            4 weeks
-                        </span>
-			</div>
-		</article>
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">JS Advanced</h3>
-				<div class="course__header-img">
-					<img src="images/JS-advanced.jpg" alt="Photo by Jesus Hilario H. on Unsplash">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> develops algorithmic thinking and
-					practical
-					skills for DOM tree
-					manipulation
-					and Unit testing.
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/2248/js-advanced-february-2019">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>Advanced functions</li>
-						<li>Unit testing</li>
-						<li>JS classes</li>
-						<li>Object composition</li>
-						<li>jQuery</li>
-						<li>Dom manipulations</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="https://github.com/chavdarovae/04.JavaScript-Advanced-February2019">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            12 Feb 2019
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            4 weeks
-                        </span>
-			</div>
-		</article>
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">JS Fundamentals</h3>
-				<div class="course__header-img">
-					<img src="images/JS-essentials.jpg" alt="Photo by Mark Finn on Unsplash">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> JS syntax and practical skills in
-					manipulation with data types,
-					operators,
-					expressions, conditional constructions, loops and functions.
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/2247/js-fundamentals-january-2019">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>JS syntax and operators</li>
-						<li>Document object model</li>
-						<li>Functions and logic flow</li>
-						<li>Arrays and matrices</li>
-						<li>Strings and regexp</li>
-						<li>Objects and JSON</li>
-						<li>Dom events</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="https://github.com/chavdarovae/03.JavaScript-Fundamentals-January2019">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            15 Jan 2019
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            4 weeks
-                        </span>
-			</div>
-		</article>
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">Technology Fundamentals - JavaScript</h3>
-				<div class="course__header-img">
-					<img src="images/JS-fundamentals.jpg" alt="Photo by Konrad Szerszen on Unsplash">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> basic techniques and tools for
-					practical
-					programming beyond the
-					writing of
-					simple program constructions.
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/2247/js-fundamentals-january-2019">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>Basic syntax, conditional statements and loops</li>
-						<li>Basic HTML</li>
-						<li>Data types and variables</li>
-						<li>Basic CSS</li>
-						<li>Arrays</li>
-						<li>Http basics</li>
-						<li>Methods / functions</li>
-						<li>Problem solving</li>
-						<li>Lists / arrays advanced</li>
-						<li>Bitwise operations</li>
-						<li>Associative arrays</li>
-						<li>Intro to computer science</li>
-						<li>Objects and classes</li>
-						<li>Database basics</li>
-						<li>String and text processing</li>
-						<li>Regular expressions</li>
-						<li>Basic web</li>
-						<li>Git and GitHub</li>
-						<li>Basic CRUD</li>
-						<li>QA fundamentals</li>
-						<li>Web project</li>
-						<li>Open-source introduction</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="https://github.com/chavdarovae/02.JavaScript-Essentials-September2018">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            26 Sep 2018
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            12 weeks
-                        </span>
-			</div>
-		</article>
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">Programming Basics with C#</h3>
-				<div class="course__header-img">
-					<img src="images/csharp.jpg" alt="csharp">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> Basic coding skills.
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/1962/programming-basics-with-csharp-may-2018">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>IDE</li>
-						<li>Simple operations and calculations</li>
-						<li>Conditional statements</li>
-						<li>Loops</li>
-						<li>Nested loops</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="#">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            12 May 2018
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            4 weeks
-                        </span>
-			</div>
-		</article>
-
-		<article class="course">
-			<div class="course__header">
-				<h3 class="course__header-title">Programming Basics with JAVA</h3>
-				<div class="course__header-img">
-					<img src="images/csharp.jpg" alt="csharp">
-				</div>
-			</div>
-			<div class="course__info">
-				<div class="course__info-focus">
-					<span class="h4-like-title">Course focus:</span> Basic coding skills.
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>Course instance link </span>
-					<a href="https://softuni.bg/trainings/1962/programming-basics-with-csharp-may-2018">here</a>
-				</div>
-				<div class="course__info-scope hidden">
-					<h4>Course scope:</h4>
-					<ul class="text-like-list animations-fancy-list">
-						<li>IDE</li>
-						<li>Simple operations and calculations</li>
-						<li>Conditional statements</li>
-						<li>Loops</li>
-						<li>Nested loops</li>
-					</ul>
-				</div>
-				<div class="course__info-link hidden animations-delayed-appaerance">
-					<span>GitHub repo with own solutions of homework and exam tasks </span>
-					<a href="#">here</a>
-				</div>
-			</div>
-			<div class="course__footer row row--space-btw">
-                        <span>
-                            <i class="fas fa-rocket"></i>
-                            12 May 2018
-                        </span>
-				<span>
-                            <i class="fas fa-stopwatch"></i>
-                            4 weeks
-                        </span>
-			</div>
-		</article>
+			</article>
+		}
 	</div>
 </section>
