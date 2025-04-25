@@ -1,9 +1,8 @@
 export interface ICourse {
 	id: string,
 	title: string,
-	focus: string,
 	link: string,
-	scope: string[],
+	scopeItems: number,
 	gitHubLink: string,
 	start: string,
 	duration: number,
