@@ -2,10 +2,8 @@ import { ICourse } from "../interfaces/general.interface";
 
 export const COURSES_CONTENT: ICourse[] = [
 	{
-		id: 1,
+		id:  'js-backend',
 		title: 'JS Backend',
-		img: 'angular.jpg',
-		imgAlt: 'Angular book',
 		focus: 'practical skills for building Single Page Application & basic TypeScript',
 		link: 'https://softuni.bg/trainings/2760/angular-january-2020',
 		scope: [
@@ -17,10 +15,8 @@ export const COURSES_CONTENT: ICourse[] = [
 		duration: 6,
 	},
 	{
-		id: 2,
+		id: 'angular',
 		title: 'Angular',
-		img: 'angular.jpg',
-		imgAlt: 'Angular book',
 		focus: 'practical skills for building Single Page Application & basic TypeScript',
 		link: 'https://softuni.bg/trainings/2760/angular-january-2020',
 		scope: [
@@ -32,10 +28,8 @@ export const COURSES_CONTENT: ICourse[] = [
 		duration: 6,
 	},
 	{
-		id: 3,
+		id: 'css-advanced',
 		title: 'CSS Advanced',
-		img: 'kobu-agency-ipARHaxETRk-unsplash.jpg',
-		imgAlt: 'Angular book',
 		focus: 'modern frontend design and development with animations and icons for adaptive display on devices with different screen sizes.',
 		link: 'https://softuni.bg/trainings/3042/css-advanced-july-2020',
 		scope: [
@@ -57,10 +51,8 @@ export const COURSES_CONTENT: ICourse[] = [
 		duration: 4,
 	},
 	{
-		id: 4,
+		id: 'html-and-css',
 		title: 'HTML & CSS',
-		img: 'HTML&CSS.jpg',
-		imgAlt: 'Photo by Greg Rakozy on Unsplash',
 		focus: 'ractical skills in web development using HTML5 and CSS3 standard latest innovations.',
 		link: 'https://softuni.bg/trainings/2375/html-and-css-may-2019',
 		scope: [
@@ -78,10 +70,8 @@ export const COURSES_CONTENT: ICourse[] = [
 		duration: 7,
 	},
 	{
-		id: 5,
-		title: 'HTML & CSS',
-		img: 'HTML&CSS.jpg',
-		imgAlt: 'Photo by Claudio Schwarz | purzlb',
+		id: 'js-applications',
+		title: 'JS Applications',
 		focus: 'practical skills for building well-structured Single Page Applications.',
 		link: 'https://softuni.bg/trainings/2249/js-applications-march-2019',
 		scope: [
@@ -98,10 +88,8 @@ export const COURSES_CONTENT: ICourse[] = [
 		duration: 4,
 	},
 	{
-		id: 6,
+		id: 'js-advanced',
 		title: 'JS Advanced',
-		img: 'JS-advanced.jpg',
-		imgAlt: 'Photo by Jesus Hilario H. on Unsplash',
 		focus: 'pdevelops algorithmic thinking and practical skills for DOM tree manipulation and Unit testing.',
 		link: 'https://softuni.bg/trainings/2248/js-advanced-february-2019',
 		scope: [
@@ -117,10 +105,8 @@ export const COURSES_CONTENT: ICourse[] = [
 		duration: 4,
 	},
 	{
-		id: 7,
+		id: 'js-fundamentals',
 		title: 'JS Fundamentals',
-		img: 'JS-essentials.jpg',
-		imgAlt: 'Photo by Mark Finn on Unsplash',
 		focus: 'JS syntax and practical skills in manipulation with data types, operators, expressions, conditional constructions, loops and functions.',
 		link: 'https://softuni.bg/trainings/2247/js-fundamentals-january-2019',
 		scope: [
@@ -132,15 +118,13 @@ export const COURSES_CONTENT: ICourse[] = [
 			'Objects and JSON',
 			'Dom events',
 		],
-		gitHubLink: 'ttps://github.com/chavdarovae/03.JavaScript-Fundamentals-January2019',
+		gitHubLink: 'https://github.com/chavdarovae/03.JavaScript-Fundamentals-January2019',
 		start: '15.01.2019',
 		duration: 4,
 	},
 	{
-		id: 8,
-		title: 'Technology Fundamentals - JavaScript',
-		img: 'JS-fundamentals.jpg',
-		imgAlt: 'Photo by Konrad Szerszen on Unsplash',
+		id: 'js-essentials',
+		title: 'Technology Essentials - JavaScript',
 		focus: 'basic techniques and tools for practical programming beyond the writing of simple program constructions.',
 		link: 'https://softuni.bg/trainings/2247/js-fundamentals-january-2019',
 		scope: [
@@ -172,10 +156,8 @@ export const COURSES_CONTENT: ICourse[] = [
 		duration: 12,
 	},
 	{
-		id: 9,
+		id: 'pb-c',
 		title: 'Programming Basics with C#',
-		img: 'images/csharp.jpg',
-		imgAlt: 'csharp',
 		focus: 'Basic coding skills.',
 		link: 'https://softuni.bg/trainings/1962/programming-basics-with-csharp-may-2018',
 		scope: [
@@ -190,10 +172,8 @@ export const COURSES_CONTENT: ICourse[] = [
 		duration: 4,
 	},
 	{
-		id: 10,
+		id: 'pb-java',
 		title: 'Programming Basics with JAVA',
-		img: 'csharp.jpg',
-		imgAlt: 'csharp',
 		focus: 'Basic coding skills.',
 		link: 'https://softuni.bg/trainings/1962/programming-basics-with-csharp-may-2018',
 		scope: [

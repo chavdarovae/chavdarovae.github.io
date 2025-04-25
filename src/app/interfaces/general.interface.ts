@@ -1,8 +1,6 @@
 export interface ICourse {
-	id: number,
+	id: string,
 	title: string,
-	img: string,
-	imgAlt: string,
 	focus: string,
 	link: string,
 	scope: string[],
@@ -12,10 +10,8 @@ export interface ICourse {
 }
 
 export interface IWorkExperience {
-	id: number,
+	id: string,
 	position: string,
-	imgPath: string,
-	imgAlt: string,
 	employer: string,
 	employerLink: string,
 	description: string,
@@ -23,22 +19,17 @@ export interface IWorkExperience {
 }
 
 export interface IProject {
-	id: number,
+	id: string,
 	title: string,
-	imgPath: string,
-	imgAlt: string,
 	highlights: string,
-	info: string[],
-	media: IProjectMedia
+	info?: string[],
+	media: IProjectMedia[]
 }
 
 export interface IProjectMedia {
+	id: string,
 	title: string,
-	imgPath: string,
-	imgAlt: string,
-	info: string,
-	moreImgs: {
-		imgPath: string,
-		imgAlt: string,
-	}[]
+	info?: string[],
+	link?: string,
+	imgCount: number
 }

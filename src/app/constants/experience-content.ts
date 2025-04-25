@@ -2,10 +2,8 @@ import { IWorkExperience } from "../interfaces/general.interface";
 
 export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 	{
-		id: 1,
+		id: 'colleto',
 		position: 'Frontend Developer',
-		imgPath: 'Colleto/colleto.jpg',
-		imgAlt: 'Digital Colleto image',
 		employer: 'Colleto GmbH – Hamburg, Germany',
 		employerLink: 'https://www.colleto.de',
 		description: `<p>
@@ -29,10 +27,8 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		period: '2022, March - present',
 	},
 	{
-		id: 8,
+		id: 'carrypicker',
 		position: 'Frontend Developer',
-		imgPath: 'Carrypicker/Teaser_Logistik.jpg',
-		imgAlt: 'Digital logistic image',
 		employer: 'Carrypicker GmbH – Hamburg, Germany',
 		employerLink: 'https://www.carrypicker.de',
 		description: `<p>
@@ -61,10 +57,8 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		period: '2021, January - 2022, March',
 	},
 	{
-		id: 7,
+		id: 'freelance',
 		position: 'Junior Software Engineer',
-		imgPath: 'freelance/ferenc-almasi-VPmMy8YA_cU-unsplash.jpg',
-		imgAlt: 'IT image',
 		employer: 'Freelance – Hamburg, Germany',
 		employerLink: 'https://www.carrypicker.de',
 		description: `<p>
@@ -79,10 +73,8 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		period: '2020 - 2021',
 	},
 	{
-		id: 6,
+		id: 'stenli',
 		position: 'Site Manager',
-		imgPath: 'Pohnpei/1.jpg',
-		imgAlt: 'Pohnpei Solar Farm',
 		employer: 'STENLI - 03 LTD – Lom, Bulgaria',
 		employerLink: 'https://www.carrypicker.de',
 		description: `<p>
@@ -93,10 +85,8 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		period: '2016 - 2017',
 	},
 	{
-		id: 5,
+		id: 'sipal',
 		position: 'Assistant Planning Coordinator',
-		imgPath: 'PDV/1.jpg',
-		imgAlt: 'Pedemontana Veneta',
 		employer: 'SIPAL S.p.a. – Turin, Italy',
 		employerLink: 'https://www.carrypicker.de',
 		description: `<p>
@@ -107,10 +97,8 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		period: '2013 - 2015',
 	},
 	{
-		id: 4,
+		id: 'way',
 		position: 'Head Of Structural Department',
-		imgPath: 'Way/SS640-1.jpg',
-		imgAlt: 'SS640 State Road',
 		employer: 'WAY ENGINEERING AD – Sofia, Bulgaria',
 		employerLink: 'https://www.carrypicker.de',
 		description: `<p>
@@ -141,10 +129,8 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		period: '2009 - 2013',
 	},
 	{
-		id: 3,
+		id: 'akropolis',
 		position: 'Personal Assistant Head Of Development Department',
-		imgPath: 'Akropolis/1.jpg',
-		imgAlt: 'Akropolis',
 		employer: 'AKROPOLIS BG LTD – Sofia, Bulgaria',
 		employerLink: 'https://www.carrypicker.de',
 		description: `<p>
@@ -156,10 +142,8 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		period: '2007 - 2008',
 	},
 	{
-		id: 2,
+		id: 'nu-boyana',
 		position: 'Design Coordinator',
-		imgPath: 'NY-Street/1.jpg',
-		imgAlt: 'New York Street Set',
 		employer: 'NU BOYANA FILM STUDIO – Sofia, Bulgaria',
 		employerLink: 'https://www.carrypicker.de',
 		description: `<p>
@@ -172,10 +156,8 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		period: '2006 - 2007',
 	},
 	{
-		id: 1,
+		id: 'strabag',
 		position: 'Student Trainee',
-		imgPath: 'Sofia-Airport/1.jpg',
-		imgAlt: 'Sofia Airport',
 		employer: 'STRABAG EAD – Sofia, Bulgaria',
 		employerLink: 'https://www.carrypicker.de',
 		description: `<p>

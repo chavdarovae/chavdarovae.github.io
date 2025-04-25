@@ -19,7 +19,7 @@
 				<div class="course__header">
 					<h3 class="course__header-title">{{ course.title }}</h3>
 					<div class="course__header-img">
-						<img [src]="'images/' + course.img" alt="Angular book">
+						<img [src]="'images/' + course.id + '.jpg'" [alt]="course.id + ' image'">
 					</div>
 				</div>
 				<div class="course__info">
