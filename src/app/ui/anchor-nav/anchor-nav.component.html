@@ -1,0 +1,14 @@
+<div class="anchor-nav">
+	<ul class="anchor-nav__list">
+		@for (nav of navList; track nav) {
+			<li class="anchor-nav__list-item" (click)="selectedNav = nav">
+				<a [routerLink]="[]"
+				   [fragment]="nav"
+				   class="anchor-nav__list-link"
+				   [ngClass]="{'anchor-nav__list-link--current': selectedNav === nav}">
+					{{(transPrefix + nav ) | translate}}
+				</a>
+			</li>
+		}
+	</ul>
+</div>
