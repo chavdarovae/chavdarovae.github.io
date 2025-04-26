@@ -1,26 +1,44 @@
-<header class="header">
-	<div class="content-container">
-		<ng-container *ngTemplateOutlet="lang, context: {end: 'backend'}"></ng-container>
-		<nav class="nav">
-			<ul class="nav__list row row--right-aligned">
-				@for (item of menuItems; track item) {
-					<li class="nav__list-item">
-						<a [routerLink]="item" class="nav__list-link">{{ ('nav.' + item) | translate }}</a>
-					</li>
-				}
-			</ul>
-		</nav>
-		<ng-container *ngTemplateOutlet="lang, context: {end: 'frontend'}"></ng-container>
-	</div>
-</header>
+<ng-container *ngIf="{section: (activePath$ | async)} as data">
+	<header class="header">
+		<h2 class="header__title">{{('nav.' + data.section) | translate | uppercase}}</h2>
 
-<main class="main">
-	<router-outlet></router-outlet>
-</main>
+		<div class="content-container">
+			<ng-container *ngTemplateOutlet="lang, context: {end: 'backend'}"></ng-container>
 
-<footer class="footer">
-	Contact me!
-</footer>
+
+			<nav class="nav">
+				<ul class="nav__list row row--right-aligned">
+					@for (item of menuItems; track item) {
+						<li class="nav__list-item">
+							<a [routerLink]="item"
+							   class="nav__list-link"
+							   [ngClass]="{'nav__list-link--current': item === data.section}">
+								{{ ('nav.' + item) | translate }}
+							</a>
+						</li>
+					}
+				</ul>
+			</nav>
+			<ng-container *ngTemplateOutlet="lang, context: {end: 'frontend'}"></ng-container>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="content-container page">
+			<router-outlet></router-outlet>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="content-container">
+			<div class="row row--space-btw">
+				<span>Emiliya Chavdarova </span>
+				<span>Email: chavdarova.eATgmail.com</span>
+				<span>GitHub: chavd</span>
+			</div>
+		</div>
+	</footer>
+</ng-container>
 
 <ng-template #lang let-end="end">
 	<div [class]="'header__logo header__logo--' + end">

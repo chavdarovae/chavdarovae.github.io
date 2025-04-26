@@ -1,7 +1,8 @@
-import {Component} from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
-import {TranslateDirective, TranslatePipe, TranslateService} from '@ngx-translate/core';
-import {NgTemplateOutlet, UpperCasePipe} from '@angular/common';
+import {Component, OnInit} from '@angular/core';
+import {NavigationEnd, Router, RouterLink, RouterOutlet} from '@angular/router';
+import { TranslatePipe, TranslateService} from '@ngx-translate/core';
+import {AsyncPipe, NgClass, NgIf, NgTemplateOutlet, UpperCasePipe} from '@angular/common';
+import {filter, map, Observable, shareReplay} from 'rxjs';
 
 @Component({
 	selector: 'app-root',
@@ -10,18 +11,35 @@ import {NgTemplateOutlet, UpperCasePipe} from '@angular/common';
 		RouterLink,
 		TranslatePipe,
 		UpperCasePipe,
-		NgTemplateOutlet
+		NgTemplateOutlet,
+		AsyncPipe,
+		NgIf,
+		NgClass
 	],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 	menuItems = ['about', 'courses', 'experience', 'projects'];
+	activePath$!: Observable<string>;
 
-	constructor(protected translate: TranslateService) {
+	constructor(
+		protected translate: TranslateService,
+		private router: Router
+	) {
 		this.translate.addLangs(['de', 'en']);
 		this.translate.setDefaultLang('en');
 		this.translate.use('en');
+	}
+
+	ngOnInit() {
+		this.activePath$ = this.router.events.pipe(
+			filter(event => event instanceof NavigationEnd),
+			map((event) => {
+				return event.url.split('/')[1].split('#')[0];
+			}),
+			shareReplay({ refCount: true, bufferSize: 1 })
+		);
 	}
 
 	changeLanguage() {

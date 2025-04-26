@@ -10,25 +10,22 @@ export interface ICourse {
 
 export interface IWorkExperience {
 	id: string,
-	position: string,
 	employer: string,
 	employerLink: string,
-	description: string,
+	descriptionItems: number,
 	period: string,
 }
 
 export interface IProject {
 	id: string,
 	title: string,
-	highlights: string,
-	info?: string[],
+	infoItems: number,
 	media: IProjectMedia[]
 }
 
 export interface IProjectMedia {
 	id: string,
 	title: string,
-	info?: string[],
 	link?: string,
 	imgCount: number
 }

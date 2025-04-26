@@ -1,50 +1,33 @@
-<section class="main__projects" id="projectsSection">
-	<h2 class="main__title page-title">Projects</h2>
-	<div class="anchor-nav">
-		<ul class="anchor-nav__list">
-			<li class="anchor-nav__list-item">
-				<a [routerLink]="[]"
-				   fragment="workProjectsDiv"
-				   class="anchor-nav__list-link anchor-nav__list-link--current">Work</a></li>
-			<li class="anchor-nav__list-item">
-				<a [routerLink]="[]"
-				   fragment="personalProjectsDiv"
-				   class="anchor-nav__list-link">Personal</a></li>
-			<li class="anchor-nav__list-item">
-				<a  [routerLink]="[]"
-					fragment="studyProjectsDiv"
-					class="anchor-nav__list-link">Study</a></li>
-		</ul>
-	</div>
-
-	<div class="content-container" id="workProjectsDiv">
-		<h2 class="main__title">WORK PROJECTS</h2>
-
-		@for (project of projectList.slice(0, -4); track project.id) {
-			<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
-		}
-	</div>
+<app-anchor-nav
+	[navList]="vertNavList"
+	[selectedNav]="selectedNav"
+	transPrefix="projects.labels.">
+</app-anchor-nav>
 
 
-	<div class="content-container" id="personalProjectsDiv">
-		<h2 class="main__title">PERSONAL PROJECTS</h2>
+<div id="workProjectsDiv">
+	<h2 class="main__title">{{'projects.labels.workProjects' | translate}}</h2>
 
-		@for (project of projectList.slice(-4, -2); track project.id) {
-			<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
-		}
+	@for (project of projectList.slice(0, -4); track project.id) {
+		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
+	}
+</div>
 
-	</div>
+<div id="personalProjectsDiv">
+	<h2 class="main__title">{{'projects.labels.personalProjects' | translate}}</h2>
 
+	@for (project of projectList.slice(-4, -2); track project.id) {
+		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
+	}
+</div>
 
+<div id="studyProjectsDiv">
+	<h2 class="main__title">{{'projects.labels.learnProjects' | translate}}</h2>
 
-	<div class="content-container" id="studyProjectsDiv">
-		<h2 class="main__title">PROJECTS WITH EDUCATIONAL PURPOSE</h2>
-
-		@for (project of projectList.slice(-2); track project.id) {
-			<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
-		}
-	</div>
-</section>
+	@for (project of projectList.slice(-2); track project.id) {
+		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
+	}
+</div>
 
 
 <ng-template #projectRef let-project="project">
@@ -56,18 +39,25 @@
 		</div>
 
 		<p class="project__highlights">
-			{{project.highlights}}
+			{{('projects.' + project.id + '.highlights') | translate}}
 		</p>
 
-		@for (info of project.info; track info) {
-			<p class="project__info">{{info}}</p>
-		}
+		<div class="project__info">
+			@for (item of project.infoItems | rangePipe; track item) {
+				<p>{{('projects.' + project.id + '.info.' + item) | translate}}</p>
+			}
+		</div>
 
 		@for (media of project.media; track media) {
 			<div class="project__media project__media--info">
 				<div class="project__media-title">{{media.title}}</div>
 				<div class="project__media-img project__media-img--big">
 					<img [src]="'images/' + project.id + '/' + media.id + '/0.png'" [alt]="media.id + ' image'">
+				</div>
+
+				<div *ngIf="(('projects.' + project.id + '.' + media.id +'.info') | translate) as infoTranslated"
+					 class="project__media-info"
+					 [innerHTML]="infoTranslated">
 				</div>
 
 				<div *ngIf="media.imgCount > 1" class="project__media-info">

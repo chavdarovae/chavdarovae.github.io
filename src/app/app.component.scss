@@ -1,11 +1,87 @@
 @import "settings-variables";
 @import "settings-breakpoints";
 
+.nav {
+	height: 70px;
+	margin-left: auto;
+
+
+	&__list {
+		height: 100%;
+	}
+
+	&__list-item {
+		height: 100%;
+
+		&:last-child {
+			margin-right: 10px;
+		}
+	}
+
+	&__list-link {
+		height: 100%;
+		padding: 0 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: color 0.4s, background-color 0.4s ease-out;
+		position: relative;
+		cursor: pointer;
+
+
+		@include for-phone-up {
+			padding: 0 7px;
+		}
+
+		@include for-tablet-landscape-up {
+			padding: 0 15px;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: $primary-color;
+			background-color: $nav-hover-color;
+		}
+	}
+
+	&__list-link--current {
+		&:before {
+			content: "";
+			display: block;
+			height: 5px;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $primary-color;
+		}
+	}
+}
+
 .header {
 	height: 70px;
 	background: #fff;
 	box-shadow: $primary-shadow;
 	color: $primary-color;
+	position: relative;
+
+	&__title {
+		position: absolute;
+		bottom: -23px;
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		background-color: #fff;
+		font-family: "Lato", sans-serif;
+		color: $text-color;
+		font-size: 25px;
+		font-weight: 700;
+		text-transform: uppercase;
+		white-space: nowrap;
+		letter-spacing: -1px;
+		line-height: 1;
+		padding: 2px 10px;
+	}
 
 	.content-container {
 		display: grid;
@@ -77,5 +153,16 @@
 	}
 }
 
+.main {
+	position: relative;
+	padding: 50px 20px 10px 20px;
+	color: $text-color;
+}
 
+
+footer {
+	height: 40px;
+	background-color: $secondary-color;
+	color: white;
+}
 

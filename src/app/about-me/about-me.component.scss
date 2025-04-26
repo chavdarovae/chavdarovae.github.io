@@ -1,35 +1,38 @@
 @import "settings-variables";
 @import "settings-breakpoints";
 
-.main__about {
-	.content-container {
+.about {
+	display: grid;
+	grid-template-areas:
+		"highlights"
+		"journey"
+		"skills"
+		"education"
+		"address";
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+
+	@include for-tablet-landscape-up {
+		grid-template-columns: 400px 1fr;
+		// grid-template-rows: min-content min-content min-content min-content;
+
 		grid-template-areas:
-            "highlights"
-            "journey"
-            "skills"
-            "education"
-            "address";
-
-		@include for-tablet-landscape-up {
-			grid-template-columns: 400px 1fr;
-			// grid-template-rows: min-content min-content min-content min-content;
-
-			grid-template-areas:
-                "address highlights"
-                "skills journey"
-                "skills education";
-		}
+			"address highlights"
+			"skills journey"
+			"skills education";
+		grid-column-gap: 40px;
+		grid-row-gap: 40px;
 	}
 
-	&-title {
+	&__title {
 		grid-area: title;
 	}
 
-	&-highlights {
+	&__highlights {
 		grid-area: highlights;
 	}
 
-	&-journey {
+	&__journey {
 		grid-area: journey;
 
 		@include for-tablet-landscape-up {
@@ -37,7 +40,7 @@
 		}
 	}
 
-	&-education {
+	&__education {
 		grid-area: education;
 
 		@include for-tablet-landscape-up {
@@ -45,28 +48,12 @@
 		}
 
 		h4 {
+			margin: 10px 0;
 			width: fit-content;
-			cursor: pointer;
-			position: relative;
-
-			&:after {
-				content: attr(data-collaps);
-				display: inline;
-				font-size: 10px;
-				position: absolute;
-				top: 0;
-				right: -13px;
-			}
-		}
-
-		.text-like-list {
-			li {
-				opacity: 0;
-			}
 		}
 	}
 
-	&-address {
+	&__address {
 		grid-area: address;
 		min-height: 135px;
 		justify-content: space-between;
@@ -80,15 +67,45 @@
 			padding: 0;
 			background-color: #fff;
 			box-shadow: none;
-			border-radius: none;
+			border-radius: 0;
 		}
 	}
 
-	&-skills {
+	&__skills {
 		grid-area: skills;
 
 		@include for-tablet-landscape-up {
 			justify-self: start;
 		}
+	}
+
+}
+
+
+.certificate-holder {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
+}
+
+.certificate {
+	width: 170px;
+	position: relative;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	span {
+		transform-origin: center center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(-60deg);
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }

@@ -1,20 +1,28 @@
-<section class="main__experience" id="experienceSection">
-	<div class="content-container">
-		<h2 class="main__title page-title">Work experience</h2>
+<app-anchor-nav
+	[navList]="vertNavList"
+	[selectedNav]="selectedNav"
+	transPrefix="experience.labels.">
+</app-anchor-nav>
 
-		@for (exp of experienceList; track exp.id) {
-			<article class="work">
-				<div class="work__media">
-					<div class="work__media-img">
-						<img [src]="'images/' + exp.id + '.jpg'" [alt]="exp.id + ' image'">
-					</div>
-				</div>
-				<h3 class="work__position">{{ exp.position }}</h3>
-				<h4 class="work__employer">{{ exp.employer}}</h4>
-				<span class="work__period h4-like">{{ exp.period}}</span>
-				<div class="work__description" [innerHTML]="exp.description"></div>
-			</article>
-		}
+@for (exp of experienceList; track exp.id) {
+	<article class="work" [id]="exp.id + 'Div'">
 
-	</div>
-</section>
+		<div class="work__media">
+			<div class="work__media-img">
+				<img [src]="'images/' + exp.id + '.jpg'" [alt]="exp.id + ' image'">
+			</div>
+		</div>
+
+		<h3 class="work__position">{{ ('experience.' + exp.id + '.position') | translate }}</h3>
+
+		<h4 class="work__employer">{{ exp.employer}}</h4>
+
+		<span class="work__period h4-like">{{ exp.period}}</span>
+
+		<div class="work__description">
+			<p *ngFor="let item of exp.descriptionItems | rangePipe"> {{('experience.' + exp.id + '.description.' + item) | translate }}</p>
+			<p>{{ 'experience.labels.furtherInfo' | translate: { link } }} </p>
+		</div>
+
+	</article>
+}

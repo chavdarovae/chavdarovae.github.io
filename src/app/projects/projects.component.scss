@@ -1,28 +1,24 @@
 @import "settings-variables";
 @import "settings-breakpoints";
 
-.main__projects {
-	.content-container {
-	}
-
-	p {
-		width: 100%;
-		margin-bottom: 10px;
-	}
-}
-
 .project {
 	display: flex;
 	flex-flow: column nowrap;
-	align-items: center;
+	align-items: flex-start;
+	justify-content: center;
 
 	&__title {
-		text-align: center;
+		align-self: center;
 	}
 
 	&__icon {
+		align-self: center;
 		width: 50px;
 		margin: 20px;
+	}
+
+	&__info {
+
 	}
 
 	&__media {

@@ -1,6 +1,9 @@
 {
 	"nav": {
-		"intro": "Hallo DE"
+		"about": "About",
+		"courses": "Kursen",
+		"experience": "Erfahrung",
+		"projects": "Projekten"
 	}
 }
 
