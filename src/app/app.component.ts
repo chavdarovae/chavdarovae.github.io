@@ -3,6 +3,7 @@ import {NavigationEnd, Router, RouterLink, RouterOutlet} from '@angular/router';
 import { TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {AsyncPipe, NgClass, NgIf, NgTemplateOutlet, UpperCasePipe} from '@angular/common';
 import {filter, map, Observable, shareReplay} from 'rxjs';
+import {PreviewDialogComponent} from './ui/preview-dialog/preview-dialog.component';
 
 @Component({
 	selector: 'app-root',
@@ -14,7 +15,8 @@ import {filter, map, Observable, shareReplay} from 'rxjs';
 		NgTemplateOutlet,
 		AsyncPipe,
 		NgIf,
-		NgClass
+		NgClass,
+		PreviewDialogComponent
 	],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss'
@@ -25,7 +27,7 @@ export class AppComponent implements OnInit {
 
 	constructor(
 		protected translate: TranslateService,
-		private router: Router
+		private router: Router,
 	) {
 		this.translate.addLangs(['de', 'en']);
 		this.translate.setDefaultLang('en');
@@ -36,7 +38,7 @@ export class AppComponent implements OnInit {
 		this.activePath$ = this.router.events.pipe(
 			filter(event => event instanceof NavigationEnd),
 			map((event) => {
-				return event.url.split('/')[1].split('#')[0];
+				return event.url.split('/')[1].split('#')[0] || 'about';
 			}),
 			shareReplay({ refCount: true, bufferSize: 1 })
 		);

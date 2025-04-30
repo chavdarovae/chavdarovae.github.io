@@ -21,8 +21,9 @@
 
 		<div class="work__description">
 			<p *ngFor="let item of exp.descriptionItems | rangePipe"> {{('experience.' + exp.id + '.description.' + item) | translate }}</p>
-			<p>{{ 'experience.labels.furtherInfo' | translate: { link } }} </p>
+			<p>{{ 'experience.labels.furtherInfo' | translate }}
+				<a [routerLink]="['/projects']" [fragment]="exp.id" class="work__description-link" id="projects">{{ 'experience.labels.clickHere' | translate }}</a>
+			</p>
 		</div>
-
 	</article>
 }

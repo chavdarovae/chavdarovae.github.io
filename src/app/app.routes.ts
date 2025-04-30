@@ -7,7 +7,8 @@ import {CoursesComponent} from './courses/courses.component';
 export const routes: Routes = [
 	{
 		path: '',
-		component: AboutMeComponent,
+		redirectTo: 'about',
+		pathMatch: 'full'
 	},
 	{
 		path: 'about',

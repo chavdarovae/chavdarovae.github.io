@@ -5,7 +5,7 @@
 	<address class="about__address column column--left-aligned">
 		<a href="#"><i class="fas fa-map-marker-alt"></i> Hamburg, Germany</a>
 		<a href="mailto:chavdarova.e@gmail.com"><i class="fas fa-envelope"></i>
-			chavdarova.eATgmail.com</a>
+			chavdarova.e&#64;gmail.com</a>
 		<a href="https://www.linkedin.com/in/emiliya-chavdarova"><i class="fab fa-linkedin"></i>
 			https://www.linkedin.com/in/emiliya-chavdarova/</a>
 		<a href="https://github.com/chavdarovae"><i class="fab fa-github-square"></i>
@@ -93,12 +93,11 @@
 			<h4 id="certificateTrigger" data-collaps="►">{{ 'about.education.certificates' | translate}}</h4>
 
 			<div class="certificate-holder animations-fancy-list">
-				@for (cert of certList; track cert) {
-					<div class="certificate">
+				@for (cert of certList; track cert;) {
+					<div class="certificate" (click)="appService.showDialog('images/certification/' + cert.img)">
 						<img [src]="'images/certification/' + cert.img" [alt]="'images ' + cert.course">
 						<span>{{cert.course}}</span>
 					</div>
-
 				}
 			</div>
 		</div>
@@ -109,3 +108,4 @@
 	</div>
 
 </div>
+

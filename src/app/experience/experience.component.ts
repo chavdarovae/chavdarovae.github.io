@@ -5,6 +5,7 @@ import {TranslatePipe} from '@ngx-translate/core';
 import {NgForOf} from '@angular/common';
 import {RangePipe} from '../utils/number-to-array.pipe';
 import {AnchorNavComponent} from '../ui/anchor-nav/anchor-nav.component';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-experience',
@@ -12,7 +13,8 @@ import {AnchorNavComponent} from '../ui/anchor-nav/anchor-nav.component';
 		TranslatePipe,
 		NgForOf,
 		RangePipe,
-		AnchorNavComponent
+		AnchorNavComponent,
+		RouterLink
 	],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'

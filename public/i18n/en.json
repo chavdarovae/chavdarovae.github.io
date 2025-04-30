@@ -183,9 +183,10 @@
 	"experience": {
 		"labels": {
 			"experience": "Work experience",
-			"furtherInfo": "For further information see {{link}} section.",
+			"furtherInfo": "For further information ",
 			"colletoDiv": "Developer",
-			"stenliDiv": "Engineer"
+			"stenliDiv": "Engineer",
+			"clickHere": "click here"
 		},
 		"colleto": {
 			"position": "Frontend Web Developer",
