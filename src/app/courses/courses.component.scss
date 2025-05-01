@@ -1,83 +1,112 @@
 @import "settings-variables";
 @import "settings-breakpoints";
 
-.courses {
-
-	&__info {
-		grid-column: 1/-1;
-	}
-
-	&__title {&__info {
-		grid-column: 1/-1;
-	}}
-}
-
-.course {
-	max-width: 400px;
-	width: 300px;
-	min-width: 300px;
-	padding: 20px 0;
-	border-radius: $primary-rad;
-	background-image: $course-color;
-	overflow: hidden;
-	transition: transform 0.2s, box-shadow 0.2s ease-out;
+.course-holder {
+	width: 350px;
+	height: 500px;
+	perspective: 1000px;
 	cursor: pointer;
 
-	display: grid;
-	grid-template-rows: 215px 180px min-content;
-
-	&:hover {
-		transform-origin: center;
-		transform: scale(1.02);
+	.course {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
+		justify-content: stretch;
+		gap: 10px;
+		width: 100%;
+		height: 100%;
+		padding: 20px 0 20px 0;
+		background: $course-color;
+		border-radius: $primary-rad;
 		box-shadow: $hover-shadow;
-	}
-
-	&__header {
-		background-color: #fff;
+		position: absolute;
+		backface-visibility: hidden;
+		transition: transform 1s;
+		transform-style: preserve-3d;
 		overflow: hidden;
 
-		&-title {
-			text-align: center;
-			text-transform: uppercase;
-		}
-	}
-
-	&__info {
-		padding: 20px 30px;
-
-		&-focus {
-		}
-
-		&-scope {
-			li {
-				opacity: 0;
-			}
-		}
-
-		&-link {
+		&__header {
 			width: 100%;
-			margin: 20px 0;
+			background-color: $primary-color;
+			color: $nav-hover-color;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 10px 0;
+			position: fixed;
+			z-index: 5;
+			top: 30px;
+		}
 
-			a {
-				color: $primary-color;
-			}
+		&__image {
+			overflow: hidden;
+			width: 100%;
+			height: 300px;
 
-			a:hover {
-				text-decoration: underline;
+			div {
+				width: 100%;
+				height: 100%;
+				max-height: 100%;
+				min-height: 100%;
+				background-size: cover;
+				background-position: center;
 			}
+		}
+
+		&__body {
+			padding: 0 30px;
+			display: flex;
+			flex-flow: column nowrap;
+			gap: 20px;
+		}
+
+		&__footer {
+			width: 100%;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			margin-top: auto;
+			padding: 0 30px;
+		}
+
+		h4 {
+			font-weight: 800;
+			margin-bottom: 10px;
+		}
+
+		ul {
+			max-height: 300px;
+			overflow-y: auto;
+		}
+
+		&.front {
+			z-index: 2;
+		}
+
+		&.back {
+			padding-top: 90px;
+			transform: rotateY(180deg);
 		}
 	}
 
-	&__footer {
-		padding: 0 30px;
+
+	&.flipped .front {
+		transform: rotateY(180deg);
 	}
 
-	&--current {
-		grid-template-rows: 215px min-content min-content;
+	&.flipped .back {
+		transform: rotateY(0deg);
+		z-index: 3;
+	}
 
-		.course__info-scope,
-		.course__info-link {
-			display: block;
-		}
+
+	a {
+		color: $primary-color;
+	}
+
+	a:hover {
+		text-decoration: underline;
 	}
 }
+
+
+

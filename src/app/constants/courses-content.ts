@@ -66,7 +66,7 @@ export const COURSES_CONTENT: ICourse[] = [
 	},
 	{
 		id: 'js-essentials',
-		title: 'Technology Essentials - JavaScript',
+		title: 'JS Technology Essentials',
 		link: 'https://softuni.bg/trainings/2247/js-fundamentals-january-2019',
 		scopeItems: 22,
 		gitHubLink: 'https://github.com/chavdarovae/02.JavaScript-Essentials-September2018',

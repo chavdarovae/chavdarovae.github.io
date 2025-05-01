@@ -44,7 +44,7 @@
 			"instanceLink": "Course instance link",
 			"scope": "Course scope",
 			"weeks": "weeks",
-			"github": "GitHub repo with own solutions of homework and exam tasks"
+			"github": "Homework and exam tasks:"
 		},
 		"info": {
 			"p1": "SoftUni's software engineering curriculum is a combination of programming courses depending on the specialization. It focuses on acquiring fundamental knowledge, practical skills and sufficient technical overview in latest software technologies - a must for every 'software engineer'.",
