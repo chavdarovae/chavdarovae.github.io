@@ -161,8 +161,25 @@
 
 
 footer {
-	height: 40px;
 	background-color: $secondary-color;
-	color: white;
+
+	.content-container {
+		padding: 10px 0;
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 5px;
+		justify-content: center;
+		align-items: center;
+
+		@include for-tablet-landscape-up {
+			flex-flow: row nowrap;
+			gap: unset;
+			justify-content: space-between;
+		}
+
+		* {
+			color: white;
+		}
+	}
 }
 
