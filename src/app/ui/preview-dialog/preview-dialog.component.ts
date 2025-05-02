@@ -4,11 +4,11 @@ import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-preview-dialog',
-	imports: [
-		NgIf
-	],
   templateUrl: './preview-dialog.component.html',
-  styleUrl: './preview-dialog.component.scss'
+  styleUrl: './preview-dialog.component.scss',
+  standalone: true,
+  imports: [
+  ],
 })
 export class PreviewDialogComponent {
 	@Input() resourceUrl?: string;

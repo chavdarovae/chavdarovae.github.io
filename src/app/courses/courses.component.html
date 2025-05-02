@@ -15,7 +15,9 @@
 			<div class="course front">
 				<h3 class="course__header">{{ course.title }}</h3>
 				<div class="course__image">
-					<div class="course__img" [ngStyle]="{'background-image': 'url(images/' + course.id + '.jpg)'}"></div>
+					<div class="course__img"
+						 [ngStyle]="{'background-image': 'url(images/' + course.id + '.jpg)'}">
+					</div>
 				</div>
 				<div class="course__body">
 					<div>

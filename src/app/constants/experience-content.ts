@@ -5,14 +5,14 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		id: 'colleto',
 		employer: 'Colleto GmbH – Hamburg, Germany',
 		employerLink: 'https://www.colleto.de',
-		descriptionItems: 8,
+		descriptionItems: 5,
 		period: '2022, March - present',
 	},
 	{
 		id: 'carrypicker',
 		employer: 'Carrypicker GmbH – Hamburg, Germany',
 		employerLink: 'https://www.carrypicker.de',
-		descriptionItems: 8,
+		descriptionItems: 4,
 		period: '2021, January - 2022, March',
 	},
 	{

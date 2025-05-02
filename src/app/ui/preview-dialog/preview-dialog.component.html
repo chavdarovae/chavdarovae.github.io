@@ -1,3 +1,5 @@
 <dialog id="dialogRef" (click)="close()">
-	<img (click)="$event.stopPropagation()" [src]="appService.resourceUrl" [alt]="appService.resourceUrl + ' image'">
+	<img [src]="appService.resourceUrl"
+		 [alt]="appService.resourceUrl + ' image'"
+		 (click)="$event.stopPropagation()">
 </dialog>

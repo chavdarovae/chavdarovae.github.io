@@ -1,0 +1,7 @@
+<div class="rotator">
+	<img *ngIf="(currentImage$ | async) as imgName"
+		 [@fade]="imgName"
+		 [src]="imagePath + imgName + '.' + imageType"
+		 [alt]="imgName + ' picture'"
+		 class="rotator__img"/>
+</div>

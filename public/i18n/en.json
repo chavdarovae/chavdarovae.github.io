@@ -54,10 +54,14 @@
 			"li3": "Professional Module - courses: JS Essentials, JS Advanced, JS Applications, JS Backend, ReactJS, HTML & CSS and Frontend Frameworks."
 		},
 		"js-backend": {
-			"focus": "practical skills for building Single Page Application & basic TypeScript",
+			"focus": "developing server-side web applications using Node.js, Express, and Handlebars, while introducing key concepts such as the HTTP protocol, non-relational databases, and the MVC architectural pattern.",
 			"scope": {
-				"1":"Introduction to Angular and TypeScript",
-				"2":"Components and Data binding"
+				"1":"Intro to Node.js",
+				"2":"Node.js Streams and Utilities",
+				"3":"ExpressJS and Templating",
+				"4":"NoSQL and MongoDB",
+				"5":"Session and Authentication",
+				"6":"Validation and Error Handling"
 			}
 		},
 		"angular": {
@@ -75,13 +79,7 @@
 				"3": "SASS",
 				"4": "CSS transitions, animations and transformations",
 				"5": "CSS grid",
-				"6": "Building layouts",
-				"7": "CSS architecture - IT CSS",
-				"8": "CSS architecture - BEM",
-				"9": "SASS",
-				"10": "CSS transitions, animations and transformations",
-				"11": "CSS grid",
-				"12": "Building layouts"
+				"6": "Building layouts"
 			}
 		},
 		"html-and-css": {
@@ -136,27 +134,17 @@
 			"focus": "basic techniques and tools for practical programming beyond the writing of simple program constructions.",
 			"scope": {
 				"1": "Basic syntax, conditional statements and loops",
-				"2": "Basic HTML",
-				"3": "Data types and variables",
-				"4": "Basic CSS",
-				"5": "Arrays",
-				"6": "Http basics",
-				"7": "Methods / functions",
-				"8": "Problem solving",
-				"9": "Lists / arrays advanced",
+				"2": "Data types and variables",
+				"3": "Arrays, Lists advanced & Associative arrays",
+				"4": "Methods / functions",
+				"5": "Objects and classes",
+				"6": "String, text processing & Regular expressions",
+				"7": "Basic HTML and CSS",
+				"8": "Http basics",
+				"9": "Basic web and CRUD",
 				"10": "Bitwise operations",
-				"11": "Associative arrays",
-				"12": "Intro to computer science",
-				"13": "Objects and classes",
-				"14": "Database basics",
-				"15": "String and text processing",
-				"16": "Regular expressions",
-				"17": "Basic web",
-				"18": "Git and GitHub",
-				"19": "Basic CRUD",
-				"20": "QA fundamentals",
-				"21": "Web project",
-				"22": "Open-source introduction"
+				"11": "Database basics & QA fundamentals",
+				"12": "Open-source introduction & Git and GitHub"
 			}
 		},
 		"pb-c": {
@@ -191,27 +179,20 @@
 		"colleto": {
 			"position": "Frontend Web Developer",
 			"description": {
-				"1": "Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow:",
-				"2": "▪︎ Colleta für Disponenten - Transport dispatcher platform, where shipments are disopsed and tours are assigned<",
-				"3": "▪︎ Colleta für Transporunternehmer - Transport service provider platform, where transport orders are received",
-				"4": "▪︎ Colleta für Betreiber - User management platform, binding the other tree apps",
-				"5": "Structured the codebase as an NX monorepo, enabling a scalable architecture with shared, reusable components and unified design patterns across all three applications.",
-				"6": "Integrated custom design guidelines into Angular Material, including a standardized color palette and icon set, ensuring consistent UI/UX across the platform.",
-				"7": "Wrote unit tests with Jest and end-to-end tests with Cypress, improving overall application quality and test coverage.",
-				"8": "Integrated a generated Feign API client, ensuring consistent and well-documented communication between frontend and backend."
+				"1": "Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow.",
+				"2": "Structured the codebase as an NX monorepo, enabling a scalable architecture with shared, reusable components and unified design patterns across all three applications.",
+				"3": "Integrated custom design guidelines into Angular Material, including a standardized color palette and icon set, ensuring consistent UI/UX across the platform.",
+				"4": "Wrote unit tests with Jest and end-to-end tests with Cypress, improving overall application quality and test coverage.",
+				"5": "Integrated a generated Feign API client, ensuring consistent and well-documented communication between frontend and backend."
 			}
 		},
 		"carrypicker": {
 			"position": "Frontend Web Developer",
 			"description": {
 				"1": "Further developed and maintained four logistic web applications, some featuring AI-powered functionality.",
-				"2": "▪︎ Carrypicker - Shippers platform, where shipment orders are placed",
-				"3": "▪︎ Colleta TMS - Transport management/Dispatcher platform, where shipments are disposed and tours are assigned",
-				"4": "▪︎ Colleta Trucking - Transport service provider platform, where transport orders are received",
-				"5": "▪︎ Colleta Manager - User management platform, binding the other tree apps",
-				"6": "Built and maintained end-to-end tests using Cypress, increasing confidence in feature releases.",
-				"7": "Designed and iterated on user interfaces using Sketch UX prototypes aligned with established design guidelines.",
-				"8": "Collaborated cross-functionally with backend developers, data analysts and product managers in feature delivery process."
+				"2": "Built and maintained end-to-end tests using Cypress, increasing confidence in feature releases.",
+				"3": "Designed and iterated on user interfaces using Sketch UX prototypes aligned with established design guidelines.",
+				"4": "Collaborated cross-functionally with backend developers, data analysts and product managers in feature delivery process."
 			}
 		},
 		"freelance": {
@@ -270,25 +251,24 @@
 			"personalProjectsDiv": "Personal",
 			"studyProjectsDiv": "Learn"
 		},
-		"carrypicker": {
-			"highlights": "Developed further features for three web applications: Carrypicker, Colleta TMS and Colleta Trucking. The symbiotic relationship between them allows for them to cover all three steps of the truck transport logistics process. Starting with placing a shipment order in Carrypicker, going through an AI based automatic disposition with a fallback option - manual disposition in Colleta TMS. And ending with issuing tour request and transportation orders via Colleta Trucking Platform, while having Colleta User Management Platform as the middle man in this ecosystem.",
+		"colleto": {
+			"highlights": "Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow.",
 			"info": {
-				"1": "Extended the four SPAs with further features written in an imperative manner using TypeScript(Angular), AJAX, REST and JSON.",
-				"2": "Prepared multiple UX design drafts using Sketch, complying with established design streamlines and implemented them with SCSS.",
-				"3": "Created multiple E-mail templates with Stripo (online platform for E-mail templates) and integrated Handlebars as a template compiler.",
-				"4": "Partnered with backend developers, data analysts and product developers."
-			},
-			"shipper": {
-				"info": "<p>Carrypicker is a web platform, where shippers can easily input shipping orders. It provides AI-based day price calculation algorithm and supports manual, CSV or excel based shipment input.</p> <p>The web portal keeps track of the status and the position of the shipments relevant to a single user or to a group of users. It also issues automatically shipping orders and allows for document exchange between stakeholders.</p>"
+				"1": "▪︎ Colleta für Disponenten - Transport dispatcher platform, where shipments are disopsed and tours are assigned<",
+				"2": "▪︎ Colleta für Transporunternehmer - Transport service provider platform, where transport orders are received",
+				"3": "▪︎ Colleta für Betreiber - User management platform, binding the other tree apps"
 			},
 			"tms": {
 				"info": "<p>Colleta TMS is a disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers.</p><p>Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.</p>"
-			},
-			"carrier": {
-				"info": "<p>Colleta Trucking is a web application meant for transportation carriers. It allows them to actively participate in tour request bids, register available transportation vehicles and commonly run routes. Another feature of the platform is keeping history of all transportation assignments and providing online-access the respective documentation.</p>"
-			} ,
-			"backoffice": {
-				"info": "<p>Colleta Manager does the user management for the other three web platforms: Carrypicker, Colleta and Colleta Trucking. It allows for intersystem data exchange and is the place where the onboarding for all stakeholders in the Carrypicker ecosystem takes place.</p>"
+			}
+		},
+		"carrypicker": {
+			"highlights": "Developed further features for three web applications: Carrypicker, Colleta TMS and Colleta Trucking. The symbiotic relationship between them allows for them to cover all three steps of the truck transport logistics process. Starting with placing a shipment order in Carrypicker, going through an AI based automatic disposition with a fallback option - manual disposition in Colleta TMS. And ending with issuing tour request and transportation orders via Colleta Trucking Platform, while having Colleta User Management Platform as the middle man in this ecosystem.",
+			"info": {
+				"1": "▪︎ Carrypicker - a web platform, where shippers can easily input shipping orders. It provides AI-based day price calculation algorithm and supports manual, CSV or excel based shipment input. The web portal keeps track of the status and the position of the shipments relevant to a single user or to a group of users. It also issues automatically shipping orders and allows for document exchange between stakeholders.",
+				"2": "▪︎ Colleta TMS - Colleta TMS is a disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers. Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.",
+				"3": "▪︎ Colleta Trucking - Colleta Trucking is a web application meant for transportation carriers. It allows them to actively participate in tour request bids, register available transportation vehicles and commonly run routes. Another feature of the platform is keeping history of all transportation assignments and providing online-access the respective documentation.",
+				"4": "▪︎ Colleta Manager - Colleta Manager does the user management for the other three web platforms: Carrypicker, Colleta and Colleta Trucking. It allows for intersystem data exchange and is the place where the onboarding for all stakeholders in the Carrypicker ecosystem takes place."
 			}
 		},
 		"ptm": {
@@ -333,5 +313,4 @@
 			}
 		}
 	}
-
 }

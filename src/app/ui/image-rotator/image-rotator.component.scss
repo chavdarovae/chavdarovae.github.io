@@ -1,0 +1,22 @@
+@import "settings-variables";
+@import "settings-breakpoints";
+
+:host {
+	.rotator {
+		min-width: 50vw;
+		min-height: 400px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.rotator__img {
+		transform-origin: center center;
+		height: 400px;
+		width: auto;
+		object-fit: cover;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

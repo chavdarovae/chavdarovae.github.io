@@ -39,7 +39,7 @@
 
 		&--info {
 			@include for-tablet-landscape-up {
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr;
 			}
 		}
 
@@ -50,7 +50,6 @@
 	&__media-img {
 		max-width: 100%;
 		border-radius: $primary-rad;
-		box-shadow: $secondary-shadow;
 		overflow: hidden;
 
 		@include for-tablet-portrait-up {

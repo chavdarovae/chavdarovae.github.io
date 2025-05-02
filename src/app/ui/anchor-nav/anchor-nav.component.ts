@@ -5,13 +5,14 @@ import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-anchor-nav',
-	imports: [
-		RouterLink,
-		NgClass,
-		TranslatePipe
-	],
   templateUrl: './anchor-nav.component.html',
-  styleUrl: './anchor-nav.component.scss'
+  styleUrl: './anchor-nav.component.scss',
+  standalone: true,
+  imports: [
+	  RouterLink,
+	  NgClass,
+	  TranslatePipe
+  ],
 })
 export class AnchorNavComponent {
 	@Input() navList = ['workProjectsDiv', 'personalProjectsDiv', 'studyProjectsDiv'];

@@ -2,33 +2,28 @@ import {IProject} from '../interfaces/general.interface';
 
 export const PROJECT_CONTENT: IProject[] = [
 	{
+		id: 'colleto',
+		title: 'Colleto Web Applications',
+		infoItems: 4,
+		media: [
+			{
+				id: 'tms',
+				title: 'Colleto Apps: DispoTool / TuPlatform / Backoffice',
+				link: 'https://neu.colleta.de',
+				imgCount: 3
+			}
+		]
+	},
+	{
 		id: 'carrypicker',
 		title: 'Carrypicker Web Applications',
 		infoItems: 4,
 		media: [
 			{
 				id: 'shipper',
-				title: 'Carrypicker - Info',
-				link: 'https://my.carrypicker.com',
-				imgCount: 1
-			},
-			{
-				id: 'tms',
-				title: 'Colleta TMS - Info',
-				link: 'https://neu.colleta.de',
-				imgCount: 1
-			},
-			{
-				id: 'carrier',
-				title: 'Colleta Trucking - Info',
-				link: 'https://trucking.colleta.de',
-				imgCount: 1
-			},
-			{
-				id: 'backoffice',
-				title: 'Colleta Manager - Info',
+				title: 'Carrypicker Apps:  Shipper Platform / Dispatcher Platform / Trucking Platform / User Management',
 				link: 'https://my.colleta.de',
-				imgCount: 1
+				imgCount: 8
 			}
 		]
 	},
@@ -40,13 +35,8 @@ export const PROJECT_CONTENT: IProject[] = [
 			{
 				id: 'desktop',
 				title: 'PMT-Desktop - Gallery',
-				imgCount: 3
-			},
-			{
-				id: 'mobile',
-				title: 'Colleta TMS - Info',
-				imgCount: 3
-			},
+				imgCount: 17
+			}
 		]
 	},
 	{
@@ -85,5 +75,4 @@ export const PROJECT_CONTENT: IProject[] = [
 			}
 		]
 	}
-
 ];

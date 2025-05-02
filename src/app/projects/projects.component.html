@@ -6,7 +6,7 @@
 
 
 <div id="workProjectsDiv">
-	<h2 class="main__title">{{'projects.labels.workProjects' | translate}}</h2>
+	<h2 class="main__title">{{ 'projects.labels.workProjects' | translate }}</h2>
 
 	@for (project of projectList.slice(0, -4); track project.id) {
 		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
@@ -14,7 +14,7 @@
 </div>
 
 <div id="personalProjectsDiv">
-	<h2 class="main__title">{{'projects.labels.personalProjects' | translate}}</h2>
+	<h2 class="main__title">{{ 'projects.labels.personalProjects' | translate }}</h2>
 
 	@for (project of projectList.slice(-4, -2); track project.id) {
 		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
@@ -22,7 +22,7 @@
 </div>
 
 <div id="studyProjectsDiv">
-	<h2 class="main__title">{{'projects.labels.learnProjects' | translate}}</h2>
+	<h2 class="main__title">{{ 'projects.labels.learnProjects' | translate }}</h2>
 
 	@for (project of projectList.slice(-2); track project.id) {
 		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
@@ -32,42 +32,31 @@
 
 <ng-template #projectRef let-project="project">
 	<div class="project">
-		<h3 class="project__title">{{project.title}}</h3>
+		<h3 class="project__title">{{ project.title }}</h3>
 
 		<div class="project__icon">
 			<img src="icons/star.svg" alt="Star icon">
 		</div>
 
 		<p class="project__highlights">
-			{{('projects.' + project.id + '.highlights') | translate}}
+			{{ ('projects.' + project.id + '.highlights') | translate }}
 		</p>
 
 		<div class="project__info">
 			@for (item of project.infoItems | rangePipe; track item) {
-				<p>{{('projects.' + project.id + '.info.' + item) | translate}}</p>
+				<p>{{ ('projects.' + project.id + '.info.' + item) | translate }}</p>
 			}
 		</div>
 
 		@for (media of project.media; track media) {
 			<div class="project__media project__media--info">
-				<div class="project__media-title">{{media.title}}</div>
+				<div class="project__media-title">{{ media.title }}</div>
 				<div class="project__media-img project__media-img--big">
-					<img [src]="'images/' + project.id + '/' + media.id + '/0.png'" [alt]="media.id + ' image'">
+					<app-image-rotator
+						[imageArr]="media.imgCount | rangePipe"
+						[imagePath]="'images/' + project.id + '/' + media.id + '/'">
+					</app-image-rotator>
 				</div>
-
-				<div *ngIf="(('projects.' + project.id + '.' + media.id +'.info') | translate) as infoTranslated"
-					 class="project__media-info"
-					 [innerHTML]="infoTranslated">
-				</div>
-
-				<div *ngIf="media.imgCount > 1" class="project__media-info">
-					@for (pic of media.imgCount | rangePipe; track pic; let indexPic = $index) {
-						<div class="project__media-img">
-							<img [src]="'images/' + project.id + '/' + media.id + '/' +indexPic + '.png'" [alt]="project.id + ' ' + media.id + ' ' + indexPic + ' image'">
-						</div>
-					}
-				</div>
-
 			</div>
 		}
 
