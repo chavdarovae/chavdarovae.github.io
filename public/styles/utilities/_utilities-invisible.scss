@@ -1,5 +1,5 @@
-.invisible {
-    opacity: 0;
-    cursor: auto;
-    pointer-events: none;
-}
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
