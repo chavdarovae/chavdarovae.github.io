@@ -1,11 +1,7 @@
 <div>
-	<p>{{'courses.info.p1' | translate}}</p>
-	<p>{{'courses.info.p2' | translate}}</p>
-	<ul class="text-like-list">
-		<li>{{'courses.info.li1' | translate}}</li>
-		<li>{{'courses.info.li2' | translate}}</li>
-		<li>{{'courses.info.li3' | translate}}</li>
-	</ul>
+	@for (item of 5 | rangePipe; track item) {
+		<p>{{('courses.info.p' + item) | translate}}</p>
+	}
 </div>
 
 <div class="row row--centered gap-50">

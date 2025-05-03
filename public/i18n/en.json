@@ -49,9 +49,9 @@
 		"info": {
 			"p1": "SoftUni's software engineering curriculum is a combination of programming courses depending on the specialization. It focuses on acquiring fundamental knowledge, practical skills and sufficient technical overview in latest software technologies - a must for every 'software engineer'.",
 			"p2": "JavaScript Web Developer Program has three modules, each having a methodically selected sequence of courses, upgrading the IT competences in a well-considered pace, as follows:",
-			"li1": "Entry Module - courses: Programming basics with C#, Programming basics with JAVA",
-			"li2": "Fundamental Module - courses: Technology Fundamentals JavaScript",
-			"li3": "Professional Module - courses: JS Essentials, JS Advanced, JS Applications, JS Backend, ReactJS, HTML & CSS and Frontend Frameworks."
+			"p3": "          ▪︎   Entry Module - courses: Programming basics with C#, Programming basics with JAVA",
+			"p4": "          ▪︎   Fundamental Module - courses: Technology Fundamentals JavaScript",
+			"p5": "          ▪︎   Professional Module - courses: JS Essentials, JS Advanced, JS Applications, JS Backend, ReactJS, HTML & CSS and Frontend Frameworks."
 		},
 		"js-backend": {
 			"focus": "developing server-side web applications using Node.js, Express, and Handlebars, while introducing key concepts such as the HTTP protocol, non-relational databases, and the MVC architectural pattern.",
