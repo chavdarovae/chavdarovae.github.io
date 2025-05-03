@@ -65,6 +65,10 @@
     &--right-aligned {
         align-items: flex-end;
     }
+
+	&--space-btw {
+        justify-content: space-between;
+    }
 }
 
 @for $i from 1 through 20 {

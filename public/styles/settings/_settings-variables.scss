@@ -1,36 +1,19 @@
-$primary-light-color: rgba(255, 62, 102, 0.5);
-$primary-color: #FF3E66;
+$app-pri: #FF3E66;
+$app-sec: #00AF9B;
+$app-ter: rgba(255, 62, 102, 0.5);
 
-$secondary-lighter-color: #DFF4F1;
-$secondary-light-color: #41BEAD;
-$secondary-color: #00AF9B;
+$text-pri: #585858;
+$text-sec: #FFFFFF;
 
-$specific-text-color: #44A9F8;
-$text-color: #585858;
+$nav-hover: #F8F8F8;
 
-$nav-hover-color:#F8F8F8;
-$primary-bg-color: #E6E6E6;
+$course-bg: radial-gradient(circle, #ffffff, #e4f2ff, #acecff, #60e7f8, #00dfca);
 
-$course-color: radial-gradient(circle, #ffffff, #e4f2ff, #acecff, #60e7f8, #00dfca);
-// $course-color: #00DAC3;
+$rounding-pri: 4px;
 
-$gray-50: #F8F8F8;
-$gray-200: #E6E6E6;
-$gray-500: #919191;
-$gray-700: #585858;
+$font-pri: "Montserrat", sans-serif;
+$font-sec:  "Roboto", sans-serif;
 
-$blue-50: #E3F3FD;
-$blue-400: #44A9F8;
-$blue-800: #676781;
-
-$red-500: #FC4C50;
-
-$primary-rad: 4px;
-$secondary-rad: 4px;
-$terdery-rad: 100px;
-
-
-$primary-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20); //2dp
-$secondary-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20); //4dp
-$therdery-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20); //1dp
-$hover-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.20); //8dp
+$shadow-pri: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20); //2dp
+$shadow-sec: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20); //4dp
+$shadow-hover: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.20); //8dp

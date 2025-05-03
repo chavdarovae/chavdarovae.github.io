@@ -16,9 +16,9 @@
 		width: 100%;
 		height: 100%;
 		padding: 20px 0 20px 0;
-		background: $course-color;
-		border-radius: $primary-rad;
-		box-shadow: $hover-shadow;
+		background: $course-bg;
+		border-radius: $rounding-pri;
+		box-shadow: $shadow-hover;
 		position: absolute;
 		backface-visibility: hidden;
 		transition: transform 1s;
@@ -27,8 +27,8 @@
 
 		&__header {
 			width: 100%;
-			background-color: $primary-color;
-			color: $nav-hover-color;
+			background-color: $app-pri;
+			color: $nav-hover;
 			text-transform: uppercase;
 			text-align: center;
 			padding: 10px 0;
@@ -101,7 +101,7 @@
 
 
 	a {
-		color: $primary-color;
+		color: $app-pri;
 	}
 
 	a:hover {

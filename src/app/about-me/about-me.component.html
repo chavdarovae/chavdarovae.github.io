@@ -13,19 +13,22 @@
 			https://github.com/chavdarovae</a>
 	</address>
 
-	<div class="about__journey column column--centered">
+	<div class="about__journey column column--centered gap-20">
 		<h2>{{ 'about.journey.title' | translate}}</h2>
 
 		<div class="about__journey-icon">
 			<img src="icons/crossroad.svg" alt="Crossroads icon">
 		</div>
 
-		@for (parIndex of 5 | rangePipe; track parIndex) {
-			<p class="about__journey-item"> {{ ('about.journey.p' + parIndex )| translate}} </p>
-		}
+		<div>
+			@for (parIndex of 5 | rangePipe; track parIndex) {
+				<p> {{ ('about.journey.p' + parIndex )| translate}} </p>
+			}
+		</div>
+
 	</div>
 
-	<div class="about__skills  column column--centered">
+	<div class="about__skills column column--centered column--space-btw">
 		<div class="about__skills-entry skill-set">
 			<h3 class="skill-set__title">{{'about.skills.core' | translate}}</h3>
 			<ul class="skill-set__list">
@@ -80,18 +83,22 @@
 		</div>
 	</div>
 
-	<div class="about__education column column--centered">
-		<h2>{{ 'about.education.title' | translate}}</h2>
+	<div class="about__education column column--centered gap-20">
+		<div>
+			<h2>{{ 'about.education.title' | translate}}</h2>
 
-		<div class="about__education-icon">
-			<img src="icons/education.svg" alt="Brain icon">
+			<div class="about__education-icon" >
+				<img src="icons/education.svg" alt="Brain icon">
+			</div>
 		</div>
 
-		<div class="about__education-entry">
-			<h2>{{ 'about.education.softUni' | translate}}</h2>
-			<p>{{ 'about.education.program' | translate}}</p>
+		<div class="about__education-entry column column--left-aligned gap-20">
+			<div>
+				<h3>{{ 'about.education.softUni' | translate}}</h3>
+				<h4>{{ 'about.education.program' | translate}}</h4>
+			</div>
 
-			<h4 id="certificateTrigger" data-collaps="►">{{ 'about.education.certificates' | translate}}</h4>
+			<h5 class="text--centered">{{ 'about.education.certificates' | translate}}</h5>
 
 			<div class="certificate-holder animations-fancy-list">
 				@for (cert of certList; track cert;) {
@@ -102,10 +109,12 @@
 				}
 			</div>
 		</div>
+
 		<div class="about__education-entry">
 			<h3>{{ 'about.education.uasg' | translate}}</h3>
-			<p>{{ 'about.education.master' | translate}}</p>
+			<h4>{{ 'about.education.master' | translate}}</h4>
 		</div>
+
 	</div>
 
 </div>

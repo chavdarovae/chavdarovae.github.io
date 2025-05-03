@@ -6,14 +6,20 @@
 
     &__title {
         width: fit-content;
-        background-color: $primary-color;
+        background-color: $app-pri;
         border: none;
-        border-radius: 100px;
-        // box-shadow: $secondary-shadow;
-        padding: 5px 22px;
+        border-radius: $rounding-pri;
+        // box-shadow: $shadow-sec;
         margin-bottom: 20px !important;
-        color: #fff;
+        color: $text-sec;
         text-transform: uppercase;
+		font-family: $font-sec;
+		width: 100%;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
 
         @include for-tablet-landscape-up {
             margin: 0;

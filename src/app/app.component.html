@@ -5,20 +5,15 @@
 		<div class="content-container">
 			<ng-container *ngTemplateOutlet="lang, context: {end: 'backend'}"></ng-container>
 
-
-			<nav class="nav">
-				<ul class="nav__list row row--right-aligned">
-					@for (item of menuItems; track item) {
-						<li class="nav__list-item">
-							<a [routerLink]="item"
-							   class="nav__list-link"
-							   [ngClass]="{'nav__list-link--current': item === data.section}">
-								{{ ('nav.' + item) | translate }}
-							</a>
-						</li>
-					}
-				</ul>
-			</nav>
+			<div class="nav row row--right-aligned">
+				@for (item of menuItems; track item) {
+					<a [routerLink]="item"
+					   class="nav__link"
+					   [ngClass]="{'nav__link--current': item === data.section}">
+						{{ ('nav.' + item) | translate }}
+					</a>
+				}
+			</div>
 			<ng-container *ngTemplateOutlet="lang, context: {end: 'frontend'}"></ng-container>
 		</div>
 	</header>

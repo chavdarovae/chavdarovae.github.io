@@ -7,9 +7,9 @@ dialog {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	height: 90vh;
-	border: 1px solid $primary-color;
-	box-shadow: $primary-shadow;
+	height: 80vh;
+	border: 1px solid $app-pri;
+	box-shadow: $shadow-pri;
 	z-index: 1001;
 
 	img {

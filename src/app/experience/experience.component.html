@@ -13,13 +13,14 @@
 			</div>
 		</div>
 
-		<h3 class="work__position">{{ ('experience.' + exp.id + '.position') | translate }}</h3>
-
-		<h4 class="work__employer">{{ exp.employer}}</h4>
+		<div class="work__position">
+			<h3>{{ ('experience.' + exp.id + '.position') | translate }}</h3>
+			<h4>{{ exp.employer}}</h4>
+		</div>
 
 		<span class="work__period h4-like">{{ exp.period}}</span>
 
-		<div class="work__description">
+		<div class="work__description column gap-5">
 			<p *ngFor="let item of exp.descriptionItems | rangePipe"> {{('experience.' + exp.id + '.description.' + item) | translate }}</p>
 			<p>{{ 'experience.labels.furtherInfo' | translate }}
 				<a [routerLink]="['/projects']" [fragment]="exp.id" class="work__description-link" id="projects">{{ 'experience.labels.clickHere' | translate }}</a>

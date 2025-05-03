@@ -179,20 +179,20 @@
 		"colleto": {
 			"position": "Frontend Web Developer",
 			"description": {
-				"1": "Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow.",
-				"2": "Structured the codebase as an NX monorepo, enabling a scalable architecture with shared, reusable components and unified design patterns across all three applications.",
-				"3": "Integrated custom design guidelines into Angular Material, including a standardized color palette and icon set, ensuring consistent UI/UX across the platform.",
-				"4": "Wrote unit tests with Jest and end-to-end tests with Cypress, improving overall application quality and test coverage.",
-				"5": "Integrated a generated Feign API client, ensuring consistent and well-documented communication between frontend and backend."
+				"1": "          ▪︎   Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow.",
+				"2": "          ▪︎   Structured the codebase as an NX monorepo, enabling a scalable architecture with shared, reusable components and unified design patterns across all three applications.",
+				"3": "          ▪︎   Integrated custom design guidelines into Angular Material, including a standardized color palette and icon set, ensuring consistent UI/UX across the platform.",
+				"4": "          ▪︎   Wrote unit tests with Jest and end-to-end tests with Cypress, improving overall application quality and test coverage.",
+				"5": "          ▪︎   Integrated a generated Feign API client, ensuring consistent and well-documented communication between frontend and backend."
 			}
 		},
 		"carrypicker": {
 			"position": "Frontend Web Developer",
 			"description": {
-				"1": "Further developed and maintained four logistic web applications, some featuring AI-powered functionality.",
-				"2": "Built and maintained end-to-end tests using Cypress, increasing confidence in feature releases.",
-				"3": "Designed and iterated on user interfaces using Sketch UX prototypes aligned with established design guidelines.",
-				"4": "Collaborated cross-functionally with backend developers, data analysts and product managers in feature delivery process."
+				"1": "          ▪︎   Further developed and maintained four logistic web applications, some featuring AI-powered functionality.",
+				"2": "          ▪︎   Built and maintained end-to-end tests using Cypress, increasing confidence in feature releases.",
+				"3": "          ▪︎   Designed and iterated on user interfaces using Sketch UX prototypes aligned with established design guidelines.",
+				"4": "          ▪︎   Collaborated cross-functionally with backend developers, data analysts and product managers in feature delivery process."
 			}
 		},
 		"freelance": {
@@ -218,9 +218,9 @@
 			"description": {
 				"1": "Developed the structural design department in Way Engineering AD - Bulgarian branch of SICS Ingegneria S.r.l. Organized and managed its growth from 2 initial employees to 15 in 3 years. Responsible for team recruitment, manpower management and direction of design works.",
 				"2": "Project coordination role for three significant infrastructural projects and various tender procedures:",
-				"3": "▪︎ DG48 Salerno-Reggio Calabria Highway – 30km, Italy, construction cost € 650 million. Road facilities design for the main contractor SIS Scpa, Italy",
-				"4": "▪︎ State road SS640 – 35km, Italy, construction cost € 739 million. Road facilities design for the main contractor Empedocles II Scpa, Italy",
-				"5": "▪︎ Saida – Tiaret Railway -153km, Algeria, Road and rail way facilities design for the main contractor Astaldi S.p.a, Italy"
+				"3": "          ▪︎   DG48 Salerno-Reggio Calabria Highway – 30km, Italy, construction cost € 650 million. Road facilities design for the main contractor SIS Scpa, Italy",
+				"4": "          ▪︎   State road SS640 – 35km, Italy, construction cost € 739 million. Road facilities design for the main contractor Empedocles II Scpa, Italy",
+				"5": "          ▪︎   Saida – Tiaret Railway -153km, Algeria, Road and rail way facilities design for the main contractor Astaldi S.p.a, Italy"
 			}
 		},
 		"akropolis": {
@@ -252,11 +252,11 @@
 			"studyProjectsDiv": "Learn"
 		},
 		"colleto": {
-			"highlights": "Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow.",
+			"highlights": "Architected and developed three bespoke Angular applications from the ground up, tailored to support core logistics operations across the organization. Leveraged RxJS and a fully declarative programming model to ensure predictable, reactive workflows and robust UI state handling. Structured within a scalable NX Monorepo, enabling efficient cross-team collaboration and consistent code reuse. Integrated a GitLab-hosted, auto-generated RESTful API client module, streamlining backend communication and ensuring contract fidelity. Applications play a pivotal role in the company’s daily freight management, significantly improving operational efficiency and transparency.",
 			"info": {
-				"1": "▪︎ Colleta für Disponenten - Transport dispatcher platform, where shipments are disopsed and tours are assigned<",
-				"2": "▪︎ Colleta für Transporunternehmer - Transport service provider platform, where transport orders are received",
-				"3": "▪︎ Colleta für Betreiber - User management platform, binding the other tree apps"
+				"1": "          ▪︎   Colleta für Disponenten - Transport dispatcher platform, where shipments are disopsed and tours are assigned",
+				"2": "          ▪︎   Colleta für Transporunternehmer - Transport service provider platform, where transport orders and tour assign are received",
+				"3": "          ▪︎   Colleta für Betreiber - User management platform, binding the other tree apps"
 			},
 			"tms": {
 				"info": "<p>Colleta TMS is a disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers.</p><p>Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.</p>"
@@ -265,10 +265,10 @@
 		"carrypicker": {
 			"highlights": "Developed further features for three web applications: Carrypicker, Colleta TMS and Colleta Trucking. The symbiotic relationship between them allows for them to cover all three steps of the truck transport logistics process. Starting with placing a shipment order in Carrypicker, going through an AI based automatic disposition with a fallback option - manual disposition in Colleta TMS. And ending with issuing tour request and transportation orders via Colleta Trucking Platform, while having Colleta User Management Platform as the middle man in this ecosystem.",
 			"info": {
-				"1": "▪︎ Carrypicker - a web platform, where shippers can easily input shipping orders. It provides AI-based day price calculation algorithm and supports manual, CSV or excel based shipment input. The web portal keeps track of the status and the position of the shipments relevant to a single user or to a group of users. It also issues automatically shipping orders and allows for document exchange between stakeholders.",
-				"2": "▪︎ Colleta TMS - Colleta TMS is a disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers. Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.",
-				"3": "▪︎ Colleta Trucking - Colleta Trucking is a web application meant for transportation carriers. It allows them to actively participate in tour request bids, register available transportation vehicles and commonly run routes. Another feature of the platform is keeping history of all transportation assignments and providing online-access the respective documentation.",
-				"4": "▪︎ Colleta Manager - Colleta Manager does the user management for the other three web platforms: Carrypicker, Colleta and Colleta Trucking. It allows for intersystem data exchange and is the place where the onboarding for all stakeholders in the Carrypicker ecosystem takes place."
+				"1": "          ▪︎   Shipper Platform - a web platform, where shippers can easily input shipping orders. It provides AI-based day price calculation algorithm and supports manual, CSV or excel based shipment input. The web portal keeps track of the status and the position of the shipments relevant to a single user or to a group of users. It also issues automatically shipping orders and allows for document exchange between stakeholders.",
+				"2": "          ▪︎   Dispatcher Platform - a web disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers. Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.",
+				"3": "          ▪︎   Trucking Platform - a web application meant for transportation carriers. It allows them to actively participate in tour request bids, register available transportation vehicles and commonly run routes. Another feature of the platform is keeping history of all transportation assignments and providing online-access the respective documentation.",
+				"4": "          ▪︎   User Management - provides user management for the other three web platforms: Carrypicker, Colleta and Colleta Trucking. It allows for intersystem data exchange and is the place where the onboarding for all stakeholders in the Carrypicker ecosystem takes place."
 			}
 		},
 		"ptm": {

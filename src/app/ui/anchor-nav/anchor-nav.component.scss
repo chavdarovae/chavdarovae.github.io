@@ -26,24 +26,24 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border: 2px solid $primary-color;
-		border-top: 1px solid $primary-color;
-		border-bottom: 1px solid $primary-color;
+		border: 2px solid $app-pri;
+		border-top: 1px solid $app-pri;
+		border-bottom: 1px solid $app-pri;
 
 		@include for-tablet-landscape-up {
 			width: 30px;
 		}
 
 		&:last-child {
-			border-bottom: 2px solid $primary-color;
+			border-bottom: 2px solid $app-pri;
 		}
 
 		&:first-child {
-			border-top: 2px solid $primary-color;
+			border-top: 2px solid $app-pri;
 		}
 
 		&:hover {
-			border-color: $primary-light-color;
+			border-color: $app-ter;
 		}
 	}
 
@@ -54,7 +54,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: $primary-color;
+		color: $app-pri;
 		background-color: #ffffff;
 
 		@include for-tablet-landscape-up {
@@ -63,17 +63,17 @@
 
 
 		&:hover {
-			background-color: $primary-light-color;
+			background-color: $app-ter;
 			color: #ffffff;
 		}
 	}
 
 	&__list-link--current {
-		background-color: $primary-color;
+		background-color: $app-pri;
 		color: #ffffff;
 
 		&:hover {
-			background-color: $primary-light-color;
+			background-color: $app-ter;
 			color: #ffffff;
 		}
 	}

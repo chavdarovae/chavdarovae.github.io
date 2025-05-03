@@ -1,14 +1,14 @@
 a {
-    font-family: 'Montserrat';
+    font-family: $font-pri;
     font-size: 14px;
     font-style: normal;
-    color: $text-color;
+    color: $text-pri;
     text-decoration: none;
 }
 
 a:hover {
     cursor: pointer;
     text-decoration: none;
-    color: $primary-color;
+    color: $app-pri;
     transform: scale(1.01);
 }

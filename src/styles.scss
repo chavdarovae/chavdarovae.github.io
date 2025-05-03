@@ -1,6 +1,11 @@
 @import "settings-variables";
 @import "settings-breakpoints";
 
+
+h3 + h4 {
+	margin-top: 10px;
+}
+
 [class*="__title"],
 [class*="-title"],
 [class*="__info"] {
@@ -13,20 +18,22 @@
 	}
 }
 
-[class*="__title"] {
+[class*="__title"],
+.title {
 	text-align: center;
 }
 
-[class*="-highlights"],
-[class*="__highlights"] {
+.highlighted {
 	justify-self: center;
 	background-color: #f9f0a3;
 	padding: 20px 10px;
-	// box-shadow: $secondary-shadow;
-	border-radius: $primary-rad;
+	font-family: $font-sec;
+	// box-shadow: $shadow-sec;
+	border-radius: $rounding-pri;
 }
 
-[class*="-icon"] {
+[class*="-icon"],
+.icon {
 	width: 50px;
 	margin: 30px;
 }
@@ -35,3 +42,5 @@
 	width: 100%;
 	margin-bottom: 10px;
 }
+
+

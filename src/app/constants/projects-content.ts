@@ -4,13 +4,13 @@ export const PROJECT_CONTENT: IProject[] = [
 	{
 		id: 'colleto',
 		title: 'Colleto Web Applications',
-		infoItems: 4,
+		infoItems: 3,
 		media: [
 			{
 				id: 'tms',
 				title: 'Colleto Apps: DispoTool / TuPlatform / Backoffice',
 				link: 'https://neu.colleta.de',
-				imgCount: 3
+				imgCount: 5
 			}
 		]
 	},
@@ -20,7 +20,7 @@ export const PROJECT_CONTENT: IProject[] = [
 		infoItems: 4,
 		media: [
 			{
-				id: 'shipper',
+				id: 'all',
 				title: 'Carrypicker Apps:  Shipper Platform / Dispatcher Platform / Trucking Platform / User Management',
 				link: 'https://my.colleta.de',
 				imgCount: 8

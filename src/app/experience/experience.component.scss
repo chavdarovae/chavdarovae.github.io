@@ -7,27 +7,26 @@
 }
 
 .work {
-	border-radius: $primary-rad;
-	box-shadow: $primary-shadow;
-	padding: 30px 10px;
+	border-radius: $rounding-pri;
+	box-shadow: $shadow-pri;
+	padding: 30px 20px;
 	display: grid;
-	row-gap: 20px;
+	row-gap: 30px;
 	column-gap: 20px;
 	grid-template-columns: 100%;
 	grid-template-rows: min-content min-content min-content min-content min-content;
 	grid-template-areas:
         "period"
         "position"
-        "employer"
         "image"
         "description";
 
 	@include for-tablet-landscape-up {
-		grid-template-columns: 300px 1fr 200px;
-		grid-template-rows: 30px 20px min-content;
+		grid-template-columns: 400px 1fr 300px;
+		grid-template-rows: 30px auto;
+		row-gap: 40px;
 		grid-template-areas:
             "image position period"
-            "image employer employer"
             "image description description";
 	}
 
@@ -35,19 +34,19 @@
 		grid-area: image;
 		align-self: center;
 		overflow: hidden;
-		border-radius: $primary-rad;
+		border-radius: $rounding-pri;
 	}
 
 	&__position {
 		grid-area: position;
-	}
-
-	&__employer {
-		grid-area: employer;
+		h3 {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__period {
 		grid-area: period;
+		justify-self: flex-end;
 	}
 
 	&__description {

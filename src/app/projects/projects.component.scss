@@ -6,6 +6,7 @@
 	flex-flow: column nowrap;
 	align-items: flex-start;
 	justify-content: center;
+	margin-bottom: 50px;
 
 	&__title {
 		align-self: center;
@@ -49,7 +50,7 @@
 
 	&__media-img {
 		max-width: 100%;
-		border-radius: $primary-rad;
+		border-radius: $rounding-pri;
 		overflow: hidden;
 
 		@include for-tablet-portrait-up {

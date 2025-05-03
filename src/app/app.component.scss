@@ -5,29 +5,20 @@
 	height: 70px;
 	margin-left: auto;
 
-
-	&__list {
+	&__link {
 		height: 100%;
-	}
-
-	&__list-item {
-		height: 100%;
+		padding: 0 4px;
+		font-weight: 500;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 400ms ease-out;
+		cursor: pointer;
+		position: relative;
 
 		&:last-child {
 			margin-right: 10px;
 		}
-	}
-
-	&__list-link {
-		height: 100%;
-		padding: 0 4px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transition: color 0.4s, background-color 0.4s ease-out;
-		position: relative;
-		cursor: pointer;
-
 
 		@include for-phone-up {
 			padding: 0 7px;
@@ -39,30 +30,28 @@
 
 		&:hover {
 			text-decoration: none;
-			color: $primary-color;
-			background-color: $nav-hover-color;
+			color: $app-pri;
+			background-color: $nav-hover;
 		}
 	}
 
-	&__list-link--current {
-		&:before {
-			content: "";
-			display: block;
-			height: 5px;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			background-color: $primary-color;
-		}
+	&__link--current::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 5px;
+		background-color: $app-pri;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 }
 
 .header {
 	height: 70px;
 	background: #fff;
-	box-shadow: $primary-shadow;
-	color: $primary-color;
+	box-shadow: $shadow-pri;
+	color: $app-pri;
 	position: relative;
 
 	&__title {
@@ -73,7 +62,7 @@
 
 		background-color: #fff;
 		font-family: "Lato", sans-serif;
-		color: $text-color;
+		color: $text-pri;
 		font-size: 25px;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -112,7 +101,7 @@
 			background: #fff;
 			font-size: 13px;
 			line-height: 1;
-			border: 1px solid $primary-color;
+			border: 1px solid $app-pri;
 			width: 22px;
 			height: 18px;
 			cursor: pointer;
@@ -156,12 +145,12 @@
 .main {
 	position: relative;
 	padding: 50px 20px 10px 20px;
-	color: $text-color;
+	color: $text-pri;
 }
 
 
 footer {
-	background-color: $secondary-color;
+	background-color: $app-sec;
 
 	.content-container {
 		padding: 10px 0;
@@ -178,7 +167,7 @@ footer {
 		}
 
 		* {
-			color: white;
+			color: $text-sec;
 		}
 	}
 }
