@@ -1,106 +1,106 @@
-<div class="about">
+<!--contact information -->
+<address class="column column--left-aligned gap-10">
+	<a href="#"><i class="fas fa-user"></i> Emiliya Chavdarova</a>
+	<a href="#"><i class="fas fa-map-marker-alt"></i> Hamburg, Germany</a>
+	<a href="mailto:chavdarova.e@gmail.com"><i class="fas fa-envelope"></i>
+		chavdarova.e&#64;gmail.com</a>
+	<a href="https://www.linkedin.com/in/emiliya-chavdarova"><i class="fab fa-linkedin"></i>
+		https://www.linkedin.com/in/emiliya-chavdarova/</a>
+	<a href="https://github.com/chavdarovae"><i class="fab fa-github-square"></i>
+		https://github.com/chavdarovae</a>
+</address>
 
-	<div class="about__highlights highlighted"> {{'about.highlight' | translate}}</div>
+<!--highlights-->
+<div class="highlighted">{{'about.highlight' | translate}}</div>
 
-	<address class="about__address column column--left-aligned">
-		<a href="#"><i class="fas fa-user"></i> Emiliya Chavdarova</a>
-		<a href="#"><i class="fas fa-map-marker-alt"></i> Hamburg, Germany</a>
-		<a href="mailto:chavdarova.e@gmail.com"><i class="fas fa-envelope"></i>
-			chavdarova.e&#64;gmail.com</a>
-		<a href="https://www.linkedin.com/in/emiliya-chavdarova"><i class="fab fa-linkedin"></i>
-			https://www.linkedin.com/in/emiliya-chavdarova/</a>
-		<a href="https://github.com/chavdarovae"><i class="fab fa-github-square"></i>
-			https://github.com/chavdarovae</a>
-	</address>
-
-	<div class="about__journey column column--centered gap-20">
-		<h2>{{ 'about.journey.title' | translate}}</h2>
-
-		<div class="about__journey-icon">
-			<img src="icons/crossroad.svg" alt="Crossroads icon">
-		</div>
-
-		<div>
-			@for (parIndex of 5 | rangePipe; track parIndex) {
-				<p> {{ ('about.journey.p' + parIndex )| translate}} </p>
-			}
-		</div>
-
+<!--skill set-->
+<div class="skill-holder column column--centered column--space-btw">
+	<div class="skill">
+		<h3>{{'about.skills.core' | translate}}</h3>
+		<ul>
+			<li>JavaScript / TypeScript</li>
+			<li>Angular</li>
+			<li>Express / NestJS</li>
+			<li>jQuery</li>
+			<li>Sammy.js</li>
+			<li>Jasmin / Jest</li>
+			<li>Cypress </li>
+			<li>HTML</li>
+			<li>CSS / SASS</li>
+			<li>MongoDB</li>
+			<li>Figma / Sketch</li>
+			<li>Handlebars</li>
+			<li>MJML</li>
+			<li>REST </li>
+			<li>AJAX</li>
+			<li>GIT / GitLab / GitHub</li>
+			<li>Confluence / Jira</li>
+		</ul>
 	</div>
 
-	<div class="about__skills column column--centered column--space-btw">
-		<div class="about__skills-entry skill-set">
-			<h3 class="skill-set__title">{{'about.skills.core' | translate}}</h3>
-			<ul class="skill-set__list">
-				<li class="skill-set__list-item">JavaScript / TypeScript</li>
-				<li class="skill-set__list-item">Angular</li>
-				<li class="skill-set__list-item">Express / NestJS</li>
-				<li class="skill-set__list-item">jQuery</li>
-				<li class="skill-set__list-item">Sammy.js</li>
-				<li class="skill-set__list-item">Jasmin / Jest</li>
-				<li class="skill-set__list-item">Cypress </li>
-				<li class="skill-set__list-item">HTML</li>
-				<li class="skill-set__list-item">CSS / SASS</li>
-				<li class="skill-set__list-item">MongoDB</li>
-				<li class="skill-set__list-item">Figma / Sketch</li>
-				<li class="skill-set__list-item">Handlebars</li>
-				<li class="skill-set__list-item">MJML</li>
-				<li class="skill-set__list-item">REST </li>
-				<li class="skill-set__list-item">AJAX</li>
-				<li class="skill-set__list-item">GIT / GitLab / GitHub</li>
-				<li class="skill-set__list-item">Confluence / Jira</li>
-			</ul>
-		</div>
+	<div class="skill">
+		<h3>{{'about.skills.additional' | translate}}</h3>
+		<ul>
+			<li>{{'about.skills.solver' | translate}}</li>
+			<li>{{'about.skills.designer' | translate}}</li>
+			<li>{{'about.skills.leader' | translate}}</li>
+			<li>{{'about.skills.manager' | translate}}</li>
+		</ul>
+	</div>
 
-		<div class="about__skills-entry skill-set">
-			<h3 class="skill-set__title">{{'about.skills.additional' | translate}}</h3>
-			<ul class="skill-set__list">
-				<li class="skill-set__list-item">{{'about.skills.solver' | translate}}</li>
-				<li class="skill-set__list-item">{{'about.skills.designer' | translate}}</li>
-				<li class="skill-set__list-item">{{'about.skills.leader' | translate}}</li>
-				<li class="skill-set__list-item">{{'about.skills.manager' | translate}}</li>
-			</ul>
-		</div>
+	<div class="skill">
+		<h3>{{'about.skills.engineering' | translate}}</h3>
+		<ul>
+			<li>AutoCAD</li>
+			<li>Autodesk Revit</li>
+			<li>SAP 2000 & Midas Civil</li>
+			<li>SketchUp & Aztec</li>
+		</ul>
+	</div>
 
-		<div class="about__skills-entry skill-set">
-			<h3 class="skill-set__title">{{'about.skills.engineering' | translate}}</h3>
-			<ul class="skill-set__list">
-				<li class="skill-set__list-item">AutoCAD</li>
-				<li class="skill-set__list-item">Autodesk Revit</li>
-				<li class="skill-set__list-item">SAP 2000 & Midas Civil</li>
-				<li class="skill-set__list-item">SketchUp & Aztec</li>
-			</ul>
-		</div>
+	<div class="skill">
+		<h3>{{'about.skills.language' | translate}}</h3>
+		<ul>
+			<li>{{'about.skills.bg' | translate}}</li>
+			<li>{{'about.skills.en' | translate}}</li>
+			<li>{{'about.skills.de' | translate}}</li>
+			<li>{{'about.skills.it' | translate}}</li>
+		</ul>
+	</div>
+</div>
 
-		<div class="about__skills-entry skill-set">
-			<h3 class="skill-set__title">{{'about.skills.language' | translate}}</h3>
-			<ul class="skill-set__list">
-				<li class="skill-set__list-item">{{'about.skills.bg' | translate}}</li>
-				<li class="skill-set__list-item">{{'about.skills.en' | translate}}</li>
-				<li class="skill-set__list-item">{{'about.skills.de' | translate}}</li>
-				<li class="skill-set__list-item">{{'about.skills.it' | translate}}</li>
-			</ul>
+<!--journey -->
+<div class="column column--centered gap-20">
+	<h2>{{ 'about.journey.title' | translate}}</h2>
+
+	<div class="icon">
+		<img src="icons/crossroad.svg" alt="Crossroads icon">
+	</div>
+
+	<div>
+		@for (parIndex of 5 | rangePipe; track parIndex) {
+			<p> {{ ('about.journey.p' + parIndex )| translate}} </p>
+		}
+	</div>
+</div>
+
+<!--education -->
+<div class="column column--centered gap-40">
+	<div class="column column--centered gap-20">
+		<h2>{{ 'about.education.title' | translate}}</h2>
+
+		<div class="icon" >
+			<img src="icons/education.svg" alt="Brain icon">
 		</div>
 	</div>
 
-	<div class="about__education column column--centered gap-20">
+	<div class="column column--left-aligned gap-40">
 		<div>
-			<h2>{{ 'about.education.title' | translate}}</h2>
+			<h3>{{ 'about.education.softUni' | translate}}</h3>
+			<h4>{{ 'about.education.program' | translate}}</h4>
 
-			<div class="about__education-icon" >
-				<img src="icons/education.svg" alt="Brain icon">
-			</div>
-		</div>
-
-		<div class="about__education-entry column column--left-aligned gap-20">
-			<div>
-				<h3>{{ 'about.education.softUni' | translate}}</h3>
-				<h4>{{ 'about.education.program' | translate}}</h4>
-			</div>
-
-			<h5 class="text--centered">{{ 'about.education.certificates' | translate}}</h5>
-
-			<div class="certificate-holder animations-fancy-list">
+			<div class="certificate-holder">
+				<h5 class="text--centered">{{ 'about.education.certificates' | translate}}</h5>
 				@for (cert of certList; track cert;) {
 					<div class="certificate" (click)="appService.showDialog('images/certification/' + cert.img)">
 						<img [src]="'images/certification/' + cert.img" [alt]="'images ' + cert.course">
@@ -110,12 +110,13 @@
 			</div>
 		</div>
 
-		<div class="about__education-entry">
+		<div>
 			<h3>{{ 'about.education.uasg' | translate}}</h3>
 			<h4>{{ 'about.education.master' | translate}}</h4>
 		</div>
-
 	</div>
-
 </div>
+
+
+
 

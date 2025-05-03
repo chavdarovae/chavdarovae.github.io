@@ -18,10 +18,6 @@ h3 + h4 {
 	}
 }
 
-[class*="__title"],
-.title {
-	text-align: center;
-}
 
 .highlighted {
 	justify-self: center;
@@ -32,15 +28,8 @@ h3 + h4 {
 	border-radius: $rounding-pri;
 }
 
-[class*="-icon"],
 .icon {
 	width: 50px;
 	margin: 30px;
 }
-
-[class*="-entry"] {
-	width: 100%;
-	margin-bottom: 10px;
-}
-
 
