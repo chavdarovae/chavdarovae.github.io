@@ -255,7 +255,7 @@
 			"highlights": "Architected and developed three bespoke Angular applications from the ground up, tailored to support core logistics operations across the organization. Leveraged RxJS and a fully declarative programming model to ensure predictable, reactive workflows and robust UI state handling. Structured within a scalable NX Monorepo, enabling efficient cross-team collaboration and consistent code reuse. Integrated a GitLab-hosted, auto-generated RESTful API client module, streamlining backend communication and ensuring contract fidelity. Applications play a pivotal role in the company’s daily freight management, significantly improving operational efficiency and transparency.",
 			"info": {
 				"1": "          ▪︎   Colleta für Disponenten - Transport dispatcher platform, where shipments are disopsed and tours are assigned",
-				"2": "          ▪︎   Colleta für Transporunternehmer - Transport service provider platform, where transport orders and tour assign are received",
+				"2": "          ▪︎   Colleta für Transportunternehmer - Transport service provider platform, where transport orders and tour assign are received",
 				"3": "          ▪︎   Colleta für Betreiber - User management platform, binding the other tree apps"
 			},
 			"tms": {
@@ -274,11 +274,11 @@
 		"ptm": {
 			"highlights": "Designed, developed and deployed an MVP Performance Management Tool (PMT SPA). The web application is inspired by Six Sigma performance improvement techniques. It provides a platform for multiple parties to quickly exchange highly complex technical reviews of assets or performance indicators, while generating a high-level overview for C level stakeholders.",
 			"info": {
-				"1": "Wrote a well-structured Single Page Application with a cloud-based Backend (BaaS) using JavaScript, AJAX, REST and JSON.",
-				"2": "Implemented efficient routing and templating via Handlebars and Sammy.js.",
-				"3": "Partnered with project managers and analysts to deeply understand the necessities of users and build a custom UI that explicitly serves those needs.",
-				"4": "Enabled modern multi-platform application design following the latest standards of HTML5 and CSS3.",
-				"5": "Structured the SCSS code in a least wasteful way by implementing Inverted Triangle architecture and BEM methodology."
+				"1": "          ▪   Single Page Application with a cloud-based Backend, based on JavaScript, jQuery, AJAX, REST and JSON.",
+				"2": "          ▪   efficient routing and templating via Handlebars and Sammy.js.",
+				"3": "          ▪   custom UI that explicitly serves the needs of the stakeholders.",
+				"4": "          ▪   modern multi-platform application design following the latest standards of HTML5 and CSS3.",
+				"5": "          ▪   SCSS code implements Inverted Triangle architecture and BEM methodology."
 			},
 			"desktop": {
 				"info": ""
@@ -288,13 +288,10 @@
 			}
 		},
 		"smo-jo": {
-			"highlights": "Designed, developed and deployed an MVP Performance Management Tool (PMT SPA). The web application is inspired by Six Sigma performance improvement techniques. It provides a platform for multiple parties to quickly exchange highly complex technical reviews of assets or performance indicators, while generating a high-level overview for C level stakeholders.",
+			"highlights": "Small Jobs Cloud is a simple and efficient platform where users can post short-term or one-off job ads and quickly connect with the right people to get the job done. Whether errands, repairs, design work, or freelance tasks, this app makes it easy to share your job offer and find skilled, reliable workers nearby.",
 			"info": {
-				"1": "Wrote a well-structured Single Page Application with a cloud-based Backend (BaaS) using JavaScript, AJAX, REST and JSON.",
-				"2": "Implemented efficient routing and templating via Handlebars and Sammy.js.",
-				"3": "Partnered with project managers and analysts to deeply understand the necessities of users and build a custom UI that explicitly serves those needs.",
-				"4": "Enabled modern multi-platform application design following the latest standards of HTML5 and CSS3.",
-				"5": "Structured the SCSS code in a least wasteful way by implementing Inverted Triangle architecture and BEM methodology."
+				"1": "          ▪   Angular Application with Backend as a service (Backendless)",
+				"2": "          ▪   modern, responsive design practices using the latest HTML5 and CSS3 standards"
 			},
 			"general": {
 				"info": ""

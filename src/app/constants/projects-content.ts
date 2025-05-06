@@ -42,7 +42,7 @@ export const PROJECT_CONTENT: IProject[] = [
 	{
 		id: 'smo-jo',
 		title: 'Small Jobs Cloud - SmoJoCloud SPA',
-		infoItems: 5,
+		infoItems: 2,
 		media: [
 			{
 				id: 'general',
