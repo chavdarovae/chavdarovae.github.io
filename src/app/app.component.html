@@ -1,21 +1,19 @@
 <ng-container *ngIf="{section: (activePath$ | async)} as data">
 	<header class="header">
 		<h2 class="header__title">{{('nav.' + data.section) | translate | uppercase}}</h2>
-
-		<div class="content-container">
+		<nav class="content-container navigation">
 			<ng-container *ngTemplateOutlet="lang, context: {end: 'backend'}"></ng-container>
-
-			<div class="nav row row--right-aligned">
+			<div class="menu row row--right-aligned">
 				@for (item of menuItems; track item) {
 					<a [routerLink]="item"
-					   class="nav__link"
-					   [ngClass]="{'nav__link--current': item === data.section}">
+					   class="menu__link"
+					   [ngClass]="{'menu__link--current': item === data.section}">
 						{{ ('nav.' + item) | translate }}
 					</a>
 				}
 			</div>
 			<ng-container *ngTemplateOutlet="lang, context: {end: 'frontend'}"></ng-container>
-		</div>
+		</nav>
 	</header>
 
 	<main class="main">

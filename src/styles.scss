@@ -1,26 +1,15 @@
 @import "settings-variables";
 @import "settings-breakpoints";
 
-
+h2 + h3,
 h3 + h4 {
 	margin-top: 10px;
-}
-
-[class*="__title"],
-[class*="-title"],
-[class*="__info"] {
-	justify-self: center;
-	margin: 10px auto;
-
-	@include for-tablet-landscape-up {
-		grid-column: 1 / -1;
-		margin: 10px 0;
-	}
 }
 
 
 .icon {
 	width: 50px;
 	margin: 30px;
+	align-self: center;
 }
 

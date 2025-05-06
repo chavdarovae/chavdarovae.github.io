@@ -1,22 +1,41 @@
 @import "settings-variables";
 @import "settings-breakpoints";
 
-:host {
-	.rotator {
-		min-width: 50vw;
+
+.rotator {
+	min-width: 90vw;
+	min-height: 200px;
+	overflow: hidden;
+	position: relative;
+
+	@include for-tablet-portrait-up {
+		min-width: 90vw;
 		min-height: 400px;
-		overflow: hidden;
-		position: relative;
 	}
 
-	.rotator__img {
-		transform-origin: center center;
-		height: 400px;
+	@include for-tablet-landscape-up {
+		min-width: 50vw;
+		min-height: 500px;
+	}
+
+	@include for-desktop-up {
+		min-width: 70vw;
+		min-height: 700px;
+	}
+}
+
+.rotator__img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	transform-origin: center center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+	@include for-tablet-landscape-up {
+		height: 100%;
 		width: auto;
-		object-fit: cover;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 	}
 }

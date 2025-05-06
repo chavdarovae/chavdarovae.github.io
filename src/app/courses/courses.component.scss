@@ -28,7 +28,8 @@
 		&__header {
 			width: 100%;
 			background-color: $app-pri;
-			color: $nav-hover;
+			color: $text-sec;
+			font-weight: 500;
 			text-transform: uppercase;
 			text-align: center;
 			padding: 10px 0;
@@ -98,7 +99,6 @@
 		transform: rotateY(0deg);
 		z-index: 3;
 	}
-
 
 	a {
 		color: $app-pri;

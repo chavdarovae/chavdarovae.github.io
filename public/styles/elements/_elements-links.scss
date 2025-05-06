@@ -6,6 +6,12 @@ a {
     text-decoration: none;
 }
 
+a {
+	i {
+		width: 20px;
+	}
+}
+
 a:hover {
     cursor: pointer;
     text-decoration: none;

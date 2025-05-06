@@ -1,6 +1,20 @@
 @import "settings-variables";
 @import "settings-breakpoints";
 
+
+:host {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 20px;
+		color: $app-pri;
+	}
+}
+
 .project {
 	display: flex;
 	flex-flow: column nowrap;
@@ -8,14 +22,8 @@
 	justify-content: center;
 	margin-bottom: 50px;
 
-	&__title {
+	h3 {
 		align-self: center;
-	}
-
-	&__icon {
-		align-self: center;
-		width: 50px;
-		margin: 20px;
 	}
 
 	&__info {
@@ -23,29 +31,11 @@
 	}
 
 	&__media {
-		margin: 20px 0;
 		width: 100%;
-		display: grid;
-		grid-template-columns: 1fr;
-		row-gap: 20px;
-		column-gap: 20px;
-		justify-items: center;
-		align-items: start;
-		justify-content: space-between;
-		position: relative;
-
-		@include for-tablet-landscape-up {
-			grid-template-columns: 1fr 1fr 1fr;
-		}
-
-		&--info {
-			@include for-tablet-landscape-up {
-				grid-template-columns: 1fr;
-			}
-		}
-
-		&:hover {
-		}
+		height: fit-content;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	&__media-img {
