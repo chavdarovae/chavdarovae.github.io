@@ -7,6 +7,7 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		employerLink: 'https://www.colleto.de',
 		descriptionItems: 5,
 		period: '2022, March - present',
+		refLink: 'colletoDiv'
 	},
 	{
 		id: 'carrypicker',
@@ -14,6 +15,7 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
 		employerLink: 'https://www.carrypicker.de',
 		descriptionItems: 4,
 		period: '2021, January - 2022, March',
+		refLink: 'carrypickerDiv'
 	},
 	{
 		id: 'freelance',

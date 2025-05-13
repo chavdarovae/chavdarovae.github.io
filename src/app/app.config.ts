@@ -15,6 +15,10 @@ export const appConfig: ApplicationConfig = {
 		provideZoneChangeDetection({
 			eventCoalescing: true
 		}),
+		importProvidersFrom(RouterModule.forRoot(routes, {
+			scrollPositionRestoration: 'enabled',
+			anchorScrolling: 'enabled'
+		})),
 		provideRouter(
 			routes,
 			withHashLocation(),
@@ -22,10 +26,6 @@ export const appConfig: ApplicationConfig = {
 				onSameUrlNavigation: 'reload'
 			})
 		),
-		importProvidersFrom(RouterModule.forRoot(routes, {
-			scrollPositionRestoration: 'enabled',  // Enables scroll restoration
-			anchorScrolling: 'enabled'             // Enables anchor scrolling
-		})),
 		provideTranslateService({
 			defaultLanguage: 'en',
 			loader: {

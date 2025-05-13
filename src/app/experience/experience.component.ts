@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {IWorkExperience} from '../interfaces/general.interface';
 import {EXPERIENCE_CONTENT} from '../constants/experience-content';
 import {TranslatePipe} from '@ngx-translate/core';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 import {RangePipe} from '../utils/number-to-array.pipe';
 import {AnchorNavComponent} from '../ui/anchor-nav/anchor-nav.component';
 import {RouterLink} from '@angular/router';
@@ -14,7 +14,8 @@ import {RouterLink} from '@angular/router';
 		NgForOf,
 		RangePipe,
 		AnchorNavComponent,
-		RouterLink
+		RouterLink,
+		NgIf
 	],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'

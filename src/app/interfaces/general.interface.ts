@@ -14,6 +14,7 @@ export interface IWorkExperience {
 	employerLink: string,
 	descriptionItems: number,
 	period: string,
+	refLink?: string
 }
 
 export interface IProject {

@@ -5,7 +5,7 @@
 			<ng-container *ngTemplateOutlet="lang, context: {end: 'backend'}"></ng-container>
 			<div class="menu row row--right-aligned">
 				@for (item of menuItems; track item) {
-					<a [routerLink]="item"
+					<a [routerLink]="'/' + item"
 					   class="menu__link"
 					   [ngClass]="{'menu__link--current': item === data.section}">
 						{{ ('nav.' + item) | translate }}
