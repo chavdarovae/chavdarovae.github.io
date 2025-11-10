@@ -1,6 +1,5 @@
-@import "settings-variables";
-@import "settings-breakpoints";
-
+@use "settings-variables" as *;
+@use "settings-breakpoints" as *;
 
 .header {
 	width: 100%;
@@ -42,8 +41,6 @@
 			top: -15%;
 			left: -3%;
 		}
-
-
 	}
 
 	.navigation {
@@ -67,7 +64,7 @@
 		padding: 10px 0;
 		position: relative;
 
-		&-lang-bar{
+		&-lang-bar {
 			width: 22px;
 			height: 18px;
 			display: flex;

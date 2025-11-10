@@ -1,5 +1,5 @@
-@import "settings-variables";
-@import "settings-breakpoints";
+@use "settings-variables" as *;
+@use "settings-breakpoints" as *;
 
 .anchor-nav {
 	position: fixed;
@@ -64,7 +64,6 @@
 		@include for-tablet-landscape-up {
 			text-transform: uppercase;
 		}
-
 
 		&:hover {
 			background-color: $app-ter;

@@ -1,0 +1,70 @@
+@use "settings-variables" as *;
+@use "settings-breakpoints" as *;
+
+:host {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 20px;
+		color: $app-pri;
+	}
+}
+
+.project {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: center;
+	margin-bottom: 50px;
+
+	h3 {
+		align-self: center;
+	}
+
+	&__info {
+	}
+
+	&__media {
+		width: 100%;
+		height: fit-content;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__media-img {
+		max-width: 100%;
+		border-radius: $rounding-pri;
+		overflow: hidden;
+
+		@include for-tablet-portrait-up {
+			max-width: 70%;
+		}
+
+		@include for-tablet-landscape-up {
+			max-width: 300px;
+		}
+
+		&--big {
+			@include for-tablet-portrait-up {
+				max-width: 70%;
+			}
+
+			@include for-tablet-landscape-up {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__media-img:not(:nth-child(2)) {
+		display: none;
+
+		@include for-tablet-landscape-up {
+			display: block;
+		}
+	}
+}

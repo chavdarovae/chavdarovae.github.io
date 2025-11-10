@@ -1,15 +1,13 @@
-@import "settings-variables";
-@import "settings-breakpoints";
+@use "settings-variables" as *;
+@use "settings-breakpoints" as *;
 
 h2 + h3,
 h3 + h4 {
 	margin-top: 10px;
 }
 
-
 .icon {
 	width: 50px;
 	margin: 30px;
 	align-self: center;
 }
-

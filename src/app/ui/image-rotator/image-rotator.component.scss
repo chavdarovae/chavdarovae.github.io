@@ -1,6 +1,5 @@
-@import "settings-variables";
-@import "settings-breakpoints";
-
+@use "settings-variables" as *;
+@use "settings-breakpoints" as *;
 
 .rotator {
 	min-width: 90vw;
@@ -32,7 +31,6 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 
 	@include for-tablet-landscape-up {
 		height: 100%;

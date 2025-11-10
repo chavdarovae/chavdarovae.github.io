@@ -1,6 +1,5 @@
-@import "settings-variables";
-@import "settings-breakpoints";
-
+@use "settings-variables" as *;
+@use "settings-breakpoints" as *;
 
 dialog {
 	position: relative;

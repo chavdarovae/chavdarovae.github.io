@@ -1,45 +1,50 @@
-<ng-container *ngIf="{section: (activePath$ | async)} as data">
-	<header class="header">
-		<h2 class="header__title">{{('nav.' + data.section) | translate | uppercase}}</h2>
-		<nav class="content-container navigation">
-			<ng-container *ngTemplateOutlet="lang, context: {end: 'backend'}"></ng-container>
-			<div class="menu row row--right-aligned">
-				@for (item of menuItems; track item) {
-					<a [routerLink]="'/' + item"
-					   class="menu__link"
-					   [ngClass]="{'menu__link--current': item === data.section}">
-						{{ ('nav.' + item) | translate }}
-					</a>
-				}
-			</div>
-			<ng-container *ngTemplateOutlet="lang, context: {end: 'frontend'}"></ng-container>
-		</nav>
-	</header>
+<ng-container *ngIf="{ section: (activePath$ | async) } as data">
+    <header class="header">
+        <h2 class="header__title">{{ 'nav.' + data.section | translate | uppercase }}</h2>
+        <nav class="content-container navigation">
+            <ng-container *ngTemplateOutlet="lang; context: { end: 'backend' }"></ng-container>
+            <div class="menu row row--right-aligned">
+                @for (item of menuItems; track item) {
+                <a
+                    [routerLink]="'/' + item"
+                    class="menu__link"
+                    [ngClass]="{ 'menu__link--current': item === data.section }">
+                    {{ 'nav.' + item | translate }}
+                </a>
+                }
+            </div>
+            <ng-container *ngTemplateOutlet="lang; context: { end: 'frontend' }"></ng-container>
+        </nav>
+    </header>
 
-	<main class="main">
-		<div class="content-container page">
-			<router-outlet></router-outlet>
-		</div>
-	</main>
+    <main class="main">
+        <div class="content-container page">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
 
-	<footer class="footer">
-		<div class="content-container">
-			<a href="#"><i class="fas fa-user"></i> Emiliya Chavdarova</a>
-			<a href="mailto:chavdarova.e@gmail.com"><i class="fas fa-envelope"></i>
-				chavdarova.e&#64;gmail.com</a>
-			<a href="https://github.com/chavdarovae"><i class="fab fa-github-square"></i>
-				https://github.com/chavdarovae</a>
-		</div>
-	</footer>
+    <footer class="footer">
+        <div class="content-container">
+            <a href="#"><i class="fas fa-user"></i> Emiliya Chavdarova</a>
+            <a href="mailto:chavdarova.e@gmail.com"><i class="fas fa-envelope"></i> chavdarova.e&#64;gmail.com</a>
+            <a href="https://github.com/chavdarovae"><i class="fab fa-github-square"></i> https://github.com/chavdarovae</a>
+        </div>
+    </footer>
 </ng-container>
 
 <app-preview-dialog></app-preview-dialog>
 
-<ng-template #lang let-end="end">
-	<div [class]="'header__logo header__logo--' + end">
-		<img [src]="'icons/' + end + '.svg'" alt="back-end-icon">
-		<div [class]="'header__logo-lang-bar header__logo-lang-bar--' + end"
-			 (click)="changeLanguage()">{{ translate.currentLang | uppercase }}
-		</div>
-	</div>
+<ng-template
+    #lang
+    let-end="end">
+    <div [class]="'header__logo header__logo--' + end">
+        <img
+            [src]="'icons/' + end + '.svg'"
+            alt="back-end-icon" />
+        <div
+            [class]="'header__logo-lang-bar header__logo-lang-bar--' + end"
+            (click)="changeLanguage()">
+            {{ translate.currentLang | uppercase }}
+        </div>
+    </div>
 </ng-template>

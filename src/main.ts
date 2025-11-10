@@ -1,6 +1,49 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
+import {
+	provideRouter,
+	RouterModule,
+	withHashLocation,
+	withRouterConfig,
+} from '@angular/router';
+import { routes } from './app/app.routes';
+import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (
+	http: HttpClient
+) => new TranslateHttpLoader(http, 'i18n/', '.json');
+
+bootstrapApplication(AppComponent, {
+	providers: [
+		provideHttpClient(),
+		provideZoneChangeDetection({
+			eventCoalescing: true,
+		}),
+		importProvidersFrom(
+			RouterModule.forRoot(routes, {
+				scrollPositionRestoration: 'enabled',
+				anchorScrolling: 'enabled',
+			})
+		),
+		provideRouter(
+			routes,
+			withHashLocation(),
+			withRouterConfig({
+				onSameUrlNavigation: 'reload',
+			})
+		),
+		provideTranslateService({
+			defaultLanguage: 'en',
+			loader: {
+				provide: TranslateLoader,
+				useFactory: httpLoaderFactory,
+				deps: [HttpClient],
+			},
+		}),
+		provideAnimations(),
+	],
+}).catch((err) => console.error(err));
