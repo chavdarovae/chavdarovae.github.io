@@ -1,3 +1,5 @@
+@use "../settings/settings-variables" as *;
+@use "../settings/settings-breakpoints" as *;
 
 .page > * {
 	display: flex;

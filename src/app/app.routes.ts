@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { AboutMeComponent } from './faeture-about-me/about-me.component';
-import { ExperienceComponent } from './feature-experience/experience.component';
-import { ProjectsComponent } from './feature-projects/projects.component';
-import { CoursesComponent } from './feature-courses/courses.component';
+import { AboutMeComponent } from '@emc-feature-about-me';
+import { CoursesComponent } from '@emc-feature-cources';
+import { ExperienceComponent } from '@emc-feature-experience';
+import { ProjectsComponent } from '@emc-feature-projects';
 
 export const routes: Routes = [
     {
@@ -19,11 +19,11 @@ export const routes: Routes = [
         component: CoursesComponent,
     },
     {
-        path: 'projects',
-        component: ProjectsComponent,
-    },
-    {
         path: 'experience',
         component: ExperienceComponent,
+    },
+    {
+        path: 'projects',
+        component: ProjectsComponent,
     },
 ];

@@ -98,7 +98,7 @@
 
     <div>
         @for (parIndex of 5 | rangePipe; track parIndex) {
-        <p>{{ 'about.journey.p' + parIndex | translate }}</p>
+            <p>{{ 'about.journey.p' + parIndex | translate }}</p>
         }
     </div>
 </article>
@@ -122,15 +122,15 @@
 
             <div class="certificate-holder">
                 <h5 class="text--centered">{{ 'about.education.certificates' | translate }}</h5>
-                @for (cert of certificateList; track cert;) {
-                <div
-                    class="certificate"
-                    (click)="showModal = true; currCertificateImg = 'images/certification/' + cert.img">
-                    <img
-                        [src]="'images/certification/' + cert.img"
-                        [alt]="'images ' + cert.course" />
-                    <span>{{ cert.course }}</span>
-                </div>
+                @for (cert of certificateList; track cert) {
+                    <div
+                        class="certificate"
+                        (click)="showModal = true; currCertificateImg = 'images/certification/' + cert.img">
+                        <img
+                            [src]="'images/certification/' + cert.img"
+                            [alt]="'images ' + cert.course" />
+                        <span>{{ cert.course }}</span>
+                    </div>
                 }
             </div>
         </div>
@@ -142,7 +142,7 @@
     </div>
 </article>
 
-<app-modal
+<emc-modal
     [show]="showModal"
     entity="recipe"
     (close)="showModal = false">
@@ -150,4 +150,3 @@
         style="max-height: 90vh; width: auto"
         [src]="currCertificateImg"
         [alt]="currCertificateImg + ' Image'" />
-</app-modal>

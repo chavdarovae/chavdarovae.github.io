@@ -3,10 +3,9 @@ import {NavigationEnd, Router, RouterLink, RouterOutlet} from '@angular/router';
 import { TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {AsyncPipe, NgClass, NgIf, NgTemplateOutlet, UpperCasePipe} from '@angular/common';
 import {filter, map, Observable, shareReplay} from 'rxjs';
-import {PreviewDialogComponent} from './ui/preview-dialog/preview-dialog.component';
 
 @Component({
-	selector: 'app-root',
+	selector: 'emc-root',
 	imports: [
 		RouterOutlet,
 		RouterLink,
@@ -14,9 +13,7 @@ import {PreviewDialogComponent} from './ui/preview-dialog/preview-dialog.compone
 		UpperCasePipe,
 		NgTemplateOutlet,
 		AsyncPipe,
-		NgIf,
 		NgClass,
-		PreviewDialogComponent
 	],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss'

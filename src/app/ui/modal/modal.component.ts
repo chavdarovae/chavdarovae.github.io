@@ -1,19 +1,12 @@
-import { NgForOf, NgIf } from '@angular/common';
-import {
-    ChangeDetectionStrategy,
-    Component,
-    EventEmitter,
-    Input,
-    Output,
-} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-    selector: 'app-modal',
+    selector: 'emc-modal',
     standalone: true,
     templateUrl: './modal.component.html',
     styleUrl: './modal.component.scss',
-    imports: [NgIf, RouterModule],
+    imports: [ RouterModule],
 })
 export class ModalComponent {
     @Input() entity: string = 'something';

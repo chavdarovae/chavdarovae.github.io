@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { ModalComponent } from '@emc-ui';
 import { TranslatePipe } from '@ngx-translate/core';
-import { RangePipe } from '../utils/pipes/number-to-array.pipe';
-import { ModalComponent } from '../ui/modal/modal.component';
-import { ABOUT_CONTENT } from '../utils/constants/about-content';
+import { ABOUT_CONTENT, RangePipe } from 'app/utils';
 
 @Component({
-    selector: 'app-about-me',
+    selector: 'emc-about-me',
     imports: [TranslatePipe, RangePipe, ModalComponent],
     templateUrl: './about-me.component.html',
     styleUrl: './about-me.component.scss',

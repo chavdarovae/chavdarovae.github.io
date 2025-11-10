@@ -1,8 +1,7 @@
-<app-anchor-nav
+<emc-anchor-nav
 	[navList]="vertNavList"
 	[selectedNav]="selectedNav"
-	transPrefix="projects.labels.">
-</app-anchor-nav>
+	transPrefix="projects.labels."/>
 
 
 <div id="workProjectsDiv">
@@ -50,10 +49,10 @@
 
 		@for (media of project.media; track media) {
 			<div class="project__media">
-				<app-image-rotator
+				<emc-image-rotator
 					[imageArr]="media.imgCount | rangePipe"
 					[imagePath]="'images/' + project.id + '/' + media.id + '/'">
-				</app-image-rotator>
+				</emc-image-rotator>
 			</div>
 		}
 

@@ -1,29 +1,30 @@
-@import "settings/settings-variables";
-@import "settings/settings-animations";
-@import "settings/settings-place-holders";
-@import "settings/settings-breakpoints";
+@use "settings/settings-variables" as *;
+@use "settings/settings-breakpoints" as *;
 
-@import "generic/generic-normalize";
-@import "generic/generic-fonts";
-@import "generic/generic-scrollbar";
-@import "generic/generic-selection";
+@use "settings/settings-animations" as *;
+@use "settings/settings-place-holders" as *;
 
-@import "elements/elements-body";
-@import "elements/elements-paragraphs";
-@import "elements/elements-headings";
-@import "elements/elements-lists";
-@import "elements/elements-list-items";
-@import "elements/elements-images";
-@import "elements/elements-links";
+@use "generic/generic-normalize" as *;
+@use "generic/generic-fonts" as *;
+@use "generic/generic-scrollbar" as *;
+@use "generic/generic-selection" as *;
 
-@import "objects/objects-containers";
-@import "objects/objects-text-like-list";
+@use "elements/elements-body" as *;
+@use "elements/elements-paragraphs" as *;
+@use "elements/elements-headings" as *;
+@use "elements/elements-lists" as *;
+@use "elements/elements-list-items" as *;
+@use "elements/elements-images" as *;
+@use "elements/elements-links" as *;
 
-@import "components/components-highlights";
-@import "components/components-preview";
+@use "objects/objects-containers" as *;
+@use "objects/objects-text-like-list" as *;
 
-@import "utilities/utilities-centered";
-@import "utilities/utilities-hidden";
-@import "utilities/utilities-invisible";
-@import "utilities/utilities-animations";
-@import "utilities/utilities-page-title";
+@use "components/components-highlights" as *;
+@use "components/components-preview" as *;
+
+@use "utilities/utilities-centered" as *;
+@use "utilities/utilities-hidden" as *;
+@use "utilities/utilities-invisible" as *;
+@use "utilities/utilities-animations" as *;
+@use "utilities/utilities-page-title" as *;

@@ -1,3 +1,6 @@
+@use "../settings/settings-variables" as *;
+@use "../settings/settings-breakpoints" as *;
+
 .preview {
   width: 100vw;
   height: 100vh;

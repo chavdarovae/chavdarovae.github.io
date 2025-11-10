@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { IProject } from '../utils/interfaces/general.interface';
 import { NgTemplateOutlet } from '@angular/common';
-import { RangePipe } from '../utils/pipes/number-to-array.pipe';
 import { TranslatePipe } from '@ngx-translate/core';
-import { ImageRotatorComponent } from '../ui/image-rotator/image-rotator.component';
-import { AnchorNavComponent } from '../ui/anchor-nav/anchor-nav.component';
-import { PROJECT_CONTENT } from '../utils/constants/projects-content';
+import { AnchorNavComponent, ImageRotatorComponent } from '@emc-ui';
+import { IProject, PROJECT_CONTENT, RangePipe } from '@emc-util';
 
 @Component({
-	selector: 'app-projects',
+	selector: 'emc-projects',
 	standalone: true,
 	imports: [
 		NgTemplateOutlet,

@@ -1,16 +1,17 @@
-<ng-container *ngIf="{ section: (activePath$ | async) } as data">
+@if({ section: (activePath$ | async) }; as data) {
+
     <header class="header">
         <h2 class="header__title">{{ 'nav.' + data.section | translate | uppercase }}</h2>
         <nav class="content-container navigation">
             <ng-container *ngTemplateOutlet="lang; context: { end: 'backend' }"></ng-container>
             <div class="menu row row--right-aligned">
                 @for (item of menuItems; track item) {
-                <a
-                    [routerLink]="'/' + item"
-                    class="menu__link"
-                    [ngClass]="{ 'menu__link--current': item === data.section }">
-                    {{ 'nav.' + item | translate }}
-                </a>
+                    <a
+                        [routerLink]="'/' + item"
+                        class="menu__link"
+                        [ngClass]="{ 'menu__link--current': item === data.section }">
+                        {{ 'nav.' + item | translate }}
+                    </a>
                 }
             </div>
             <ng-container *ngTemplateOutlet="lang; context: { end: 'frontend' }"></ng-container>
@@ -22,19 +23,16 @@
             <router-outlet></router-outlet>
         </div>
     </main>
-
     <footer class="footer">
-        <div class="content-container">
+    <div class="content-container">
             <a href="#"><i class="fas fa-user"></i> Emiliya Chavdarova</a>
             <a href="mailto:chavdarova.e@gmail.com"><i class="fas fa-envelope"></i> chavdarova.e&#64;gmail.com</a>
             <a href="https://github.com/chavdarovae"><i class="fab fa-github-square"></i> https://github.com/chavdarovae</a>
         </div>
     </footer>
-</ng-container>
+}
 
-<app-preview-dialog></app-preview-dialog>
-
-<ng-template
+<ng-template 
     #lang
     let-end="end">
     <div [class]="'header__logo header__logo--' + end">

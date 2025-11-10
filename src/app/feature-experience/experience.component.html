@@ -1,8 +1,7 @@
-<app-anchor-nav
+<emc-anchor-nav
 	[navList]="vertNavList"
 	[selectedNav]="selectedNav"
-	transPrefix="experience.labels.">
-</app-anchor-nav>
+	transPrefix="experience.labels."/>
 
 @for (exp of experienceList; track exp.id) {
 	<article class="work" [id]="exp.id + 'Div'">

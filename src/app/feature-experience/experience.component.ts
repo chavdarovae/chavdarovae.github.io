@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { IWorkExperience } from '../utils/interfaces/general.interface';
 import { TranslatePipe } from '@ngx-translate/core';
 import { NgForOf, NgIf } from '@angular/common';
-import { RangePipe } from '../utils/pipes/number-to-array.pipe';
-import { AnchorNavComponent } from '../ui/anchor-nav/anchor-nav.component';
 import { RouterLink } from '@angular/router';
-import { EXPERIENCE_CONTENT } from '../utils/constants/experience-content';
+import { EXPERIENCE_CONTENT, IWorkExperience, RangePipe } from '@emc-util';
+import { AnchorNavComponent } from '@emc-ui';
 
 @Component({
-    selector: 'app-experience',
+    selector: 'emc-experience',
     imports: [
         TranslatePipe,
         NgForOf,
@@ -22,8 +20,6 @@ import { EXPERIENCE_CONTENT } from '../utils/constants/experience-content';
 })
 export class ExperienceComponent {
     experienceList: IWorkExperience[] = EXPERIENCE_CONTENT;
-    link =
-        '<a href="#" class="work__description-link" id="projects">Projects</a>';
     vertNavList = ['colletoDiv', 'stenliDiv'];
     selectedNav = 'colletoDiv';
 }

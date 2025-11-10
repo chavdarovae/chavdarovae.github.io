@@ -33,6 +33,7 @@
 		border: 2px solid $app-pri;
 		border-top: 1px solid $app-pri;
 		border-bottom: 1px solid $app-pri;
+		writing-mode: sideways-lr;
 
 		@include for-tablet-landscape-up {
 			width: 30px;

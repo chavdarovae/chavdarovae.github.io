@@ -1,10 +1,12 @@
-<div
-    class="backdrop"
-    *ngIf="show"
-    (click)="onClose()">
+@if (show) {
     <div
-        class="modal col col--no-warp col--space-btw"
-        (click)="$event.stopPropagation()">
-        <ng-content> </ng-content>
+        class="backdrop"
+        (click)="onClose()">
+        <div
+            class="modal col col--no-warp col--space-btw"
+            (click)="$event.stopPropagation()">
+
+            <ng-content></ng-content>
+        </div>
     </div>
-</div>
+}
