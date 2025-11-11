@@ -1,17 +1,17 @@
-@use "../settings/settings-variables" as *;
-@use "../settings/settings-breakpoints" as *;
+@use '../settings/settings-variables' as *;
+@use '../settings/settings-breakpoints' as *;
 
 .page > * {
-	display: flex;
-	flex-flow: column nowrap;
-	gap: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
 
-	@include for-tablet-landscape-up {
-		gap: 30px;
+    @include for-tablet-landscape-up {
+        gap: 30px;
     }
 
     @include for-desktop-up {
-		gap: 40px;
+        gap: 40px;
     }
 }
 
@@ -54,15 +54,13 @@
         align-items: flex-end;
     }
 
-	&--space-btw {
+    &--space-btw {
         justify-content: space-between;
     }
 }
 
 @for $i from 1 through 20 {
-	.gap-#{5*$i} {
-		gap: 5px*$i !important;
-	}
+    .gap-#{5*$i} {
+        gap: 5px * $i !important;
+    }
 }
-
-

@@ -42,8 +42,7 @@ export const COURSES_CONTENT: ICourse[] = [
         title: 'JS Applications',
         link: 'https://softuni.bg/trainings/2249/js-applications-march-2019',
         scopeItems: 7,
-        gitHubLink:
-            'https://github.com/chavdarovae/05.JavaScript-Applications-March2019',
+        gitHubLink: 'https://github.com/chavdarovae/05.JavaScript-Applications-March2019',
         start: '19.03.2019',
         duration: 4,
     },
@@ -52,8 +51,7 @@ export const COURSES_CONTENT: ICourse[] = [
         title: 'JS Advanced',
         link: 'https://softuni.bg/trainings/2248/js-advanced-february-2019',
         scopeItems: 6,
-        gitHubLink:
-            'https://github.com/chavdarovae/05.JavaScript-Applications-March2019',
+        gitHubLink: 'https://github.com/chavdarovae/05.JavaScript-Applications-March2019',
         start: '12.02.2019',
         duration: 4,
     },
@@ -62,8 +60,7 @@ export const COURSES_CONTENT: ICourse[] = [
         title: 'JS Fundamentals',
         link: 'https://softuni.bg/trainings/2247/js-fundamentals-january-2019',
         scopeItems: 7,
-        gitHubLink:
-            'https://github.com/chavdarovae/03.JavaScript-Fundamentals-January2019',
+        gitHubLink: 'https://github.com/chavdarovae/03.JavaScript-Fundamentals-January2019',
         start: '15.01.2019',
         duration: 4,
     },
@@ -72,8 +69,7 @@ export const COURSES_CONTENT: ICourse[] = [
         title: 'JS Technology Essentials',
         link: 'https://softuni.bg/trainings/2247/js-fundamentals-january-2019',
         scopeItems: 15,
-        gitHubLink:
-            'https://github.com/chavdarovae/02.JavaScript-Essentials-September2018',
+        gitHubLink: 'https://github.com/chavdarovae/02.JavaScript-Essentials-September2018',
         start: '26.09.2018',
         duration: 12,
     },

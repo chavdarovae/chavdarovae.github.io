@@ -1,60 +1,69 @@
 <emc-anchor-nav
-	[navList]="vertNavList"
-	[selectedNav]="selectedNav"
-	transPrefix="projects.labels."/>
+    [navList]="vertNavList"
+    [selectedNav]="selectedNav"
+    transPrefix="projects.labels."
+    (goToFragement)="appService.goToFragment($event)" />
 
+<div
+    class="projects-hodler"
+    id="workProjectsDiv">
+    <h2>{{ 'projects.labels.workProjects' | translate }}</h2>
 
-<div id="workProjectsDiv">
-	<h2>{{ 'projects.labels.workProjects' | translate }}</h2>
-
-	@for (project of projectList.slice(0, -4); track project.id) {
-		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
-	}
+    @for (project of projectList.slice(0, -4); track project.id) {
+        <ng-container *ngTemplateOutlet="projectRef; context: { project }"></ng-container>
+    }
 </div>
 
-<div id="personalProjectsDiv">
-	<h2>{{ 'projects.labels.personalProjects' | translate }}</h2>
+<div
+    class="projects-hodler"
+    id="personalProjectsDiv">
+    <h2>{{ 'projects.labels.personalProjects' | translate }}</h2>
 
-	@for (project of projectList.slice(-4, -2); track project.id) {
-		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
-	}
+    @for (project of projectList.slice(-4, -2); track project.id) {
+        <ng-container *ngTemplateOutlet="projectRef; context: { project }"></ng-container>
+    }
 </div>
 
-<div id="studyProjectsDiv">
-	<h2>{{ 'projects.labels.learnProjects' | translate }}</h2>
+<div
+    class="projects-hodler"
+    id="studyProjectsDiv">
+    <h2>{{ 'projects.labels.learnProjects' | translate }}</h2>
 
-	@for (project of projectList.slice(-2); track project.id) {
-		<ng-container *ngTemplateOutlet="projectRef; context: {project}"></ng-container>
-	}
+    @for (project of projectList.slice(-2); track project.id) {
+        <ng-container *ngTemplateOutlet="projectRef; context: { project }"></ng-container>
+    }
 </div>
 
+<ng-template
+    #projectRef
+    let-project="project">
+    <div
+        class="project"
+        [id]="project.id + 'Div'">
+        <h3>{{ project.title }}</h3>
 
-<ng-template #projectRef let-project="project">
-	<div class="project" [id]="project.id + 'Div'">
-		<h3>{{ project.title }}</h3>
+        <div class="icon">
+            <img
+                src="icons/star.svg"
+                alt="Star icon" />
+        </div>
 
-		<div class="icon">
-			<img src="icons/star.svg" alt="Star icon">
-		</div>
+        <p class="highlights">
+            {{ 'projects.' + project.id + '.highlights' | translate }}
+        </p>
 
-		<p class="highlights">
-			{{ ('projects.' + project.id + '.highlights') | translate }}
-		</p>
+        <div class="project__info">
+            @for (item of project.infoItems | rangePipe; track item) {
+                <p>{{ 'projects.' + project.id + '.info.' + item | translate }}</p>
+            }
+        </div>
 
-		<div class="project__info">
-			@for (item of project.infoItems | rangePipe; track item) {
-				<p>{{ ('projects.' + project.id + '.info.' + item) | translate }}</p>
-			}
-		</div>
-
-		@for (media of project.media; track media) {
-			<div class="project__media">
-				<emc-image-rotator
-					[imageArr]="media.imgCount | rangePipe"
-					[imagePath]="'images/' + project.id + '/' + media.id + '/'">
-				</emc-image-rotator>
-			</div>
-		}
-
-	</div>
+        @for (media of project.media; track media) {
+            <div class="project__media">
+                <emc-image-rotator
+                    [imageArr]="media.imgCount | rangePipe"
+                    [imagePath]="'images/' + project.id + '/' + media.id + '/'" />
+            </div>
+        }
+    </div>
 </ng-template>

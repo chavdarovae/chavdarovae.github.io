@@ -23,19 +23,40 @@
 // album animations
 /* first image */
 @keyframes image1 {
-	0%   { transform: rotate(0deg) translate(0, 0) scale(1.0); }
-	100% { transform: rotate(-6deg) translate(-100px, -3px) scale(1.1); }
+    0% {
+        transform: rotate(0deg) translate(0, 0) scale(1);
+    }
+    100% {
+        transform: rotate(-6deg) translate(-100px, -3px) scale(1.1);
+    }
 }
 
 /* second image:  webkit */
 @keyframes image2 {
-	0%   { transform: rotate(0deg) translate(0, 0) scale(1.0); }
-	100% { transform: rotate(0deg) translate(0, -3px) scale(1.1); }
+    0% {
+        transform: rotate(0deg) translate(0, 0) scale(1);
+    }
+    100% {
+        transform: rotate(0deg) translate(0, -3px) scale(1.1);
+    }
 }
 
 /* third image:  webkit */
 @keyframes image3 {
-	0%   { transform: rotate(0deg) translate(0, 0) scale(1.0); }
-	100% { transform: rotate(6deg) translate(100px, -3px) scale(1.1); }
+    0% {
+        transform: rotate(0deg) translate(0, 0) scale(1);
+    }
+    100% {
+        transform: rotate(6deg) translate(100px, -3px) scale(1.1);
+    }
 }
 
+/* Keyframes for back-and-forth rotation */
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}

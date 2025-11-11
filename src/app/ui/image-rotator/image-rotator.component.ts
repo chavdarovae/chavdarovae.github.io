@@ -12,30 +12,25 @@ import { trigger, transition, style, animate } from '@angular/animations';
         trigger('fade', [
             transition('* => *', [
                 style({ opacity: 0, filter: 'blur(5px)' }),
-                animate(
-                    '600ms ease-in',
-                    style({ opacity: 1, filter: 'blur(0px)' }),
-                ),
+                animate('600ms ease-in', style({ opacity: 1, filter: 'blur(0px)' })),
             ]),
         ]),
     ],
-    imports: [CommonModule, AsyncPipe, NgIf],
+    imports: [CommonModule, AsyncPipe],
 })
 export class ImageRotatorComponent implements OnInit {
     @Input() imageArr: number[] = [];
     @Input() imagePath: string = 'assets/images/';
     @Input() imageType: string = 'png';
 
-    private delays = [7400, 9300, 4100, 5800, 6480, 7500];
+    private delays = [4400, 5300, 2100, 3800, 5480, 3500];
 
     currentImage$!: Observable<string>;
 
     ngOnInit() {
         this.currentImage$ = this.currentImage$ = timer(0).pipe(
             map(() => this.randomImage()),
-            expand(() =>
-                timer(this.randomDelay()).pipe(map(() => this.randomImage())),
-            ),
+            expand(() => timer(this.randomDelay()).pipe(map(() => this.randomImage()))),
         );
     }
 

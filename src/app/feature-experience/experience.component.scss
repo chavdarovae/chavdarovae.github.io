@@ -1,11 +1,6 @@
 @use 'settings-variables' as *;
 @use 'settings-breakpoints' as *;
 
-.main__experience {
-    .content-container {
-    }
-}
-
 .work {
     border-radius: $rounding-pri;
     box-shadow: $shadow-pri;
@@ -46,7 +41,11 @@
 
     &__period {
         grid-area: period;
-        justify-self: flex-end;
+        justify-self: flex-start;
+
+        @include for-tablet-landscape-up {
+            justify-self: flex-end;
+        }
     }
 
     &__description {

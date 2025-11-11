@@ -1,70 +1,74 @@
-@use "settings-variables" as *;
-@use "settings-breakpoints" as *;
+@use 'settings-variables' as *;
+@use 'settings-breakpoints' as *;
 
 :host {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 
-	h2 {
-		text-align: center;
-		margin-bottom: 20px;
-		color: $app-pri;
-	}
+    h2 {
+        margin-bottom: 20px;
+        color: $app-pri;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px dotted $app-pri;
+    }
+
+    .projects-hodler {
+        display: flex;
+        width: 100%;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
 }
 
 .project {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: flex-start;
-	justify-content: center;
-	margin-bottom: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    width: 100%;
 
-	h3 {
-		align-self: center;
-	}
+    h3 {
+        align-self: center;
+    }
 
-	&__info {
-	}
+    &__info {
+    }
 
-	&__media {
-		width: 100%;
-		height: fit-content;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+    &__media {
+        width: 100%;
+        aspect-ratio: calc(16 / 9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $rounding-pri;
+        box-shadow: $shadow-pri;
+        overflow: hidden;
+        background: whitesmoke;
+        padding: 5px;
 
-	&__media-img {
-		max-width: 100%;
-		border-radius: $rounding-pri;
-		overflow: hidden;
+        @include for-tablet-landscape-up {
+            padding: 20px;
+        }
+    }
 
-		@include for-tablet-portrait-up {
-			max-width: 70%;
-		}
+    &__media-img {
+        max-width: 100%;
+        border-radius: $rounding-pri;
+        overflow: hidden;
+    }
 
-		@include for-tablet-landscape-up {
-			max-width: 300px;
-		}
+    &__media-img:not(:nth-child(2)) {
+        display: none;
 
-		&--big {
-			@include for-tablet-portrait-up {
-				max-width: 70%;
-			}
-
-			@include for-tablet-landscape-up {
-				max-width: 100%;
-			}
-		}
-	}
-
-	&__media-img:not(:nth-child(2)) {
-		display: none;
-
-		@include for-tablet-landscape-up {
-			display: block;
-		}
-	}
+        @include for-tablet-landscape-up {
+            display: block;
+        }
+    }
 }

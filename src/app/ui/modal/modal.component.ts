@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
     standalone: true,
     templateUrl: './modal.component.html',
     styleUrl: './modal.component.scss',
-    imports: [ RouterModule],
+    imports: [RouterModule],
 })
 export class ModalComponent {
     @Input() entity: string = 'something';
