@@ -60,3 +60,18 @@
         transform: translateY(10px);
     }
 }
+
+/* Modal panel animation */
+@keyframes modal-pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.02) translateY(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

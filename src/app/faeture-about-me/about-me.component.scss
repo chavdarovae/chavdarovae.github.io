@@ -88,3 +88,8 @@
         justify-content: center;
     }
 }
+
+emc-modal img {
+    width: min(auto, 90vmin);
+    height: min(auto, 90vmin);
+}
