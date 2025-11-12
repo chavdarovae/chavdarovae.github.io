@@ -1,0 +1,77 @@
+@keyframes fancy-list {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes delayed-apearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// album animations
+/* first image */
+@keyframes image1 {
+    0% {
+        transform: rotate(0deg) translate(0, 0) scale(1);
+    }
+    100% {
+        transform: rotate(-6deg) translate(-100px, -3px) scale(1.1);
+    }
+}
+
+/* second image:  webkit */
+@keyframes image2 {
+    0% {
+        transform: rotate(0deg) translate(0, 0) scale(1);
+    }
+    100% {
+        transform: rotate(0deg) translate(0, -3px) scale(1.1);
+    }
+}
+
+/* third image:  webkit */
+@keyframes image3 {
+    0% {
+        transform: rotate(0deg) translate(0, 0) scale(1);
+    }
+    100% {
+        transform: rotate(6deg) translate(100px, -3px) scale(1.1);
+    }
+}
+
+/* Keyframes for back-and-forth rotation */
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* Modal panel animation */
+@keyframes modal-pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.02) translateY(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

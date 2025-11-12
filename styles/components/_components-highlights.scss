@@ -1,0 +1,14 @@
+@use "../settings/settings-variables" as *;
+@use "../settings/settings-breakpoints" as *;
+
+.highlights {
+	justify-self: center;
+	background-color: #f9f0a3;
+	padding: 10px 5px;
+	font-family: $font-sec;
+	border-radius: $rounding-pri;
+
+	@include for-tablet-landscape-up {
+		padding: 20px 10px;
+    }
+}

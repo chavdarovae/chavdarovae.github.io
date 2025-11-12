@@ -1,0 +1,22 @@
+@use "../settings/settings-variables" as *;
+
+a {
+    font-family: $font-pri;
+    font-size: 14px;
+    font-style: normal;
+    color: $text-pri;
+    text-decoration: none;
+}
+
+a {
+	i {
+		width: 20px;
+	}
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: $app-pri;
+    transform: scale(1.01);
+}

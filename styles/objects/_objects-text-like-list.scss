@@ -1,0 +1,12 @@
+@use "../settings/settings-variables" as *;
+
+.text-like-list {
+    list-style: square !important;
+
+    li {
+		font-family: $font-sec;
+        list-style-position: inside;
+        font-size: inherit;
+        padding: 5px 15px;
+    }
+}
