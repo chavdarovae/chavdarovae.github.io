@@ -1,0 +1,9 @@
+User-agent: *
+User-agent: AdsBot-Google
+Disallow: /assets/
+Allow: /
+
+Sitemap: http://www.chavdarovae.github.io/sitemap.xml
+Sitemap: https://www.chavdarovae.github.io/sitemap.xml
+Sitemap: http://chavdarovae.github.io/sitemap.xml
+Sitemap: https://chavdarovae.github.io/sitemap.xml
