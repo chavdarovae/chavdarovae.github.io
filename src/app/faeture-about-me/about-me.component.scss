@@ -90,6 +90,13 @@
 }
 
 emc-modal img {
-    width: min(auto, 90vmin);
-    height: min(auto, 90vmin);
+    width: 90vw;
+    height: auto;
+    max-height: 90vh;
+
+    @include for-tablet-portrait-up {
+        max-width: 90vw;
+        width: auto;
+        height: 90vh;
+    }
 }
