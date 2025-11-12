@@ -1,313 +1,313 @@
 {
-	"nav": {
-		"about": "About",
-		"courses": "Courses",
-		"experience": "Experience",
-		"projects": "Projects"
-	},
-	"about": {
-		"highlight": "I am an experienced software developer and engineer with a persisting passion for discovery and achievement. Curiosity, ingenuity and reliability are my signature. Throughout my 14 years of professional experience I have learned to value inspiration and collaboration as the true pillars of productivity and fulfilment. My positive attitude, confidence and natural responsibility make me a valued  asset to every team.",
-		"journey": {
-			"title": "On a journey to new frontiers",
-			"p1": "Throughout my 8-year carrier as a civil engineer I was always fascinated by the impact of digitalization and how web applications changed the core activities within my field and everything around it.",
-			"p2": "Looking to optimize processes and increase the effectiveness of my team’s efforts, I searched for ways to extract the maximum of every application by exploring different scripts and APIs.",
-			"p3": "As time progressed and my curiosity increased, so did my desire to create applications of my own and cover areas of my field and everyday life which I felt could be improved with digital solutions.",
-			"p4": "In the past 4 years I have decided to pursue this desire fully by enlisting a developer program in a software academy, creating my first web application from the ground up and joining an agile Start-up team of likeminded developers who share my passion of exploring.",
-			"p5": "I am eager to continue this exciting journey and grow my skillset professionally, learn and create more applications that improve our quality of life."
-		},
-		"education": {
-			"title": "Education",
-			"softUni": "SoftUni Educational Center - Sofia, Bulgaria",
-			"program": "Software Engineering Program – JavaScript Web Developer",
-			"certificates": "Acquired Certificates",
-			"uasg": "University of Architecture, Civil Engineering and Geodesy - Sofia, Bulgaria",
-			"master": "MSc Civil Engineering"
-		},
-		"skills": {
-			"core": "Core skills",
-			"additional": "Additional skills",
-			"engineering": "Civil engineering skills",
-			"language": "Language skills",
-			"solver": "Analytical problem-solver",
-			"designer": "Engineering Solutions Design and Implementation",
-			"leader": "Leadership Experience",
-			"manager": "Project management",
-			"bg":"Bulgarian – native",
-			"de":"German – professional working",
-			"en":"English – full professional",
-			"it":"Italian – professional working"
-		}
-	},
-	"courses": {
-		"labels": {
-			"focus": "Course focus",
-			"instanceLink": "Course instance link",
-			"scope": "Course scope",
-			"weeks": "weeks",
-			"github": "Homework and exam tasks:"
-		},
-		"info": {
-			"p1": "SoftUni's software engineering curriculum is a combination of programming courses depending on the specialization. It focuses on acquiring fundamental knowledge, practical skills and sufficient technical overview in latest software technologies - a must for every 'software engineer'.",
-			"p2": "JavaScript Web Developer Program has three modules, each having a methodically selected sequence of courses, upgrading the IT competences in a well-considered pace, as follows:",
-			"p3": "          ▪︎   Entry Module - courses: Programming basics with C#, Programming basics with JAVA",
-			"p4": "          ▪︎   Fundamental Module - courses: Technology Fundamentals JavaScript",
-			"p5": "          ▪︎   Professional Module - courses: JS Essentials, JS Advanced, JS Applications, JS Backend, ReactJS, HTML & CSS and Frontend Frameworks."
-		},
-		"js-backend": {
-			"focus": "developing server-side web applications using Node.js, Express, and Handlebars, while introducing key concepts such as the HTTP protocol, non-relational databases, and the MVC architectural pattern.",
-			"scope": {
-				"1":"Intro to Node.js",
-				"2":"Node.js Streams and Utilities",
-				"3":"ExpressJS and Templating",
-				"4":"NoSQL and MongoDB",
-				"5":"Session and Authentication",
-				"6":"Validation and Error Handling"
-			}
-		},
-		"angular": {
-			"focus": "practical skills for building Single Page Application & basic TypeScript",
-			"scope": {
-				"1":"Introduction to Angular and TypeScript",
-				"2":"Components and Data binding"
-			}
-		},
-		"css-advanced": {
-			"focus": "modern frontend design and development with animations and icons for adaptive display on devices with different screen sizes.",
-			"scope": {
-				"1": "CSS architecture - IT CSS",
-				"2": "CSS architecture - BEM",
-				"3": "SASS",
-				"4": "CSS transitions, animations and transformations",
-				"5": "CSS grid",
-				"6": "Building layouts"
-			}
-		},
-		"html-and-css": {
-			"focus": "practical skills in web development using HTML5 and CSS3 standard latest innovations.",
-			"scope": {
-				"1": "Introduction to html & CSS",
-				"2": "HTML structure",
-				"3": "CSS & typography",
-				"4": "CSS box model",
-				"5": "Position & float",
-				"6": "Flexbox",
-				"7": "Working with forms",
-				"8": "Media queries"
-			}
-		},
-		"js-applications": {
-			"focus": "practical skills for building well-structured Single Page Applications",
-			"scope": {
-				"1": "REST services",
-				"2": "AJAX and jquery AJAX",
-				"3": "Asynchronous programming",
-				"4": "JS for frontend",
-				"5": "Templating",
-				"6": "Routing and architecture",
-				"7": "Single page application"
-			}
-		},
-		"js-advanced": {
-			"focus": "develops algorithmic thinking and practical skills for DOM tree manipulation and Unit testing.",
-			"scope": {
-				"1": "Advanced functions",
-				"2": "Unit testing",
-				"3": "JS classes",
-				"4": "Object composition",
-				"5": "jQuery",
-				"6": "DOM manipulations"
-			}
-		},
-		"js-fundamentals": {
-			"focus": "JS syntax and practical skills in manipulation with data types, operators, expressions, conditional constructions, loops and functions.",
-			"scope": {
-				"1": "JS syntax and operators",
-				"2": "Document object model",
-				"3": "Functions and logic flow",
-				"4": "Arrays and matrices",
-				"5": "Strings and regexp",
-				"6": "Objects and JSON",
-				"7": "Dom events"
-			}
-		},
-		"js-essentials": {
-			"focus": "basic techniques and tools for practical programming beyond the writing of simple program constructions.",
-			"scope": {
-				"1": "Basic syntax, conditional statements and loops",
-				"2": "Data types and variables",
-				"3": "Arrays, Lists advanced & Associative arrays",
-				"4": "Methods / functions",
-				"5": "Objects and classes",
-				"6": "String, text processing & Regular expressions",
-				"7": "Basic HTML and CSS",
-				"8": "Http basics",
-				"9": "Basic web and CRUD",
-				"10": "Bitwise operations",
-				"11": "Database basics & QA fundamentals",
-				"12": "Open-source introduction & Git and GitHub"
-			}
-		},
-		"pb-c": {
-			"focus": "Basic coding skills.",
-			"scope": {
-				"1": "IDE",
-				"2": "Simple operations and calculations",
-				"3": "Conditional statements",
-				"4": "Loops",
-				"5": "Nested loops"
-			}
-		},
-		"pb-java": {
-			"focus": "Basic coding skills.",
-			"scope": {
-				"1": "IDE",
-				"2": "Simple operations and calculations",
-				"3": "Conditional statements",
-				"4": "Loops",
-				"5": "Nested loops"
-			}
-		}
-	},
-	"experience": {
-		"labels": {
-			"experience": "Work experience",
-			"furtherInfo": "For further information ",
-			"colletoDiv": "Developer",
-			"stenliDiv": "Engineer",
-			"clickHere": "click here"
-		},
-		"colleto": {
-			"position": "Frontend Web Developer",
-			"description": {
-				"1": "          ▪︎   Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow.",
-				"2": "          ▪︎   Structured the codebase as an NX monorepo, enabling a scalable architecture with shared, reusable components and unified design patterns across all three applications.",
-				"3": "          ▪︎   Integrated custom design guidelines into Angular Material, including a standardized color palette and icon set, ensuring consistent UI/UX across the platform.",
-				"4": "          ▪︎   Wrote unit tests with Jest and end-to-end tests with Cypress, improving overall application quality and test coverage.",
-				"5": "          ▪︎   Integrated a generated Feign API client, ensuring consistent and well-documented communication between frontend and backend."
-			}
-		},
-		"carrypicker": {
-			"position": "Frontend Web Developer",
-			"description": {
-				"1": "          ▪︎   Further developed and maintained four logistic web applications, some featuring AI-powered functionality.",
-				"2": "          ▪︎   Built and maintained end-to-end tests using Cypress, increasing confidence in feature releases.",
-				"3": "          ▪︎   Designed and iterated on user interfaces using Sketch UX prototypes aligned with established design guidelines.",
-				"4": "          ▪︎   Collaborated cross-functionally with backend developers, data analysts and product managers in feature delivery process."
-			}
-		},
-		"freelance": {
-			"position": "Junior Software Engineer",
-			"description": {
-				"1": "Designed and developed an MVP Performance Management Tool – a single-page application inspired by Six Sigma performance improvement techniques. It provides a platform for multiple parties to quickly exchange highly complex technical reviews of assets or performance indicators, while generating a high-level overview for C level stakeholders."
-			}
-		},
-		"stenli": {
-			"position": "Site Manager",
-			"description": {
-				"1": "Site management and coordination role for Pohnpei Solar Farm, The Federated States of Micronesia. 640kW installed solar capacity of strategical relevance to Pohnpei island power generation system."
-			}
-		},
-		"sipal": {
-			"position": "Assistant Planning Coordinator",
-			"description": {
-				"1": "Assistant planning coordination, structural design and design supervision role for Pedemontana Veneta Expressway. 95km road artery with great significance for Northern Itlay and Eastern Europe, construction cost € 2.4 billion."
-			}
-		},
-		"way": {
-			"position": "Head Of Structural Department",
-			"description": {
-				"1": "Developed the structural design department in Way Engineering AD - Bulgarian branch of SICS Ingegneria S.r.l. Organized and managed its growth from 2 initial employees to 15 in 3 years. Responsible for team recruitment, manpower management and direction of design works.",
-				"2": "Project coordination role for three significant infrastructural projects and various tender procedures:",
-				"3": "          ▪︎   DG48 Salerno-Reggio Calabria Highway – 30km, Italy, construction cost € 650 million. Road facilities design for the main contractor SIS Scpa, Italy",
-				"4": "          ▪︎   State road SS640 – 35km, Italy, construction cost € 739 million. Road facilities design for the main contractor Empedocles II Scpa, Italy",
-				"5": "          ▪︎   Saida – Tiaret Railway -153km, Algeria, Road and rail way facilities design for the main contractor Astaldi S.p.a, Italy"
-			}
-		},
-		"akropolis": {
-			"position": "Personal Assistant Head Of Development Department",
-			"description": {
-				"1": "Coordination role for Akropolis Shopping and Entertainment Center – a 524,000 sq.m. multifunctional commercial complex (shopping mall and office towers) in Sofia. Responsible for the official communication and the department documentation (concept and tender design stage). Preparation and execution of contractor appointment procedures."
-			}
-		},
-		"nu-boyana": {
-			"position": "Design Coordinator",
-			"description": {
-				"1": "Design coordination role for the large-scale movie set “New York Street”, Sofia, Bulgaria – 8000 sq.m with real size buildings, power and water supplied, construction cost € 3,5 million. Art design and on-site supervision. Responsible for the design localization and the official correspondence."
-			}
-		},
-		"strabag": {
-			"position": "Student Trainee",
-			"description": {
-				"1": "Trainee civil engineer during the As-built design stage of Sofia Airport – Terminal 2, Bulgaria, construction cost € 120 million. On-site processes assistance and survey data adoption for design purposes."
-			}
-		}
-	},
-	"projects": {
-		"labels": {
-			"workProjects": "Work projects",
-			"personalProjects": "Personal projects",
-			"learnProjects": "Projects with educational purpose",
-			"workProjectsDiv": "Work",
-			"personalProjectsDiv": "Personal",
-			"studyProjectsDiv": "Learn"
-		},
-		"colleto": {
-			"highlights": "Architected and developed three bespoke Angular applications from the ground up, tailored to support core logistics operations across the organization. Leveraged RxJS and a fully declarative programming model to ensure predictable, reactive workflows and robust UI state handling. Structured within a scalable NX Monorepo, enabling efficient cross-team collaboration and consistent code reuse. Integrated a GitLab-hosted, auto-generated RESTful API client module, streamlining backend communication and ensuring contract fidelity. Applications play a pivotal role in the company’s daily freight management, significantly improving operational efficiency and transparency.",
-			"info": {
-				"1": "          ▪︎   Colleta für Disponenten - Transport dispatcher platform, where shipments are disopsed and tours are assigned",
-				"2": "          ▪︎   Colleta für Transportunternehmer - Transport service provider platform, where transport orders and tour assign are received",
-				"3": "          ▪︎   Colleta für Betreiber - User management platform, binding the other tree apps"
-			},
-			"tms": {
-				"info": "<p>Colleta TMS is a disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers.</p><p>Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.</p>"
-			}
-		},
-		"carrypicker": {
-			"highlights": "Developed further features for three web applications: Carrypicker, Colleta TMS and Colleta Trucking. The symbiotic relationship between them allows for them to cover all three steps of the truck transport logistics process. Starting with placing a shipment order in Carrypicker, going through an AI based automatic disposition with a fallback option - manual disposition in Colleta TMS. And ending with issuing tour request and transportation orders via Colleta Trucking Platform, while having Colleta User Management Platform as the middle man in this ecosystem.",
-			"info": {
-				"1": "          ▪︎   Shipper Platform - a web platform, where shippers can easily input shipping orders. It provides AI-based day price calculation algorithm and supports manual, CSV or excel based shipment input. The web portal keeps track of the status and the position of the shipments relevant to a single user or to a group of users. It also issues automatically shipping orders and allows for document exchange between stakeholders.",
-				"2": "          ▪︎   Dispatcher Platform - a web disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers. Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.",
-				"3": "          ▪︎   Trucking Platform - a web application meant for transportation carriers. It allows them to actively participate in tour request bids, register available transportation vehicles and commonly run routes. Another feature of the platform is keeping history of all transportation assignments and providing online-access the respective documentation.",
-				"4": "          ▪︎   User Management - provides user management for the other three web platforms: Carrypicker, Colleta and Colleta Trucking. It allows for intersystem data exchange and is the place where the onboarding for all stakeholders in the Carrypicker ecosystem takes place."
-			}
-		},
-		"ptm": {
-			"highlights": "Designed, developed and deployed an MVP Performance Management Tool (PMT SPA). The web application is inspired by Six Sigma performance improvement techniques. It provides a platform for multiple parties to quickly exchange highly complex technical reviews of assets or performance indicators, while generating a high-level overview for C level stakeholders.",
-			"info": {
-				"1": "          ▪   Single Page Application with a cloud-based Backend, based on JavaScript, jQuery, AJAX, REST and JSON.",
-				"2": "          ▪   efficient routing and templating via Handlebars and Sammy.js.",
-				"3": "          ▪   custom UI that explicitly serves the needs of the stakeholders.",
-				"4": "          ▪   modern multi-platform application design following the latest standards of HTML5 and CSS3.",
-				"5": "          ▪   SCSS code implements Inverted Triangle architecture and BEM methodology."
-			},
-			"desktop": {
-				"info": ""
-			},
-			"mobile": {
-				"info": ""
-			}
-		},
-		"smo-jo": {
-			"highlights": "Small Jobs Cloud is a simple and efficient platform where users can post short-term or one-off job ads and quickly connect with the right people to get the job done. Whether errands, repairs, design work, or freelance tasks, this app makes it easy to share your job offer and find skilled, reliable workers nearby.",
-			"info": {
-				"1": "          ▪   Angular Application with Backend as a service (Backendless)",
-				"2": "          ▪   modern, responsive design practices using the latest HTML5 and CSS3 standards"
-			},
-			"general": {
-				"info": ""
-			}
-		},
-		"movies": {
-			"highlights": "Implemented Movie platform Single Page Application - platform for sharing and rating inspiring movie titles. The web application keeps users and other relevant data in a could-based backend (Backendless), support register and login for guest users. And allow for various manipulation with instances, like: reviewing, creating, editing, deleting and simulation of purchasing movie tickets.",
-			"general": {
-				"info": ""
-			}
-		},
-		"music": {
-			"highlights": "Implemented Music platform Single Page Application - platform for sharing and rating inspiring song titles. The web application keeps users and other relevant data in a could-based backend (Backendless), support register and login for guest users. And allow for various manipulation with instances, like: reviewing, creating, deleting and liking songs.",
-			"general": {
-				"info": ""
-			}
-		}
-	}
+    "nav": {
+        "about": "About",
+        "courses": "Courses",
+        "experience": "Experience",
+        "projects": "Projects"
+    },
+    "about": {
+        "highlight": "I am an experienced software developer and engineer with a persisting passion for discovery and achievement. Curiosity, ingenuity and reliability are my signature. Throughout my 14 years of professional experience I have learned to value inspiration and collaboration as the true pillars of productivity and fulfilment. My positive attitude, confidence and natural responsibility make me a valued  asset to every team.",
+        "journey": {
+            "title": "On a journey to new frontiers",
+            "p1": "Throughout my 8-year carrier as a civil engineer I was always fascinated by the impact of digitalization and how web applications changed the core activities within my field and everything around it.",
+            "p2": "Looking to optimize processes and increase the effectiveness of my team’s efforts, I searched for ways to extract the maximum of every application by exploring different scripts and APIs.",
+            "p3": "As time progressed and my curiosity increased, so did my desire to create applications of my own and cover areas of my field and everyday life which I felt could be improved with digital solutions.",
+            "p4": "In the past 4 years I have decided to pursue this desire fully by enlisting a developer program in a software academy, creating my first web application from the ground up and joining an agile Start-up team of likeminded developers who share my passion of exploring.",
+            "p5": "I am eager to continue this exciting journey and grow my skillset professionally, learn and create more applications that improve our quality of life."
+        },
+        "education": {
+            "title": "Education",
+            "softUni": "SoftUni Educational Center - Sofia, Bulgaria",
+            "program": "Software Engineering Program – JavaScript Web Developer",
+            "certificates": "Acquired Certificates",
+            "uasg": "University of Architecture, Civil Engineering and Geodesy - Sofia, Bulgaria",
+            "master": "MSc Civil Engineering"
+        },
+        "skills": {
+            "core": "Core skills",
+            "additional": "Additional skills",
+            "engineering": "Civil engineering skills",
+            "language": "Language skills",
+            "solver": "Analytical problem-solver",
+            "designer": "Engineering Solutions Design and Implementation",
+            "leader": "Leadership Experience",
+            "manager": "Project management",
+            "bg": "Bulgarian – native",
+            "de": "German – professional working",
+            "en": "English – full professional",
+            "it": "Italian – professional working"
+        }
+    },
+    "courses": {
+        "labels": {
+            "focus": "Course focus",
+            "instanceLink": "Course instance link",
+            "scope": "Course scope",
+            "weeks": "weeks",
+            "github": "Homework and exam tasks:"
+        },
+        "info": {
+            "p1": "SoftUni's software engineering curriculum is a combination of programming courses depending on the specialization. It focuses on acquiring fundamental knowledge, practical skills and sufficient technical overview in latest software technologies - a must for every 'software engineer'.",
+            "p2": "JavaScript Web Developer Program has three modules, each having a methodically selected sequence of courses, upgrading the IT competences in a well-considered pace, as follows:",
+            "p3": "          ▪︎   Entry Module - courses: Programming basics with C#, Programming basics with JAVA",
+            "p4": "          ▪︎   Fundamental Module - courses: Technology Fundamentals JavaScript",
+            "p5": "          ▪︎   Professional Module - courses: JS Essentials, JS Advanced, JS Applications, JS Backend, ReactJS, HTML & CSS and Frontend Frameworks."
+        },
+        "js-backend": {
+            "focus": "developing server-side web applications using Node.js, Express, and Handlebars, while introducing key concepts such as the HTTP protocol, non-relational databases, and the MVC architectural pattern.",
+            "scope": {
+                "1": "Intro to Node.js",
+                "2": "Node.js Streams and Utilities",
+                "3": "ExpressJS and Templating",
+                "4": "NoSQL and MongoDB",
+                "5": "Session and Authentication",
+                "6": "Validation and Error Handling"
+            }
+        },
+        "angular": {
+            "focus": "practical skills for building Single Page Application & basic TypeScript",
+            "scope": {
+                "1": "Introduction to Angular and TypeScript",
+                "2": "Components and Data binding"
+            }
+        },
+        "css-advanced": {
+            "focus": "modern frontend design and development with animations and icons for adaptive display on devices with different screen sizes.",
+            "scope": {
+                "1": "CSS architecture - IT CSS",
+                "2": "CSS architecture - BEM",
+                "3": "SASS",
+                "4": "CSS transitions, animations and transformations",
+                "5": "CSS grid",
+                "6": "Building layouts"
+            }
+        },
+        "html-and-css": {
+            "focus": "practical skills in web development using HTML5 and CSS3 standard latest innovations.",
+            "scope": {
+                "1": "Introduction to html & CSS",
+                "2": "HTML structure",
+                "3": "CSS & typography",
+                "4": "CSS box model",
+                "5": "Position & float",
+                "6": "Flexbox",
+                "7": "Working with forms",
+                "8": "Media queries"
+            }
+        },
+        "js-applications": {
+            "focus": "practical skills for building well-structured Single Page Applications",
+            "scope": {
+                "1": "REST services",
+                "2": "AJAX and jquery AJAX",
+                "3": "Asynchronous programming",
+                "4": "JS for frontend",
+                "5": "Templating",
+                "6": "Routing and architecture",
+                "7": "Single page application"
+            }
+        },
+        "js-advanced": {
+            "focus": "develops algorithmic thinking and practical skills for DOM tree manipulation and Unit testing.",
+            "scope": {
+                "1": "Advanced functions",
+                "2": "Unit testing",
+                "3": "JS classes",
+                "4": "Object composition",
+                "5": "jQuery",
+                "6": "DOM manipulations"
+            }
+        },
+        "js-fundamentals": {
+            "focus": "JS syntax and practical skills in manipulation with data types, operators, expressions, conditional constructions, loops and functions.",
+            "scope": {
+                "1": "JS syntax and operators",
+                "2": "Document object model",
+                "3": "Functions and logic flow",
+                "4": "Arrays and matrices",
+                "5": "Strings and regexp",
+                "6": "Objects and JSON",
+                "7": "Dom events"
+            }
+        },
+        "js-essentials": {
+            "focus": "basic techniques and tools for practical programming beyond the writing of simple program constructions.",
+            "scope": {
+                "1": "Basic syntax, conditional statements and loops",
+                "2": "Data types and variables",
+                "3": "Arrays, Lists advanced & Associative arrays",
+                "4": "Methods / functions",
+                "5": "Objects and classes",
+                "6": "String, text processing & Regular expressions",
+                "7": "Basic HTML and CSS",
+                "8": "Http basics",
+                "9": "Basic web and CRUD",
+                "10": "Bitwise operations",
+                "11": "Database basics & QA fundamentals",
+                "12": "Open-source introduction & Git and GitHub"
+            }
+        },
+        "pb-c": {
+            "focus": "Basic coding skills.",
+            "scope": {
+                "1": "IDE",
+                "2": "Simple operations and calculations",
+                "3": "Conditional statements",
+                "4": "Loops",
+                "5": "Nested loops"
+            }
+        },
+        "pb-java": {
+            "focus": "Basic coding skills.",
+            "scope": {
+                "1": "IDE",
+                "2": "Simple operations and calculations",
+                "3": "Conditional statements",
+                "4": "Loops",
+                "5": "Nested loops"
+            }
+        }
+    },
+    "experience": {
+        "labels": {
+            "experience": "Work experience",
+            "furtherInfo": "For further information ",
+            "colletoDiv": "Developer",
+            "stenliDiv": "Engineer",
+            "clickHere": "click here"
+        },
+        "colleto": {
+            "position": "Frontend Web Developer",
+            "description": {
+                "1": "          ▪︎   Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow.",
+                "2": "          ▪︎   Structured the codebase as an NX monorepo, enabling a scalable architecture with shared, reusable components and unified design patterns across all three applications.",
+                "3": "          ▪︎   Integrated custom design guidelines into Angular Material, including a standardized color palette and icon set, ensuring consistent UI/UX across the platform.",
+                "4": "          ▪︎   Wrote unit tests with Jest and end-to-end tests with Cypress, improving overall application quality and test coverage.",
+                "5": "          ▪︎   Integrated a generated Feign API client, ensuring consistent and well-documented communication between frontend and backend."
+            }
+        },
+        "carrypicker": {
+            "position": "Frontend Web Developer",
+            "description": {
+                "1": "          ▪︎   Further developed and maintained four logistic web applications, some featuring AI-powered functionality.",
+                "2": "          ▪︎   Built and maintained end-to-end tests using Cypress, increasing confidence in feature releases.",
+                "3": "          ▪︎   Designed and iterated on user interfaces using Sketch UX prototypes aligned with established design guidelines.",
+                "4": "          ▪︎   Collaborated cross-functionally with backend developers, data analysts and product managers in feature delivery process."
+            }
+        },
+        "freelance": {
+            "position": "Junior Software Engineer",
+            "description": {
+                "1": "Designed and developed an MVP Performance Management Tool – a single-page application inspired by Six Sigma performance improvement techniques. It provides a platform for multiple parties to quickly exchange highly complex technical reviews of assets or performance indicators, while generating a high-level overview for C level stakeholders."
+            }
+        },
+        "stenli": {
+            "position": "Site Manager",
+            "description": {
+                "1": "Site management and coordination role for Pohnpei Solar Farm, The Federated States of Micronesia. 640kW installed solar capacity of strategical relevance to Pohnpei island power generation system."
+            }
+        },
+        "sipal": {
+            "position": "Assistant Planning Coordinator",
+            "description": {
+                "1": "Assistant planning coordination, structural design and design supervision role for Pedemontana Veneta Expressway. 95km road artery with great significance for Northern Itlay and Eastern Europe, construction cost € 2.4 billion."
+            }
+        },
+        "way": {
+            "position": "Head Of Structural Department",
+            "description": {
+                "1": "Developed the structural design department in Way Engineering AD - Bulgarian branch of SICS Ingegneria S.r.l. Organized and managed its growth from 2 initial employees to 15 in 3 years. Responsible for team recruitment, manpower management and direction of design works.",
+                "2": "Project coordination role for three significant infrastructural projects and various tender procedures:",
+                "3": "          ▪︎   DG48 Salerno-Reggio Calabria Highway – 30km, Italy, construction cost € 650 million. Road facilities design for the main contractor SIS Scpa, Italy",
+                "4": "          ▪︎   State road SS640 – 35km, Italy, construction cost € 739 million. Road facilities design for the main contractor Empedocles II Scpa, Italy",
+                "5": "          ▪︎   Saida – Tiaret Railway -153km, Algeria, Road and rail way facilities design for the main contractor Astaldi S.p.a, Italy"
+            }
+        },
+        "akropolis": {
+            "position": "Personal Assistant Head Of Development Department",
+            "description": {
+                "1": "Coordination role for Akropolis Shopping and Entertainment Center – a 524,000 sq.m. multifunctional commercial complex (shopping mall and office towers) in Sofia. Responsible for the official communication and the department documentation (concept and tender design stage). Preparation and execution of contractor appointment procedures."
+            }
+        },
+        "nu-boyana": {
+            "position": "Design Coordinator",
+            "description": {
+                "1": "Design coordination role for the large-scale movie set “New York Street”, Sofia, Bulgaria – 8000 sq.m with real size buildings, power and water supplied, construction cost € 3,5 million. Art design and on-site supervision. Responsible for the design localization and the official correspondence."
+            }
+        },
+        "strabag": {
+            "position": "Student Trainee",
+            "description": {
+                "1": "Trainee civil engineer during the As-built design stage of Sofia Airport – Terminal 2, Bulgaria, construction cost € 120 million. On-site processes assistance and survey data adoption for design purposes."
+            }
+        }
+    },
+    "projects": {
+        "labels": {
+            "workProjects": "Work projects",
+            "personalProjects": "Personal projects",
+            "learnProjects": "Projects with educational purpose",
+            "workProjectsDiv": "Work",
+            "personalProjectsDiv": "Personal",
+            "studyProjectsDiv": "Learn"
+        },
+        "colleto": {
+            "highlights": "Architected and developed three bespoke Angular applications from the ground up, tailored to support core logistics operations across the organization. Leveraged RxJS and a fully declarative programming model to ensure predictable, reactive workflows and robust UI state handling. Structured within a scalable NX Monorepo, enabling efficient cross-team collaboration and consistent code reuse. Integrated a GitLab-hosted, auto-generated RESTful API client module, streamlining backend communication and ensuring contract fidelity. Applications play a pivotal role in the company’s daily freight management, significantly improving operational efficiency and transparency.",
+            "info": {
+                "1": "          ▪︎   Colleta für Disponenten - Transport dispatcher platform, where shipments are disopsed and tours are assigned",
+                "2": "          ▪︎   Colleta für Transportunternehmer - Transport service provider platform, where transport orders and tour assign are received",
+                "3": "          ▪︎   Colleta für Betreiber - User management platform, binding the other tree apps"
+            },
+            "tms": {
+                "info": "<p>Colleta TMS is a disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers.</p><p>Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.</p>"
+            }
+        },
+        "carrypicker": {
+            "highlights": "Developed further features for three web applications: Carrypicker, Colleta TMS and Colleta Trucking. The symbiotic relationship between them allows for them to cover all three steps of the truck transport logistics process. Starting with placing a shipment order in Carrypicker, going through an AI based automatic disposition with a fallback option - manual disposition in Colleta TMS. And ending with issuing tour request and transportation orders via Colleta Trucking Platform, while having Colleta User Management Platform as the middle man in this ecosystem.",
+            "info": {
+                "1": "          ▪︎   Shipper Platform - a web platform, where shippers can easily input shipping orders. It provides AI-based day price calculation algorithm and supports manual, CSV or excel based shipment input. The web portal keeps track of the status and the position of the shipments relevant to a single user or to a group of users. It also issues automatically shipping orders and allows for document exchange between stakeholders.",
+                "2": "          ▪︎   Dispatcher Platform - a web disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers. Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.",
+                "3": "          ▪︎   Trucking Platform - a web application meant for transportation carriers. It allows them to actively participate in tour request bids, register available transportation vehicles and commonly run routes. Another feature of the platform is keeping history of all transportation assignments and providing online-access the respective documentation.",
+                "4": "          ▪︎   User Management - provides user management for the other three web platforms: Carrypicker, Colleta and Colleta Trucking. It allows for intersystem data exchange and is the place where the onboarding for all stakeholders in the Carrypicker ecosystem takes place."
+            }
+        },
+        "ptm": {
+            "highlights": "Designed, developed and deployed an MVP Performance Management Tool (PMT SPA). The web application is inspired by Six Sigma performance improvement techniques. It provides a platform for multiple parties to quickly exchange highly complex technical reviews of assets or performance indicators, while generating a high-level overview for C level stakeholders.",
+            "info": {
+                "1": "          ▪   Single Page Application with a cloud-based Backend, based on JavaScript, jQuery, AJAX, REST and JSON.",
+                "2": "          ▪   efficient routing and templating via Handlebars and Sammy.js.",
+                "3": "          ▪   custom UI that explicitly serves the needs of the stakeholders.",
+                "4": "          ▪   modern multi-platform application design following the latest standards of HTML5 and CSS3.",
+                "5": "          ▪   SCSS code implements Inverted Triangle architecture and BEM methodology."
+            },
+            "desktop": {
+                "info": ""
+            },
+            "mobile": {
+                "info": ""
+            }
+        },
+        "smo-jo": {
+            "highlights": "Small Jobs Cloud is a simple and efficient platform where users can post short-term or one-off job ads and quickly connect with the right people to get the job done. Whether errands, repairs, design work, or freelance tasks, this app makes it easy to share your job offer and find skilled, reliable workers nearby.",
+            "info": {
+                "1": "          ▪   Angular Application with Backend as a service (Backendless)",
+                "2": "          ▪   modern, responsive design practices using the latest HTML5 and CSS3 standards"
+            },
+            "general": {
+                "info": ""
+            }
+        },
+        "movies": {
+            "highlights": "Implemented Movie platform Single Page Application - platform for sharing and rating inspiring movie titles. The web application keeps users and other relevant data in a could-based backend (Backendless), support register and login for guest users. And allow for various manipulation with instances, like: reviewing, creating, editing, deleting and simulation of purchasing movie tickets.",
+            "general": {
+                "info": ""
+            }
+        },
+        "music": {
+            "highlights": "Implemented Music platform Single Page Application - platform for sharing and rating inspiring song titles. The web application keeps users and other relevant data in a could-based backend (Backendless), support register and login for guest users. And allow for various manipulation with instances, like: reviewing, creating, deleting and liking songs.",
+            "general": {
+                "info": ""
+            }
+        }
+    }
 }
