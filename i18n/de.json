@@ -287,6 +287,23 @@
                 "info": ""
             }
         },
+        "recipes": {
+            "highlights": "Cooking Recipes ist eine schlanke Single-Page-Anwendung zum Entdecken, Erstellen und Teilen von Kochrezepten. Die Anwendung ist nach einer domänengetriebenen Frontend-Architektur aufgebaut, was eine klare Trennung der Verantwortlichkeiten, gute Skalierbarkeit und hohe Wartbarkeit gewährleistet. Ein reaktives Typeahead-Suchsystem sorgt für eine schnelle und intuitive Navigation durch Inhalte.",
+            "info": [
+                "          ▪   Angular-20-SPA mit domänengetriebener Frontend-Struktur",
+                "          ▪   Signal-basiertes State-Management in Kombination mit RxJS für asynchrone Datenverarbeitung",
+                "          ▪   Reaktive Typeahead-Suche in allen Listenansichten für schnelle und präzise Ergebnisse",
+                "          ▪   Frontend- und Backend-Validierung in Detailansichten zur Verbesserung der Benutzererfahrung und Sicherheit",
+                "          ▪   NestJS-Backend mit einer sauberen, skalierbaren REST-Architektur",
+                "          ▪   JWT-basierte Authentifizierung mit HttpOnly-Cookies für erhöhte Sicherheit",
+                "          ▪   Rollenbasierte Zugriffskontrolle mit unterschiedlichen Funktionen je Benutzerrolle",
+                "          ▪   Modernes, responsives UI mit SASS, umgesetzt nach ITCSS- und BEM-Methodologien",
+                "          ▪   Extrem leichtgewichtiges Setup ohne zusätzliche Libraries, außer Prettier zur Code-Formatierung"
+            ],
+            "general": {
+                "info": ""
+            }
+        },
         "smo-jo": {
             "highlights": "Small Jobs Cloud ist eine einfache und effiziente Plattform, auf der Benutzer kurzfristige oder einmalige Jobangebote veröffentlichen und schnell mit den richtigen Personen in Kontakt treten können. Ob Besorgungen, Reparaturen, Designarbeit oder Freelance-Aufträge – diese App erleichtert es, Aufträge zu teilen und qualifizierte, zuverlässige Arbeitskräfte in der Nähe zu finden.",
             "info": {
