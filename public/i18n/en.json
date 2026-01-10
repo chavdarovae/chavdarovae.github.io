@@ -287,6 +287,23 @@
                 "info": ""
             }
         },
+        "recipes": {
+            "highlights": "Cooking Recipes is a lightweight single-page application for discovering, creating, and sharing cooking recipes. The application follows a domain-driven frontend architecture, ensuring clear separation of concerns, scalability, and maintainability. A reactive typeahead search provides fast and intuitive navigation across content.",
+            "info": [
+                "          ▪   Angular 20 SPA with a domain-driven frontend structure",
+                "          ▪   Signal-based state management combined with RxJS for asynchronous data handling",
+                "          ▪   Reactive typeahead search implemented across all list views for fast and precise results",
+                "          ▪   Frontend and backend validation in detail views to enhance user experience and application security",
+                "          ▪   NestJS backend with a clean, scalable REST architecture",
+                "          ▪   JWT-based authentication using HttpOnly cookies for enhanced security",
+                "          ▪   Role-based access control enabling different features per user role",
+                "          ▪   Modern, responsive UI styled with SASS following ITCSS and BEM methodologies",
+                "          ▪   Ultra-lightweight setup with no additional libraries except Prettier for code formatting"
+            ],
+            "general": {
+                "info": ""
+            }
+        },
         "smo-jo": {
             "highlights": "Small Jobs Cloud is a simple and efficient platform where users can post short-term or one-off job ads and quickly connect with the right people to get the job done. Whether errands, repairs, design work, or freelance tasks, this app makes it easy to share your job offer and find skilled, reliable workers nearby.",
             "info": {

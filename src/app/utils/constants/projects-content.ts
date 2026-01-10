@@ -40,6 +40,18 @@ export const PROJECT_CONTENT: IProject[] = [
         ],
     },
     {
+        id: 'recipes',
+        title: 'Cooking Reicpes SPA',
+        infoItems: 8,
+        media: [
+            {
+                id: 'general',
+                title: 'Cooking Recipes - Gallery',
+                imgCount: 6,
+            },
+        ],
+    },
+    {
         id: 'smo-jo',
         title: 'Small Jobs Cloud - SmoJoCloud SPA',
         infoItems: 2,
