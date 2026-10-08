@@ -6,14 +6,14 @@
         "projects": "Projekte"
     },
     "about": {
-        "highlight": "Ich bin ein erfahrener Softwareentwickler und Ingenieur mit einer anhaltenden Leidenschaft für Entdeckung und Erfolg. Neugier, Einfallsreichtum und Zuverlässigkeit sind meine Markenzeichen. Während meiner 14-jährigen Berufserfahrung habe ich gelernt, Inspiration und Zusammenarbeit als die wahren Säulen von Produktivität und Erfüllung zu schätzen. Meine positive Einstellung, mein Selbstvertrauen und mein ausgeprägtes Verantwortungsbewusstsein machen mich zu einer wertvollen Bereicherung für jedes Team.",
+        "highlight": "Senior Frontend Developer (Angular) in Hamburg mit Schwerpunkt auf Software für die Speditionslogistik. Bei Colleto habe ich das Frontend von Anfang an aufgebaut: drei Angular-Anwendungen von Grund auf, später zusammengeführt in einem NX-Monorepo mit 15 Domänenbibliotheken und über 700 Komponenten. Heute prüfe ich jeden Frontend-Merge-Request und betreue die beiden Teammitglieder, die am Frontend mitarbeiten. Wir arbeiten mit Angular 20, Standalone Components, Signals und RxJS. Vor dem Wechsel in die Softwareentwicklung war ich 8 Jahre im Bauingenieurwesen tätig, unter anderem als Leitung der Abteilung für Tragwerksplanung mit 13 Mitarbeitenden in direkter Berichtslinie.",
         "journey": {
             "title": "Auf einer Reise zu neuen Horizonten",
-            "p1": "Während meiner achtjährigen Karriere als Bauingenieur war ich stets fasziniert von der Wirkung der Digitalisierung und davon, wie Webanwendungen die Kernaktivitäten in meinem Berufsfeld und darüber hinaus verändert haben.",
-            "p2": "Um Prozesse zu optimieren und die Effizienz der Arbeit meines Teams zu steigern, suchte ich nach Wegen, das Maximum aus jeder Anwendung herauszuholen, indem ich verschiedene Skripte und APIs erforschte.",
-            "p3": "Mit der Zeit wuchs meine Neugier – ebenso wie der Wunsch, eigene Anwendungen zu entwickeln und Bereiche meines Berufs und Alltags zu verbessern, die durch digitale Lösungen optimiert werden könnten.",
-            "p4": "Im Jahr 2017 habe ich beschlossen, dieses Ziel vollständig zu verfolgen, indem ich ein Entwicklerprogramm an einer Softwareakademie absolvierte, meine erste Webanwendung von Grund auf entwickelte und einem agilen Start-up-Team gleichgesinnter Entwickler beitrat, die meine Entdeckerleidenschaft teilen.",
-            "p5": "Ich freue mich darauf, diese spannende Reise fortzusetzen, meine Fähigkeiten weiterzuentwickeln, zu lernen und mehr Anwendungen zu schaffen, die unsere Lebensqualität verbessern."
+            "p1": "In meinen acht Jahren im Bauingenieurwesen hat mich fasziniert, wie Digitalisierung und Webanwendungen die Kernarbeit in meinem Fachgebiet und darüber hinaus verändert haben.",
+            "p2": "Um die Arbeit meines Teams effizienter zu machen, habe ich nach Wegen gesucht, das Maximum aus jeder Anwendung herauszuholen, und dafür verschiedene Skripte und APIs ausprobiert.",
+            "p3": "Mit der Zeit wuchs meine Neugier – und mit ihr der Wunsch, eigene Anwendungen für die Bereiche meiner Arbeit und meines Alltags zu entwickeln, die digitale Lösungen verbessern können.",
+            "p4": "2018 habe ich diesen Weg konsequent eingeschlagen: Ich habe das JavaScript-Webentwicklerprogramm an der SoftUni begonnen, meine erste Webanwendung von Grund auf entwickelt und mich später einem agilen Start-up-Team angeschlossen, das meine Neugier teilt.",
+            "p5": "Heute verantworte ich das Frontend von drei Angular-Anwendungen und möchte mich in Richtung technischer Führung weiterentwickeln – mit Software, die anderen die Arbeit erleichtert."
         },
         "education": {
             "title": "Ausbildung",
@@ -30,7 +30,7 @@
             "language": "Sprachkenntnisse",
             "solver": "Analytischer Problemlöser",
             "designer": "Entwurf und Umsetzung technischer Lösungen",
-            "leader": "Führungserfahrung",
+            "leader": "Führung: Code Reviews, Mentoring, Bewerbungsgespräche",
             "manager": "Projektmanagement",
             "bg": "Bulgarisch – Muttersprache",
             "de": "Deutsch – professionelles Niveau",
@@ -177,28 +177,28 @@
             "clickHere": "hier klicken"
         },
         "colleto": {
-            "position": "Frontend-Webentwickler",
+            "position": "Senior Frontend Developer (Angular)",
             "description": {
-                "1": "          ▪︎   Entwicklung von drei firmeneigenen Single Page Applications von Grund auf mit Angular, TypeScript, RxJS, AJAX und REST APIs zur Unterstützung des gesamten Speditionsprozesses.",
-                "2": "          ▪︎   Strukturierung der Codebasis als NX-Monorepo, um eine skalierbare Architektur mit gemeinsam genutzten, wiederverwendbaren Komponenten und einheitlichen Designmustern über alle drei Anwendungen hinweg zu ermöglichen.",
-                "3": "          ▪︎   Integration kundenspezifischer Designrichtlinien in Angular Material, einschließlich einer standardisierten Farbpalette und eines Icon-Sets, um ein konsistentes UI/UX über die gesamte Plattform sicherzustellen.",
-                "4": "          ▪︎   Erstellung von Unit-Tests mit Jest und End-to-End-Tests mit Cypress, um die Gesamtqualität und Testabdeckung der Anwendung zu verbessern.",
-                "5": "          ▪︎   Integration eines generierten Feign API-Clients, um eine konsistente und gut dokumentierte Kommunikation zwischen Frontend und Backend zu gewährleisten."
+                "1": "          ▪︎  Als erste und einzige Person im Frontend drei Angular-Anwendungen von Grund auf entwickelt (Angular, TypeScript, RxJS, REST), die den gesamten Speditionsprozess abdecken. Sie werden von 400–500 Mitarbeitenden und rund 100 weiteren Nutzenden verwendet.",
+                "2": "          ▪︎  Den Umstieg auf ein NX-Monorepo vorgeschlagen, als eine zweite Anwendung nötig wurde, präsentiert und die gesamte Migration selbst durchgeführt. Die Codebasis umfasst heute 15 Domänenbibliotheken und über 700 Komponenten.",
+                "3": "          ▪︎  Review von 100 % der Frontend-Merge-Requests, Mentoring der beiden Teammitglieder, die am Frontend mitarbeiten, und Teilnahme an rund 90 % der Bewerbungsgespräche.",
+                "4": "          ▪︎  Entwicklung mit Angular 20: Standalone Components, Signals und Computed Signals für das State-Management sowie RxJS für asynchrone Abläufe und Polling.",
+                "5": "          ▪︎  Unit-Tests mit Jest und End-to-End-Tests mit Cypress laufen in der Deployment-CI-Pipeline. Integration unserer Designrichtlinien in Angular Material und eines generierten Feign-API-Clients für das Spring-Boot-Backend (Kotlin)."
             }
         },
         "carrypicker": {
-            "position": "Frontend-Webentwickler",
+            "position": "Frontend Developer",
             "description": {
-                "1": "          ▪︎   Weiterentwicklung und Wartung von vier Logistik-Webanwendungen, von denen einige KI-gestützte Funktionen enthalten.",
-                "2": "          ▪︎   Erstellung und Wartung von End-to-End-Tests mit Cypress, um das Vertrauen in neue Funktionsveröffentlichungen zu erhöhen.",
-                "3": "          ▪︎   Gestaltung und Überarbeitung von Benutzeroberflächen mit Sketch-UX-Prototypen, die an festgelegte Designrichtlinien angepasst sind.",
-                "4": "          ▪︎   Zusammenarbeit mit Backend-Entwicklern, Datenanalysten und Produktmanagern im gesamten Feature-Delivery-Prozess."
+                "1": "          ▪︎  Weiterentwicklung und Wartung von vier Logistik-Webanwendungen mit Angular und RxJS, teils mit KI-gestützten Funktionen.",
+                "2": "          ▪︎  Aufbau und Pflege von End-to-End-Tests mit Cypress für sicherere Feature-Releases.",
+                "3": "          ▪︎  Gestaltung von Benutzeroberflächen als Sketch-Prototypen innerhalb der bestehenden Designrichtlinien.",
+                "4": "          ▪︎  Zusammenarbeit mit Backend-Entwicklung, Datenanalyse und Produktmanagement bei der Umsetzung neuer Features."
             }
         },
         "freelance": {
-            "position": "Junior Software Engineer",
+            "position": "Freelance Software Developer",
             "description": {
-                "1": "Entwurf und Entwicklung eines MVP Performance Management Tools – einer Single Page Application, inspiriert von Six-Sigma-Methoden zur Leistungsverbesserung. Die Anwendung bietet eine Plattform für mehrere Parteien, um komplexe technische Bewertungen von Anlagen oder Leistungsindikatoren schnell auszutauschen, während sie eine Übersicht auf hoher Ebene für Führungskräfte generiert."
+                "1": "Entwurf und Entwicklung eines MVP Performance Management Tools für ein Ingenieurbüro mit rund 10 Beratenden und Planenden: eine Single Page Application, inspiriert von Six Sigma, in der technische Bewertungen von Anlagen und Leistungsindikatoren ausgetauscht werden und das Management eine Übersicht erhält. Freiberufliche Tätigkeit neben Elternzeit und Studium an der SoftUni."
             }
         },
         "stenli": {
@@ -208,15 +208,15 @@
             }
         },
         "sipal": {
-            "position": "Assistent des Planungskoordinators",
+            "position": "Bauingenieur",
             "description": {
-                "1": "Assistenz in der Planungskoordination, Strukturplanung und Entwurfsüberwachung für die Schnellstraße Pedemontana Veneta. 95 km lange Verkehrsachse von großer Bedeutung für Norditalien und Osteuropa, Baukosten 2,4 Milliarden €."
+                "1": "Planungskoordination, Tragwerksplanung und Entwurfsüberwachung für die Schnellstraße Pedemontana Veneta: eine 95 km lange Verkehrsachse von großer Bedeutung für Norditalien und Osteuropa, Baukosten 2,4 Milliarden €."
             }
         },
         "way": {
             "position": "Leiter der Abteilung für Tragwerksplanung",
             "description": {
-                "1": "Aufbau der Abteilung für Tragwerksplanung bei Way Engineering AD – bulgarische Niederlassung von SICS Ingegneria S.r.l. Organisation und Leitung ihres Wachstums von anfangs 2 auf 15 Mitarbeiter innerhalb von 3 Jahren. Verantwortlich für Teamrekrutierung, Personalmanagement und Leitung der Planungsarbeiten.",
+                "1": "Aufbau der Abteilung für Tragwerksplanung bei Way Engineering AD, der bulgarischen Niederlassung von SICS Ingegneria S.r.l., und Leitung ihres Wachstums von 2 auf 15 Mitarbeitende in 3 Jahren, davon 13 in direkter Berichtslinie. Verantwortlich für Terminplanung und Arbeitsverteilung sowie Mitwirkung an Bewerbungsgesprächen und Einstellungsentscheidungen.",
                 "2": "Projektkoordination für drei bedeutende Infrastrukturprojekte und verschiedene Ausschreibungsverfahren:",
                 "3": "          ▪︎   DG48 Salerno–Reggio Calabria Autobahn – 30 km, Italien, Baukosten 650 Millionen €. Entwurf von Straßenanlagen für den Hauptauftragnehmer SIS Scpa, Italien.",
                 "4": "          ▪︎   Staatsstraße SS640 – 35 km, Italien, Baukosten 739 Millionen €. Entwurf von Straßenanlagen für den Hauptauftragnehmer Empedocles II Scpa, Italien.",
@@ -252,11 +252,11 @@
             "studyProjectsDiv": "Lernen"
         },
         "colleto": {
-            "highlights": "Architektur und Entwicklung von drei maßgeschneiderten Angular-Anwendungen von Grund auf, die darauf ausgelegt sind, zentrale Logistikprozesse im gesamten Unternehmen zu unterstützen. Einsatz von RxJS und einem vollständig deklarativen Programmiermodell, um vorhersehbare, reaktive Workflows und eine robuste UI-Zustandsverwaltung sicherzustellen. Strukturierung in einem skalierbaren NX-Monorepo, das eine effiziente teamübergreifende Zusammenarbeit und konsistente Wiederverwendung von Code ermöglicht. Integration eines in GitLab gehosteten, automatisch generierten RESTful API-Client-Moduls, um die Backend-Kommunikation zu optimieren und die Vertragstreue sicherzustellen. Diese Anwendungen spielen eine zentrale Rolle im täglichen Frachtmanagement des Unternehmens und verbessern die betriebliche Effizienz und Transparenz erheblich.",
+            "highlights": "Architektur und Entwicklung von drei Angular-Anwendungen von Grund auf für die Speditionsprozesse unserer Muttergesellschaft. Als die zweite Anwendung nötig wurde, habe ich die Codebasis in ein NX-Monorepo überführt, das heute 15 Domänenbibliotheken und über 700 Komponenten umfasst. Die Anwendungen nutzen Angular 20 mit Standalone Components, Signals und RxJS und kommunizieren über einen in GitLab gehosteten, automatisch generierten REST-API-Client mit dem Backend. Sie werden von 400–500 Mitarbeitenden im täglichen Frachtmanagement genutzt und haben papierbasierte Schritte im Speditionsprozess ersetzt.",
             "info": {
                 "1": "          ▪︎   Colleta für Disponenten – Plattform für Transportdisponenten, auf der Sendungen disponiert und Touren zugewiesen werden.",
                 "2": "          ▪︎   Colleta für Transportunternehmer – Plattform für Transportdienstleister, auf der Transportaufträge und Tourenzuweisungen empfangen werden.",
-                "3": "          ▪︎   Colleta für Betreiber – Plattform für Benutzerverwaltung, die die drei anderen Anwendungen miteinander verbindet."
+                "3": "          ▪︎  Colleta für Betreiber – Plattform für die Benutzerverwaltung, die die anderen Anwendungen miteinander verbindet."
             },
             "tms": {
                 "info": "<p>Colleta TMS ist ein Dispositionstool, das hauptsächlich Transportmanagement-Zwecken dient. Es fungiert als Backup-Webplattform, auf der Sendungen, die nicht automatisch durch die KI disponiert werden konnten, manuell von Disponenten gebündelt werden.</p><p>Colleta TMS reduziert die Prozesskette des Bündelns mehrerer Sendungen, der Erstellung einer Tourenanfrage und der Kontaktaufnahme mit zahlreichen Spediteuren auf wenige Klicks. Preisverhandlungen und die tatsächliche Zuweisung eines Transportauftrags erfolgen ebenfalls in dieser Webplattform.</p>"
@@ -272,7 +272,7 @@
             }
         },
         "ptm": {
-            "highlights": "Entwurf, Entwicklung und Bereitstellung eines MVP Performance Management Tools (PMT SPA). Die Webanwendung ist inspiriert von den Six-Sigma-Methoden zur Leistungsverbesserung. Sie bietet eine Plattform, auf der mehrere Parteien komplexe technische Bewertungen von Anlagen oder Leistungsindikatoren schnell austauschen können, während gleichzeitig eine Übersicht für das Management generiert wird.",
+            "highlights": "Entwurf, Entwicklung und Bereitstellung eines MVP Performance Management Tools (PMT SPA) für ein Ingenieurbüro. Inspiriert von Six-Sigma-Methoden zur Leistungsverbesserung, können mehrere Parteien komplexe technische Bewertungen von Anlagen und Leistungsindikatoren austauschen, und das Management erhält eine Übersicht.",
             "info": {
                 "1": "          ▪   Single Page Application mit cloudbasiertem Backend auf Basis von JavaScript, jQuery, AJAX, REST und JSON.",
                 "2": "          ▪   Effizientes Routing und Templating mittels Handlebars und Sammy.js.",
