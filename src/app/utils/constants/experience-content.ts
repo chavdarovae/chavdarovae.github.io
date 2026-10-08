@@ -3,7 +3,7 @@ import { IWorkExperience } from '../interfaces/general.interface';
 export const EXPERIENCE_CONTENT: IWorkExperience[] = [
     {
         id: 'colleto',
-        employer: 'Colleto GmbH – Hamburg, Germany',
+        employer: 'Colleto Solution GmbH – Hamburg, Germany',
         employerLink: 'https://www.colleto.de',
         descriptionItems: 5,
         period: '2022, March - present',
@@ -22,7 +22,7 @@ export const EXPERIENCE_CONTENT: IWorkExperience[] = [
         employer: 'Freelance – Hamburg, Germany',
         employerLink: 'https://www.carrypicker.de',
         descriptionItems: 1,
-        period: '2020 - 2021',
+        period: '2019 - 2021',
     },
     {
         id: 'stenli',
