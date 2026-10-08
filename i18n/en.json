@@ -6,14 +6,14 @@
         "projects": "Projects"
     },
     "about": {
-        "highlight": "I am an experienced software developer and engineer with a persisting passion for discovery and achievement. Curiosity, ingenuity and reliability are my signature. Throughout my 14 years of professional experience I have learned to value inspiration and collaboration as the true pillars of productivity and fulfilment. My positive attitude, confidence and natural responsibility make me a valued  asset to every team.",
+        "highlight": "Senior Frontend Developer (Angular) building freight forwarding software in Hamburg. At Colleto I was the first frontend developer: I built three Angular applications from scratch, moved them into an NX monorepo with 15 domain libraries and more than 700 components, and now review every frontend merge request and mentor the developers who contribute to the frontend. We work in Angular 20 with standalone components, signals and RxJS. Before software, I spent 8 years as a civil engineer and was Head of Structural Department, with 13 engineers reporting to me.",
         "journey": {
             "title": "On a journey to new frontiers",
-            "p1": "Throughout my 8-year carrier as a civil engineer I was always fascinated by the impact of digitalization and how web applications changed the core activities within my field and everything around it.",
-            "p2": "Looking to optimize processes and increase the effectiveness of my team’s efforts, I searched for ways to extract the maximum of every application by exploring different scripts and APIs.",
-            "p3": "As time progressed and my curiosity increased, so did my desire to create applications of my own and cover areas of my field and everyday life which I felt could be improved with digital solutions.",
-            "p4": "In 2017 I have decided to pursue this desire fully by enlisting a developer program in a software academy, creating my first web application from the ground up and joining an agile Start-up team of likeminded developers who share my passion of exploring.",
-            "p5": "I am eager to continue this exciting journey and grow my skillset professionally, learn and create more applications that improve our quality of life."
+            "p1": "Throughout my 8-year career as a civil engineer, I was fascinated by how digitalization and web applications changed the core work in my field and everything around it.",
+            "p2": "To make my team's work more effective, I looked for ways to get the most out of every application we used, exploring different scripts and APIs.",
+            "p3": "Over time my curiosity grew, and so did my wish to build applications of my own for the parts of my work and everyday life that digital tools could improve.",
+            "p4": "In 2018 I committed to that fully: I enrolled in the JavaScript Web Developer program at SoftUni, built my first web application from the ground up, and later joined an agile start-up team of developers who share my curiosity.",
+            "p5": "Today I own the frontend of three Angular applications and want to keep growing toward technical leadership, while building software that makes people's work easier."
         },
         "education": {
             "title": "Education",
@@ -30,7 +30,7 @@
             "language": "Language skills",
             "solver": "Analytical problem-solver",
             "designer": "Engineering Solutions Design and Implementation",
-            "leader": "Leadership Experience",
+            "leader": "Leadership: code review, mentoring, hiring interviews",
             "manager": "Project management",
             "bg": "Bulgarian – native",
             "de": "German – professional working",
@@ -177,54 +177,54 @@
             "clickHere": "click here"
         },
         "colleto": {
-            "position": "Frontend Web Developer",
+            "position": "Senior Frontend Developer (Angular)",
             "description": {
-                "1": "          ▪︎   Developed three proprietary SPAs from scratch using Angular, TypeScript, RxJS, AJAX and REST APIs, designed to support the entire freight forwarding workflow.",
-                "2": "          ▪︎   Structured the codebase as an NX monorepo, enabling a scalable architecture with shared, reusable components and unified design patterns across all three applications.",
-                "3": "          ▪︎   Integrated custom design guidelines into Angular Material, including a standardized color palette and icon set, ensuring consistent UI/UX across the platform.",
-                "4": "          ▪︎   Wrote unit tests with Jest and end-to-end tests with Cypress, improving overall application quality and test coverage.",
-                "5": "          ▪︎   Integrated a generated Feign API client, ensuring consistent and well-documented communication between frontend and backend."
+                "1": "          ▪︎  Joined as the first and only frontend developer and built three Angular applications from scratch (Angular, TypeScript, RxJS, REST) covering the freight forwarding workflow. They are used by 400–500 employees and about 100 more users.",
+                "2": "          ▪︎  Proposed the move to an NX monorepo when a second app was needed, presented the case and carried out the full migration myself. The codebase now has 15 domain libraries and more than 700 components.",
+                "3": "          ▪︎  Review 100% of frontend merge requests, mentor the two developers who contribute to the frontend, and take part in about 90% of hiring interviews.",
+                "4": "          ▪︎  Work in Angular 20 with standalone components, signals and computed signals for state management, and RxJS for asynchronous flows and polling.",
+                "5": "          ▪︎  Unit tests in Jest and end-to-end tests in Cypress run in the deployment CI pipeline. Integrated our design guidelines into Angular Material and a generated Feign API client for the Spring Boot (Kotlin) backend."
             }
         },
         "carrypicker": {
-            "position": "Frontend Web Developer",
+            "position": "Frontend Developer",
             "description": {
-                "1": "          ▪︎   Further developed and maintained four logistic web applications, some featuring AI-powered functionality.",
-                "2": "          ▪︎   Built and maintained end-to-end tests using Cypress, increasing confidence in feature releases.",
-                "3": "          ▪︎   Designed and iterated on user interfaces using Sketch UX prototypes aligned with established design guidelines.",
-                "4": "          ▪︎   Collaborated cross-functionally with backend developers, data analysts and product managers in feature delivery process."
+                "1": "          ▪︎  Developed and maintained four logistics web applications in Angular and RxJS, some with AI-powered features.",
+                "2": "          ▪︎  Built and maintained Cypress end-to-end tests to make feature releases safer.",
+                "3": "          ▪︎  Designed user interfaces as Sketch prototypes within the existing design guidelines.",
+                "4": "          ▪︎  Worked with backend developers, data analysts and product managers to deliver features."
             }
         },
         "freelance": {
-            "position": "Junior Software Engineer",
+            "position": "Freelance Software Developer",
             "description": {
-                "1": "Designed and developed an MVP Performance Management Tool – a single-page application inspired by Six Sigma performance improvement techniques. It provides a platform for multiple parties to quickly exchange highly complex technical reviews of assets or performance indicators, while generating a high-level overview for C level stakeholders."
+                "1": "Designed and built an MVP performance management tool for a civil engineering consultancy of about 10 consultants and designers: a single-page application, inspired by Six Sigma, where users exchange technical reviews of assets and performance indicators and management gets a summary view. Freelance work alongside parental leave and studies at SoftUni."
             }
         },
         "stenli": {
             "position": "Site Manager",
             "description": {
-                "1": "Site management and coordination role for Pohnpei Solar Farm, The Federated States of Micronesia. 640kW installed solar capacity of strategical relevance to Pohnpei island power generation system."
+                "1": "Site management and coordination for the Pohnpei Solar Farm, Federated States of Micronesia: 640 kW of installed solar capacity, of strategic importance to the island's power supply."
             }
         },
         "sipal": {
-            "position": "Assistant Planning Coordinator",
+            "position": "Civil Engineer",
             "description": {
-                "1": "Assistant planning coordination, structural design and design supervision role for Pedemontana Veneta Expressway. 95km road artery with great significance for Northern Itlay and Eastern Europe, construction cost € 2.4 billion."
+                "1": "Planning coordination, structural design and design supervision for the Pedemontana Veneta Expressway: a 95 km road artery of great importance for Northern Italy and Eastern Europe, construction cost €2.4 billion."
             }
         },
         "way": {
-            "position": "Head Of Structural Department",
+            "position": "Head of Structural Department",
             "description": {
-                "1": "Developed the structural design department in Way Engineering AD - Bulgarian branch of SICS Ingegneria S.r.l. Organized and managed its growth from 2 initial employees to 15 in 3 years. Responsible for team recruitment, manpower management and direction of design works.",
+                "1": "Built the structural design department at Way Engineering AD, the Bulgarian branch of SICS Ingegneria S.r.l., and led it as it grew from 2 to 15 engineers in 3 years. 13 engineers reported to me. I owned delivery schedules and work distribution, and took part in hiring interviews and decisions.",
                 "2": "Project coordination role for three significant infrastructural projects and various tender procedures:",
                 "3": "          ▪︎   DG48 Salerno-Reggio Calabria Highway – 30km, Italy, construction cost € 650 million. Road facilities design for the main contractor SIS Scpa, Italy",
                 "4": "          ▪︎   State road SS640 – 35km, Italy, construction cost € 739 million. Road facilities design for the main contractor Empedocles II Scpa, Italy",
-                "5": "          ▪︎   Saida – Tiaret Railway -153km, Algeria, Road and rail way facilities design for the main contractor Astaldi S.p.a, Italy"
+                "5": "          ▪︎  Saida–Tiaret Railway – 153 km, Algeria. Road and railway facilities design for the main contractor Astaldi S.p.A., Italy"
             }
         },
         "akropolis": {
-            "position": "Personal Assistant Head Of Development Department",
+            "position": "Personal Assistant to the Head of Development",
             "description": {
                 "1": "Coordination role for Akropolis Shopping and Entertainment Center – a 524,000 sq.m. multifunctional commercial complex (shopping mall and office towers) in Sofia. Responsible for the official communication and the department documentation (concept and tender design stage). Preparation and execution of contractor appointment procedures."
             }
@@ -252,18 +252,18 @@
             "studyProjectsDiv": "Learn"
         },
         "colleto": {
-            "highlights": "Architected and developed three bespoke Angular applications from the ground up, tailored to support core logistics operations across the organization. Leveraged RxJS and a fully declarative programming model to ensure predictable, reactive workflows and robust UI state handling. Structured within a scalable NX Monorepo, enabling efficient cross-team collaboration and consistent code reuse. Integrated a GitLab-hosted, auto-generated RESTful API client module, streamlining backend communication and ensuring contract fidelity. Applications play a pivotal role in the company’s daily freight management, significantly improving operational efficiency and transparency.",
+            "highlights": "Architected and built three Angular applications from scratch for the freight forwarding operations of our parent company. When the second app was needed, I moved the codebase into an NX monorepo, which now holds 15 domain libraries and more than 700 components. The apps use Angular 20 with standalone components, signals and RxJS, and talk to the backend through a GitLab-hosted, auto-generated REST API client. They are used by 400–500 employees in daily freight management and replaced paper-based steps in the forwarding process.",
             "info": {
-                "1": "          ▪︎   Colleta für Disponenten - Transport dispatcher platform, where shipments are disopsed and tours are assigned",
-                "2": "          ▪︎   Colleta für Transportunternehmer - Transport service provider platform, where transport orders and tour assign are received",
-                "3": "          ▪︎   Colleta für Betreiber - User management platform, binding the other tree apps"
+                "1": "          ▪︎  Colleta für Disponenten – platform for transport dispatchers, where shipments are dispatched and tours are assigned",
+                "2": "          ▪︎  Colleta für Transportunternehmer – platform for transport service providers, where transport orders and tour assignments are received",
+                "3": "          ▪︎  Colleta für Betreiber – user management platform that connects the other apps"
             },
             "tms": {
-                "info": "<p>Colleta TMS is a disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers.</p><p>Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.</p>"
+                "info": "<p>Colleta TMS is a dispatching tool for transport management. It is the fallback platform where dispatchers manually bundle shipments that the AI could not dispatch automatically.</p><p>Colleta TMS turns bundling several shipments, creating a tour request and contacting numerous carriers into a few clicks. Price negotiation and the assignment of the transport order also happen on this platform.</p>"
             }
         },
         "carrypicker": {
-            "highlights": "Developed further features for three web applications: Carrypicker, Colleta TMS and Colleta Trucking. The symbiotic relationship between them allows for them to cover all three steps of the truck transport logistics process. Starting with placing a shipment order in Carrypicker, going through an AI based automatic disposition with a fallback option - manual disposition in Colleta TMS. And ending with issuing tour request and transportation orders via Colleta Trucking Platform, while having Colleta User Management Platform as the middle man in this ecosystem.",
+            "highlights": "Developed features for three web applications: Carrypicker, Colleta TMS and Colleta Trucking. Together they cover the whole truck transport process: a shipment order is placed in Carrypicker, dispatched automatically by AI (with manual dispatching in Colleta TMS as the fallback), and turned into tour requests and transport orders on the Colleta Trucking platform. The Colleta User Management platform connects the three.",
             "info": {
                 "1": "          ▪︎   Shipper Platform - a web platform, where shippers can easily input shipping orders. It provides AI-based day price calculation algorithm and supports manual, CSV or excel based shipment input. The web portal keeps track of the status and the position of the shipments relevant to a single user or to a group of users. It also issues automatically shipping orders and allows for document exchange between stakeholders.",
                 "2": "          ▪︎   Dispatcher Platform - a web disposition tool that serves mainly transport management purposes. It is meant as a fallback web platform, where shipments that could not be disposed automatically by the AI, are bundled manually by dispatchers. Colleta TMS reduces the process chain of bundling multiple shipments together, creating a tour request and contacting numerous carriers to a couple of button clicks. The price negotiation and the actual assignment of a transport order also take place in this web platform.",
@@ -272,13 +272,13 @@
             }
         },
         "ptm": {
-            "highlights": "Designed, developed and deployed an MVP Performance Management Tool (PMT SPA). The web application is inspired by Six Sigma performance improvement techniques. It provides a platform for multiple parties to quickly exchange highly complex technical reviews of assets or performance indicators, while generating a high-level overview for C level stakeholders.",
+            "highlights": "Designed, built and deployed an MVP Performance Management Tool (PMT SPA) for a civil engineering consultancy. Inspired by Six Sigma performance improvement techniques, it lets several parties exchange complex technical reviews of assets and performance indicators, and gives management a summary view.",
             "info": {
-                "1": "          ▪   Single Page Application with a cloud-based Backend, based on JavaScript, jQuery, AJAX, REST and JSON.",
-                "2": "          ▪   efficient routing and templating via Handlebars and Sammy.js.",
-                "3": "          ▪   custom UI that explicitly serves the needs of the stakeholders.",
-                "4": "          ▪   modern multi-platform application design following the latest standards of HTML5 and CSS3.",
-                "5": "          ▪   SCSS code implements Inverted Triangle architecture and BEM methodology."
+                "1": "          ▪  Single-page application with a cloud-based backend, built with JavaScript, jQuery, AJAX, REST and JSON.",
+                "2": "          ▪  Routing and templating with Sammy.js and Handlebars.",
+                "3": "          ▪  Custom UI built around the stakeholders' needs.",
+                "4": "          ▪  Responsive design using HTML5 and CSS3.",
+                "5": "          ▪  SCSS structured with the Inverted Triangle (ITCSS) architecture and BEM methodology."
             },
             "desktop": {
                 "info": ""
@@ -315,13 +315,13 @@
             }
         },
         "movies": {
-            "highlights": "Implemented Movie platform Single Page Application - platform for sharing and rating inspiring movie titles. The web application keeps users and other relevant data in a could-based backend (Backendless), support register and login for guest users. And allow for various manipulation with instances, like: reviewing, creating, editing, deleting and simulation of purchasing movie tickets.",
+            "highlights": "Movie platform single-page application for sharing and rating movie titles. Users and data are stored in a cloud-based backend (Backendless). Supports registration and login, and lets users review, create, edit and delete entries and simulate buying movie tickets.",
             "general": {
                 "info": ""
             }
         },
         "music": {
-            "highlights": "Implemented Music platform Single Page Application - platform for sharing and rating inspiring song titles. The web application keeps users and other relevant data in a could-based backend (Backendless), support register and login for guest users. And allow for various manipulation with instances, like: reviewing, creating, deleting and liking songs.",
+            "highlights": "Music platform single-page application for sharing and rating song titles. Users and data are stored in a cloud-based backend (Backendless). Supports registration and login, and lets users review, create, delete and like songs.",
             "general": {
                 "info": ""
             }
